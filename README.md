@@ -5,7 +5,7 @@ This Open Research Institute Phase4SPace project repo will be used to develop th
 
 # Summary
 
-In July/August 2022 the ORI community discussed formalizing a concept for a High Energy Orbit (HEO) 'flyer' satellite, that would have its own propulsion system. The background for the Haifuraiya name and the overall initial concept derivation/top-level goals was discussed at length and is recorded[^1] and its predecessor concept by Jan King W3GEY is directly available [here][^2]. 
+In July/August 2022 the ORI community discussed formalizing a concept for a High Energy Orbit (HEO) 'flyer' satellite, that would have its own propulsion system. The background for the Haifuraiya name and the overall initial concept derivation/top-level goals was discussed at length and is recorded[^1] and its predecessor concept by Jan King W3GEY is directly available[^2]. 
 
 # Team
 1. Samudra Haque N3RDX
