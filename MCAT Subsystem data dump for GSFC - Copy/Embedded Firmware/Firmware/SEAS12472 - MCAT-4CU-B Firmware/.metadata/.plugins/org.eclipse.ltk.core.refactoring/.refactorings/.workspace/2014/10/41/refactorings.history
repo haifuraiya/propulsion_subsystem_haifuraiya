@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;MCAT-4CU-B-FSW/mcat_cmd_parse_routines.cpp&apos;" deleteContents="false" description="Delete resource &apos;MCAT-4CU-B-FSW/mcat_cmd_parse_routines.cpp&apos;" element1="/MCAT-4CU-B-FSW/mcat_cmd_parse_routines.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1412788062160"/>
+</session>

@@ -1,0 +1,198 @@
+/*
+ * mcat_cmd_parsers.cpp
+ *
+ *  Created on: Oct 4, 2014
+ *      Author: samudra
+ */
+#include <multichanneli2c.h>
+#include "mcat_cmd_packet.h"
+#include <string>
+//function defines
+/*
+void parseCMDPacket (char CMDPacket[I2C_MAX_BUF_SIZE]);
+void parseBlockG (string BlockG);
+void parseBlockCU (string BlockCU);
+void parseBlockIPD (string BlockIPD);
+void parseBlockPPU (string BlockPPU);
+*/
+
+void parseCMDPacket (char cmdPacket[I2C_MAX_BUF_SIZE]){
+
+	/*
+	 * calls the following helper routine
+	 * parseBlockG
+	 * parseBlockCU
+	 * parseBlockIPD
+	 * parseBlockPPU
+	 */
+	//define
+	int currPOS = 0; //marks the current position of the cursor in the string
+	string cmdVersion = ""; //length in LEN_MCAT_CMD_PACKET_VERSION
+	string cmdBlockG = ""; //length of CU command Block LEN_MCAT_BLOCK_G
+	string cmdBlockCU = ""; //length of CU command block LEN_CMD_BLOCK_CU
+	string cmdBlockIPD = ""; //length LEN_CMD_BLOCK_IPD
+	string cmdBlockPPU = ""; //length LEN_CMD_BLOCK_PPU
+
+	cout << "About to parse Command Packet containing " << strlen((char *) cmdPacket) << " bytes" << endl;
+	cout << "The packet contains: [" << cmdPacket << "]" << endl;
+
+	//convert cmdPacket char array to C++ string object
+	string strCMD (cmdPacket);
+
+	//extract entire Block of commands for G
+	cmdBlockG = strCMD.substr(currPOS, LEN_CMD_BLOCK_G);
+	currPOS = currPOS + LEN_CMD_BLOCK_G;
+	cout << "G Block: [" << cmdBlockG << "]" << endl;
+	parseBlockG(cmdBlockG);
+
+	//extract entire Block of commands for CU
+	cmdBlockCU = strCMD.substr(currPOS, LEN_CMD_BLOCK_CU);
+	currPOS = currPOS + LEN_CMD_BLOCK_CU;
+	cout << "CU Block: [" << cmdBlockCU << "]" << endl;
+	parseBlockCU(cmdBlockCU);
+
+	if (cmdMode == MODE_CHANGE_TO_IDLE){
+		cout << "Mode must be set to IDLE" << endl;
+	}
+
+	//Block PM support not in present version - skipping
+
+	//extract entire Block IPD
+	cmdBlockIPD = strCMD.substr(currPOS, LEN_CMD_BLOCK_IPD);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD;
+	cout << "IPD Block: [" << cmdBlockIPD << "]" << endl;
+	parseBlockIPD(cmdBlockIPD);
+
+
+	//extract entire Block PPU
+	cmdBlockPPU = strCMD.substr(currPOS, LEN_CMD_BLOCK_PPU);
+	currPOS = currPOS + LEN_CMD_BLOCK_PPU;
+	cout << "PPU Block: [" << cmdBlockPPU << "]" << endl;
+	parseBlockPPU(cmdBlockPPU);
+
+	//Block MNPS support not in present version - skipping
+
+	//Block SBITE support not in present version - skipping
+}
+
+
+
+void parseBlockG (string BlockG){
+	//this routine will parse elements of the G Command Block
+	int currPOS = 0; //set position of cursor to first pos of the block
+
+	//extract version information of cmdPacket received over I2C
+	cmdVersion = BlockG.substr(currPOS, LEN_MCAT_CMD_PACKET_VERSION);
+	currPOS = currPOS + LEN_MCAT_CMD_PACKET_VERSION;
+	cout << "Command Packet Version: [" << cmdVersion << "]" << endl;
+}
+
+void parseBlockCU (string BlockCU){
+	//this routine will parse elements of the CU Command Block
+	int currPOS = 0; //set position of cursor to first pos of the block
+
+	cmdMode = BlockCU.substr(currPOS, LEN_CMD_BLOCK_CU_MODE); //cmdMode is global
+	currPOS = currPOS + LEN_CMD_BLOCK_CU_MODE;
+	cout << "Mode [" << cmdMode << "]" << endl;
+}
+
+
+void parseBlockIPD (string BlockIPD){
+	//this routine will parse elements of the IPD Command Block
+	int currPOS = 0; //set position of cursor to first pos of the block
+	char *endptr;
+	//process s_cmdTP1
+	s_cmdTP1 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_TP1);
+	cmdTP1 = strtol(s_cmdTP1.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_TP1;
+	cout << "TP1 string [" << s_cmdTP1 << "]" << endl;
+	cout << "TP1 integer [" <<  cmdTP1 << "]" << endl;
+	//process s_cmdPCH1
+	s_cmdPCH1 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_PCH1);
+	cmdPCH1 = strtol(s_cmdPCH1.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_PCH1;
+	cout << "PCH1 [" << s_cmdPCH1 << "]" << endl;
+	cout << "PCH1 integer [" <<  cmdPCH1 << "]" << endl;
+	//process s_cmdTP2
+	s_cmdTP2 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_TP2);
+	cmdTP2 = strtol(s_cmdTP2.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_TP2;
+	cout << "TP2 string [" << s_cmdTP2 << "]" << endl;
+	cout << "TP2 integer [" <<  cmdTP2 << "]" << endl;
+	//process s_cmdPCH2
+	s_cmdPCH2 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_PCH2);
+	cmdPCH2 = strtol(s_cmdPCH2.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_PCH2;
+	cout << "PCH2 [" << s_cmdPCH2 << "]" << endl;
+	cout << "PCH2 integer [" <<  cmdPCH2 << "]" << endl;
+	//process s_cmdTP3
+	s_cmdTP3 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_TP3);
+	cmdTP3 = strtol(s_cmdTP3.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_TP3;
+	cout << "TP3 string [" << s_cmdTP3 << "]" << endl;
+	cout << "TP3 integer [" <<  cmdTP3 << "]" << endl;
+	//process s_cmdPCH3
+	s_cmdPCH3 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_PCH3);
+	cmdPCH3 = strtol(s_cmdPCH3.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_PCH3;
+	cout << "PCH3 [" << s_cmdPCH3 << "]" << endl;
+	cout << "PCH3 integer [" <<  cmdPCH3 << "]" << endl;
+
+	//process s_cmdTP4
+	s_cmdTP4 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_TP4);
+	cmdTP4 = strtol(s_cmdTP4.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_TP4;
+	cout << "TP4 string [" << s_cmdTP4 << "]" << endl;
+	cout << "TP4 integer [" <<  cmdTP4 << "]" << endl;
+	//process s_cmdPCH4
+	s_cmdPCH4 = BlockIPD.substr(currPOS, LEN_CMD_BLOCK_IPD_PCH4);
+	cmdPCH4 = strtol(s_cmdPCH4.c_str(),&endptr,16);
+	currPOS = currPOS + LEN_CMD_BLOCK_IPD_PCH4;
+	cout << "PCH4 [" << s_cmdPCH4 << "]" << endl;
+	cout << "PCH4 integer [" <<  cmdPCH4 << "]" << endl;
+}
+
+void parseBlockPPU (string BlockPPU){
+
+	int currPOS=0;
+	//process cmdP18H1
+	s_cmdP18H1 = BlockPPU.substr(currPOS, LEN_CMD_BLOCK_PPU_P18H1);
+	if (s_cmdP18H1 == "Y") {
+		cmdP18H1 = TRUE;
+	} else {
+		cmdP18H1 = FALSE;
+	}
+	currPOS = currPOS + LEN_CMD_BLOCK_PPU_P18H1;
+	cout << "P18H1 [" << cmdP18H1 << "]" << endl;
+
+	//process cmdP18H2
+	s_cmdP18H2 = BlockPPU.substr(currPOS, LEN_CMD_BLOCK_PPU_P18H2);
+	if (s_cmdP18H2 == "Y") {
+		cmdP18H2 = TRUE;
+	} else {
+		cmdP18H2 = FALSE;
+	}
+	currPOS = currPOS + LEN_CMD_BLOCK_PPU_P18H2;
+	cout << "P18H2 [" << cmdP18H2 << "]" << endl;
+
+	//process cmdP18H3
+	s_cmdP18H3 = BlockPPU.substr(currPOS, LEN_CMD_BLOCK_PPU_P18H3);
+	if (s_cmdP18H3 == "Y") {
+		cmdP18H3 = TRUE;
+	} else {
+		cmdP18H3 = FALSE;
+	}
+	currPOS = currPOS + LEN_CMD_BLOCK_PPU_P18H3;
+	cout << "P18H3 [" << cmdP18H3 << "]" << endl;
+
+	//process cmdP18H4
+	s_cmdP18H4 = BlockPPU.substr(currPOS, LEN_CMD_BLOCK_PPU_P18H4);
+	if (s_cmdP18H4 == "Y") {
+		cmdP18H4 = TRUE;
+	} else {
+		cmdP18H4 = FALSE;
+	}
+	currPOS = currPOS + LEN_CMD_BLOCK_PPU_P18H4;
+	cout << "P18H4 [" << cmdP18H4 << "]" << endl;
+
+}

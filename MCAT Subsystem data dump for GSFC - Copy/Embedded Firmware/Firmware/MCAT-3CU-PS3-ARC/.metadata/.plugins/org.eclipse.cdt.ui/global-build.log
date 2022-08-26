@@ -1,0 +1,120 @@
+
+**** Rebuild of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for MCAT-3CU-PS3-ARC
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -ID:\nburn\include -ID:\nburn\mod5270\include -ID:\nburn\gcc-m68k\m68k-elf\include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5208 -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+..\main.cpp:45:34: error: predef.h: No such file or directory
+..\main.cpp:48:36: error: startnet.h: No such file or directory
+..\main.cpp:49:38: error: autoupdate.h: No such file or directory
+..\main.cpp:50:38: error: dhcpclient.h: No such file or directory
+..\main.cpp:51:35: error: taskmon.h: No such file or directory
+..\main.cpp:52:51: error: nbtime.h: No such file or directory
+..\main.cpp:53:17: error: udp.h: No such file or directory
+..\main.cpp:57:19: error: iosys.h: No such file or directory
+..\main.cpp:58:19: error: utils.h: No such file or directory
+..\main.cpp:60:16: error: ip.h: No such file or directory
+..\main.cpp:61:17: error: dns.h: No such file or directory
+..\main.cpp:62:17: error: tcp.h: No such file or directory
+..\main.cpp:64:23: error: htmlfiles.h: No such file or directory
+..\main.cpp:65:18: error: ucos.h: No such file or directory
+..\main.cpp:68:18: error: pins.h: No such file or directory
+..\main.cpp:69:37: error: sim5270.h: No such file or directory
+..\main.cpp:70:21: error: cfinter.h: No such file or directory
+..\main.cpp:79:23: error: smarttrap.h: No such file or directory
+..\main.cpp:95: error: 'PCSTR' has not been declared
+..\main.cpp:96: error: 'PCSTR' has not been declared
+..\main.cpp:97: error: 'PCSTR' has not been declared
+..\main.cpp:98: error: 'PCSTR' has not been declared
+..\main.cpp:102: error: 'PCSTR' has not been declared
+..\main.cpp:117: error: 'DWORD' does not name a type
+..\main.cpp:119: error: 'DWORD' does not name a type
+..\main.cpp:120: error: 'DWORD' does not name a type
+..\main.cpp:121: error: 'DWORD' does not name a type
+..\main.cpp:123: error: 'IPADDR' does not name a type
+..\main.cpp:129: error: 'FALSE' was not declared in this scope
+..\main.cpp:130: error: 'FALSE' was not declared in this scope
+..\main.cpp:133: error: 'OS_SEM' does not name a type
+..\main.cpp:134: error: 'OS_SEM' does not name a type
+..\main.cpp:227: error: expected constructor, destructor, or type conversion before '(' token
+Build error occurred, build is stopped
+Time consumed: 643  ms.  
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -Ic:\nburn\include -Ic:\nburn\mod5270\include -Ic:\nburn\gcc-m68k\m68k-elf\include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5208 -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 663  ms.  
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -Ic:\nburn\include -Ic:\nburn\mod5270\include -Ic:\nburn\gcc-m68k\m68k-elf\include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5208 -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 647  ms.  
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -Ic:\nburn\include -Ic:\nburn\mod5270\include -Ic:\nburn\gcc-m68k\m68k-elf\include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5208 -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 657  ms.  
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 164  ms.  
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 154  ms.  
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -Ic:\nburn\include -Ic:\nburn\mod5270\include -Ic:\nburn\gcc-m68k\m68k-elf\include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5208 -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 639  ms.  
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -Ic:\nburn\include -Ic:\nburn\mod5270\include -Ic:\nburn\gcc-m68k\m68k-elf\include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5208 -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 648  ms.  

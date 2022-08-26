@@ -1,0 +1,369 @@
+
+**** Build of configuration FLTCU for project MCAT-4CU-B-FSW ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -DFLTCU -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o ..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp
+..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:145:2: warning: #warning FLTCU build in progress ----------------------------------------------
+m68k-elf-g++ main6C.o main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o -Wl,-Map=MCAT-4CU-B-FSW.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oMCAT-4CU-B-FSW.elf
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `fake_func_isr()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:170: multiple definition of `fake_func_isr()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `fake_func_isr()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:170: multiple definition of `func_isr'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `real_func_isr':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:170: multiple definition of `real_func_isr'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `disablePeripherals()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1334: multiple definition of `disablePeripherals()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1334: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `setDefaults':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:787: multiple definition of `setDefaults'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:787: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x28): multiple definition of `TSRD'
+main6C.o:(.data+0x28): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <char, std::char_traits<char>, std::allocator<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:2404: multiple definition of `TSR'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:2404: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <char, std::char_traits<char>, std::allocator<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:2404: multiple definition of `MCHCD'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:2404: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `MCHC'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0xfc): multiple definition of `TPHCD'
+main6C.o:(.data+0xfc): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `TPHC'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x100): multiple definition of `TPLCD'
+main6C.o:(.data+0x100): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `TPLC'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x104): multiple definition of `MCLCD'
+main6C.o:(.data+0x104): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `MCLC'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x108): multiple definition of `EOCCD'
+main6C.o:(.data+0x108): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `EOCC'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `Ascii2Byte(char*)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1215: multiple definition of `Ascii2Byte(char*)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1215: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `initDMATIMER1':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:826: multiple definition of `initDMATIMER1'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:826: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `TS1Count'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `cmdVersion'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x34): multiple definition of `EOCC_array'
+main6C.o:(.data+0x34): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <char, std::char_traits<char>, std::allocator<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:2404: multiple definition of `EOCCD50'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:2404: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `EOCCD10'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::ostream::operator<<(long)':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: multiple definition of `cmdMode'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::ostream::operator<<(long)':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: multiple definition of `cmdModeCurrent'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::ostream::operator<<(long)':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: multiple definition of `s_freqTP1'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `s_freqTP2'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::ostream::operator<<(long)':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: multiple definition of `s_freqTP3'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `s_freqTP4'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `s_countCh1'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `s_countCh2'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `s_countCh3'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::ostream::operator<<(std::ostream& (*)(std::ostream&))':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:117: multiple definition of `s_countCh4'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:117: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `s_cmdP18H1'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `s_cmdP18H2'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `s_cmdP18H3'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `s_cmdP18H4'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `menuVersion'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `PulseCount'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x0): multiple definition of `MaxCount'
+main6C.o:(.data+0x0): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `Continuous'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `disableAll':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:780: multiple definition of `disableAll'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:780: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `controlTP1(unsigned char)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:568: multiple definition of `controlTP1(unsigned char)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:568: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goFIRfromRUN()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:607: multiple definition of `goFIRfromRUN()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:607: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `countCh1'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::ostream::operator<<(std::ostream& (*)(std::ostream&))':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:117: multiple definition of `endCountCh1'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:117: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `countCh2'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `endCountCh2'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `countCh3'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `endCountCh3'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `countCh4'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_check(unsigned long, char const*) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: multiple definition of `endCountCh4'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:310: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goFIR()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:602: multiple definition of `goFIR()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:602: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goIDLfromFIR()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:696: multiple definition of `goIDLfromFIR()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:696: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goIDLfromRUN()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:692: multiple definition of `goIDLfromRUN()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:692: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goIDLfromSBY()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:688: multiple definition of `goIDLfromSBY()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:688: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goIDL()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:683: multiple definition of `goIDL()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:683: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goSBYfromIDL()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:678: multiple definition of `goSBYfromIDL()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:678: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goSBYfromRUN()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:674: multiple definition of `goSBYfromRUN()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:674: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goSBYfromFIR()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:670: multiple definition of `goSBYfromFIR()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:670: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goSBY()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:665: multiple definition of `goSBY()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:665: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goRUNfromIDL()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:660: multiple definition of `goRUNfromIDL()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:660: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goRUNfromSBY()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:656: multiple definition of `goRUNfromSBY()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:656: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goRUNfromFIR()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:652: multiple definition of `goRUNfromFIR()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:652: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goRUN()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:641: multiple definition of `goRUN()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:641: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goFIRfromIDL()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:636: multiple definition of `goFIRfromIDL()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:636: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `goFIRfromSBY()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:632: multiple definition of `goFIRfromSBY()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:632: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `setNewMode(std::string, std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:703: multiple definition of `setNewMode(std::string, std::string)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:703: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `menu()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1233: multiple definition of `menu()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1233: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockIPD(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1139: multiple definition of `verCU'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1139: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `control18Hmanual(int, int)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:376: multiple definition of `control18Hmanual(int, int)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:376: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x1c): multiple definition of `ON'
+main6C.o:(.data+0x1c): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockIPD(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1130: multiple definition of `OFF'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1130: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `cmdP18H1'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `control18L(int, int)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:254: multiple definition of `control18L(int, int)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:254: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `debugPrint(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:162: multiple definition of `debugPrint(std::string)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:162: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `setNewPulseCount()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1323: multiple definition of `setNewPulseCount()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1323: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x24): multiple definition of `limitPulseCount'
+main6C.o:(.data+0x24): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::ostream::operator<<(std::ostream& (*)(std::ostream&))':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:117: multiple definition of `startPulseCount'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:117: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `endPulseCount'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `controlPMA(unsigned char)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:237: multiple definition of `controlPMA(unsigned char)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:237: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockPPU(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1155: multiple definition of `parseBlockPPU(std::string)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1155: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `cmdP18H2'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `cmdP18H3'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `cmdP18H4'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockIPD(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1100: multiple definition of `parseBlockIPD(std::string)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1100: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x10c): multiple definition of `freqTP1'
+main6C.o:(.data+0x10c): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x110): multiple definition of `freqTP2'
+main6C.o:(.data+0x110): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x114): multiple definition of `freqTP3'
+main6C.o:(.data+0x114): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x118): multiple definition of `freqTP4'
+main6C.o:(.data+0x118): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockCU(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1089: multiple definition of `parseBlockCU(std::string)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1089: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockG(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1079: multiple definition of `parseBlockG(std::string)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1079: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `doSetup()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:841: multiple definition of `doSetup()'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:841: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `idQ'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `setTP1(long)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:547: multiple definition of `setTP1(long)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:547: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x2c): multiple definition of `PPU_SAFE_OPS_MIN'
+main6C.o:(.data+0x2c): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x30): multiple definition of `PPU_SAFE_OPS_MAX'
+main6C.o:(.data+0x30): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `UserMain':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1380: multiple definition of `UserMain'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1380: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x124): multiple definition of `address'
+main6C.o:(.data+0x124): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `idCU'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x11c): multiple definition of `AppName'
+main6C.o:(.data+0x11c): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `toggleHFlag'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `buffer'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `I2CStat'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseCMDPacket(char*)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:934: multiple definition of `parseCMDPacket(char*)'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:934: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `fake_func_isr()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:170: multiple definition of `stringVersion'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `fake_func_isr()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:170: multiple definition of `doPulseStack'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:170: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `uint32_counter'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `SemPulse'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::substr(unsigned long, unsigned long) const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: multiple definition of `SempTP'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:1913: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::operator=(std::string const&)':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:491: multiple definition of `P18H1Sem'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:491: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_Rep::_M_dispose(std::allocator<char> const&)':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:234: multiple definition of `P18H2Sem'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:234: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_Rep::_M_dispose(std::allocator<char> const&)':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:234: multiple definition of `P18H3Sem'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:234: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockIPD(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1130: multiple definition of `P18H4Sem'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1130: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x4): multiple definition of `Ch1Prio'
+main6C.o:(.data+0x4): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x8): multiple definition of `Ch2Prio'
+main6C.o:(.data+0x8): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0xc): multiple definition of `Ch3Prio'
+main6C.o:(.data+0xc): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x10): multiple definition of `Ch4Prio'
+main6C.o:(.data+0x10): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x14): multiple definition of `HIGH'
+main6C.o:(.data+0x14): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `NHIGH'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `parseBlockIPD(std::string)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).cpp:1130: multiple definition of `LOW'
+main6C.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW\FLTCU/..\main6C.cpp:1130: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x18): multiple definition of `NLOW'
+main6C.o:(.data+0x18): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x20): multiple definition of `ACTIVE'
+main6C.o:(.data+0x20): first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_data() const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:280: multiple definition of `INACTIVE'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:280: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `std::string::_M_data() const':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:280: multiple definition of `countUP'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/bits/basic_string.h:280: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o: In function `operator<< <std::char_traits<char> >':
+c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: multiple definition of `I2CInputBuffer'
+main6C.o:c:\nburn\gcc-m68k\bin\../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/include/c++/4.2.1/ostream:517: first defined here
+main6C (Samudra Haque N3RDX's conflicted copy 2014-11-27).o:(.data+0x120): multiple definition of `inbuf'
+main6C.o:(.data+0x120): first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 20198  ms.  

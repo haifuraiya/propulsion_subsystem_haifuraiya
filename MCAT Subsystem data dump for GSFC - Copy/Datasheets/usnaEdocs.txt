@@ -1,0 +1,81 @@
+ Volume in drive C is OS
+ Volume Serial Number is 56E8-33A2
+
+ Directory of C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT SS\Reference\Datasheets
+
+12/18/2013  09:11 PM                 0 usnaEdocs.txt
+12/18/2013  09:10 PM    <DIR>          ..
+12/18/2013  09:10 PM    <DIR>          .
+12/18/2013  08:25 PM    <DIR>          csk_motherboard_revd
+12/18/2013  08:25 PM    <DIR>          csk_motherboard_revd_passthru
+12/18/2013  08:24 PM         8,449,443 csk_motherboard_revd_passthru.zip
+12/18/2013  08:21 PM         2,863,371 CubeSat 1U Electronic Power System and Batteries CS-1UEPS2-NB-10-20 (4).pdf
+12/18/2013  08:20 PM           351,357 DS_CSK_MB_710-00484-D.pdf
+12/18/2013  08:01 PM           222,189 PCA9515A.pdf
+12/18/2013  07:57 PM           525,695 DS_CSK_GPSR_1_710-00908-B.pdf
+12/18/2013  07:27 PM           403,412 DS_CSK_DB_710-00297-D.pdf
+12/17/2013  07:37 PM           181,086 DS_CSK_Protoboard_711-00303-B.pdf
+12/17/2013  07:35 PM           277,724 DS_CSK_PPM_D2_710-00528-A.pdf
+12/17/2013  07:35 PM               228 pdf_logo.gif
+10/10/2013  08:05 AM         8,549,788 csk_motherboard_revd.zip
+09/30/2013  08:57 PM           272,903 Mini PCI card latch MOLEX 480994000_sd.pdf
+09/30/2013  08:55 PM           198,560 Mini PCI Connector MOLEX 679101002_sd.pdf
+09/03/2013  05:08 PM           346,921 SatelliteOrbitalDecayCalculations.pdf
+08/28/2013  01:02 PM           312,699 2scr514p-210620.pdf
+08/28/2013  01:01 PM           608,579 oki-78sr-56393.pdf
+08/14/2013  10:51 PM           359,015 molex 022232021_sd.pdf
+08/10/2013  02:56 PM           100,943 M20-106-59872.pdf
+07/28/2013  04:52 PM           374,076 mfsmdf2-17667.pdf
+07/24/2013  08:15 AM            40,136 0008500106_CRIMP_TERMINALS-156254.pdf
+07/24/2013  08:12 AM            35,469 DataSheet 76650-0209-196582.pdf
+07/23/2013  12:24 PM         2,431,227 RHRG75120.pdf
+07/16/2013  09:36 PM           131,574 C031-6180.PDF
+07/16/2013  08:18 PM           162,595 1735875.pdf
+07/15/2013  12:17 AM           469,031 MLX91205_datasheet.pdf
+07/15/2013  12:14 AM           594,427 Integrating Current Sensor Data Sheet.pdf
+07/09/2013  04:40 PM           173,704 60966-fig-1.jpg
+07/09/2013  12:17 PM           772,074 Integrated AMR Current Sensor 524_50-224482.pdf
+07/07/2013  09:56 PM           745,807 Wago 2716.pdf
+07/07/2013  09:08 PM            95,441 DM00063620.pdf
+07/07/2013  06:59 PM         1,089,895 F3101_Aximax.pdf
+07/04/2013  10:49 PM           311,640 w-sink-181565.pdf
+06/15/2013  08:13 PM            49,660 0022232021_PCB_HEADERS-227096.pdf
+06/15/2013  07:32 PM           327,746 505226-da-01-en-Kleinrelais_waschdicht_24V.pdf
+06/15/2013  04:59 PM           263,932 FAIRCHILD 4N28M.pdf
+06/15/2013  03:48 PM           603,977 CNY17x optocoupler.pdf
+06/15/2013  01:12 AM         2,025,849 Optiplex 990 User_Manual_83-155-487.pdf
+06/12/2013  05:31 PM    <DIR>          CN0190-DesignSupport
+06/11/2013  11:09 PM           117,064 TIP32A ON SEMI.pdf
+06/11/2013  10:58 PM           120,942 TIP32A.pdf
+06/11/2013  10:35 PM         1,057,335 0900766b80da43ec.pdf
+06/11/2013  12:07 AM           370,498 G5V-2_0911-11924.pdf
+06/10/2013  11:39 PM           502,531 2903.pdf
+06/10/2013  11:21 PM           260,497 brk2x25_datasheet.pdf
+06/10/2013  11:11 PM           143,776 schmartboard_pd_201-0302-01_dim.pdf
+06/09/2013  12:04 PM           128,327 VISHAY 4n28 4n25.pdf
+06/08/2013  11:33 PM            98,459 Nippon Chemicon Conductive Polymer Aluminium Solid Capacitors PSG (1).pdf
+06/08/2013  11:21 PM            98,459 PSG.pdf
+06/07/2013  10:43 AM           272,769 Analysis of Weibull Grading Test for Solid Tantulum Capacitors.pdf
+06/07/2013  10:09 AM           357,253 MIL-PRF-123.pdf
+06/07/2013  12:10 AM           831,595 49437.pdf
+06/07/2013  12:06 AM           103,395 597d-239913.pdf
+06/06/2013  11:40 PM         4,118,104 KEM_TC111_SPACE.pdf
+05/03/2013  09:14 AM         2,679,689 RF69.pdf
+05/01/2013  05:09 PM            40,057 FAIRCHILD HGTG27N120BN TO247A03.pdf
+04/29/2013  11:57 PM           127,892 TO-247E_01.pdf
+04/29/2013  11:45 PM           119,481 po_to274aa.pdf
+04/26/2013  04:17 PM         1,045,368 Datasheet-NANO54415-200IR (2).pdf
+04/19/2013  03:16 AM            88,202 74LVX4245.pdf
+04/19/2013  02:34 AM           521,590 0900766b80f9b070.pdf
+04/19/2013  01:44 AM           462,219 ts2149-8790.pdf
+04/19/2013  12:02 AM         2,120,559 RHRP30120.pdf
+04/17/2013  07:55 PM         1,856,947 MAGNETICS_Powder_Core_Catalog.pdf
+04/13/2013  05:52 PM            17,408 380523655245964505593671154107510036154RU24.pdf
+01/27/2013  07:27 PM         1,501,264 LDOBk.pdf
+01/23/2013  10:13 PM         2,861,795 IXD_604.pdf
+01/23/2013  09:54 PM         1,540,561 FAN3227T.pdf
+01/23/2013  09:12 PM           168,639 HGTG27N120BN.pdf
+01/23/2013  09:10 PM           882,809 atmini_manual_v102.pdf
+05/04/2006  02:42 PM         1,277,432 M5271EVBUM.pdf
+              69 File(s)     60,615,089 bytes
+               5 Dir(s)  356,458,278,912 bytes free

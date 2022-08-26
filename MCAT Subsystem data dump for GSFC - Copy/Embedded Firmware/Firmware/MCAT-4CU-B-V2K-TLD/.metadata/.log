@@ -1,0 +1,9 @@
+!SESSION 2014-05-28 16:58:24.204 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-05-28 16:59:39.387
+!MESSAGE Indexed 'test' (1 sources, 59 headers) in 1.02 sec: 1,875 declarations; 1,501 references; 13 unresolved inclusions; 2 syntax errors; 25 unresolved names (0.74%)

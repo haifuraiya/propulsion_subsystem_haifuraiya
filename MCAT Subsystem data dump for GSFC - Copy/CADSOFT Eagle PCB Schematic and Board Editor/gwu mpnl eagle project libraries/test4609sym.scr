@@ -1,0 +1,33 @@
+Edit 'LTM9064.SCH.sym';
+grid inch 0.1
+Pin 'EXTV_CC' io none middle R0 both 0 (-22.86 25.4);
+Pin 'INTV_CC' io none middle R0 both 0 (-22.86 20.32);
+Pin 'PGOOD' io none middle R0 both 0 (-22.86 15.24);
+Pin 'RUN' io none middle R0 both 0 (-22.86 10.16);
+Pin 'STBYMD' io none middle R0 both 0 (-22.86 5.08);
+Pin 'COMP' io none middle R0 both 0 (-22.86 0);
+Pin 'SS' io none middle R0 both 0 (-22.86 -5.08);
+Pin 'PLLIN' io none middle R0 both 0 (-22.86 -10.16);
+Pin 'PLLFLTR' io none middle R0 both 0 (-22.86 -15.24);
+Pin 'FCB' io none middle R0 both 0 (-22.86 -20.32);
+Pin 'SGND' io none middle R0 both 0 (-22.86 -25.4);
+Pin 'V_IN' io none middle R180 both 0 (27.94 25.4);
+Pin 'SW2' io none middle R180 both 0 (27.94 20.32);
+Pin 'SW1' io none middle R180 both 0 (27.94 10.16);
+Pin 'V_OUT' io none middle R180 both 0 (27.94 5.08);
+Pin 'V_FB' io none middle R180 both 0 (27.94 -2.54);
+Pin 'R_SENSE' io none middle R180 both 0 (27.94 -7.62);
+Pin 'SENSE+' io none middle R180 both 0 (27.94 -12.7);
+Pin 'SENSE-' io none middle R180 both 0 (27.94 -20.32);
+Pin 'PGND' io none middle R180 both 0 (27.94 -25.4);
+Layer 94;
+Wire  0.254 (-17.78 27.94) (-17.78 -27.94) (22.86 -27.94) (22.86 27.94) \
+      (-17.78 27.94);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Text '>NAME' R0 (-17.78 35.56);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (-17.78 30.48);

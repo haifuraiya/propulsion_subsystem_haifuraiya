@@ -1,0 +1,4 @@
+#Thu Sep 25 13:45:05 EDT 2014
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=build

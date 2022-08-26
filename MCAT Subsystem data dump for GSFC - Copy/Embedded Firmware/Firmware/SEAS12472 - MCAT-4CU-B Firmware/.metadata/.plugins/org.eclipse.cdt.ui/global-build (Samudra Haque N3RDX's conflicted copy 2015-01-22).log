@@ -1,0 +1,433 @@
+
+**** Clean-only build of configuration Release for project JUNK ****
+rm -f JUNK.elf JUNK_APP.s19 JUNK.s19 main.o
+Build complete for project JUNK
+
+**** Rebuild of configuration Release for project JUNK ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\JUNK -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=JUNK.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oJUNK.elf
+m68k-elf-objcopy JUNK.elf --strip-all --output-target=srec JUNK.s19
+compcode JUNK.s19 JUNK_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8a4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189604 bytes into 102240 bytes
+Code CheckSum= c7eace81
+Struct CheckSum= fa65c7c9
+S records output with a base address of 4000
+S records output with a final address of 1cf78
+About to write S7...
+******************************Build summary ******************************
+Used 102264 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project JUNK
+Time consumed: 712  ms.  
+
+**** Build of configuration Release for project JUNK ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for JUNK
+
+**** Rebuild of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8a4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189604 bytes into 102240 bytes
+Code CheckSum= c7eace81
+Struct CheckSum= fa65c7c9
+S records output with a base address of 4000
+S records output with a final address of 1cf78
+About to write S7...
+******************************Build summary ******************************
+Used 102264 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 1006  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8a4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189604 bytes into 102240 bytes
+Code CheckSum= c7eace81
+Struct CheckSum= fa65c7c9
+S records output with a base address of 4000
+S records output with a final address of 1cf78
+About to write S7...
+******************************Build summary ******************************
+Used 102264 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 735  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8b4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189620 bytes into 102201 bytes
+Code CheckSum= c9188743
+Struct CheckSum= f9380f1e
+S records output with a base address of 4000
+S records output with a final address of 1cf51
+About to write S7...
+******************************Build summary ******************************
+Used 102225 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 1089  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8b4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189620 bytes into 102201 bytes
+Code CheckSum= 54b08937
+Struct CheckSum= 6da00d2a
+S records output with a base address of 4000
+S records output with a final address of 1cf51
+About to write S7...
+******************************Build summary ******************************
+Used 102225 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 826  ms.  
+
+**** Build of configuration Release for project TESTBUS ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=TESTBUS.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTBUS.elf
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c1_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:360: multiple definition of `INT_STATUS'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:871: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `I2CRXAvail':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:1015: multiple definition of `I2CRXAvail'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:871: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c0_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:355: multiple definition of `pI2CRec'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:366: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `I2CTXAvail':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:1027: multiple definition of `I2CTXAvail'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:883: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `I2CFillSlaveTXBuf':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:961: multiple definition of `I2CFillSlaveTXBuf'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:817: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o):(.data+0x0): multiple definition of `bRestartSlaveTX'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):(.data+0x0): first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `I2CGetByte':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:1001: multiple definition of `I2CGetByte'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:857: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:355: multiple definition of `I2C_RX_Semaphore'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:871: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c0_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:355: multiple definition of `I2C_TX_Semaphore'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:366: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c1_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:360: multiple definition of `bRestarted'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:871: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c1_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:360: multiple definition of `RnW'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:871: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c1_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:360: multiple definition of `bLastTX'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:871: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `i2cModuleSwitch(int)':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:94: multiple definition of `I2C_SlaveTX_Callback'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:333: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c1_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:360: multiple definition of `dummy'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:871: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `i2cModuleSwitch(int)':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:94: multiple definition of `I2C_SlaveTX_NAK_Callback'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:333: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `i2cModuleSwitch(int)':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:94: multiple definition of `I2C_SlaveRX_Callback'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:333: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `fake_i2c0_multichannel_int_routine()':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:355: multiple definition of `I2CSlaveRec'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:360: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `i2cModuleSwitch(int)':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:96: multiple definition of `I2CSlaveRXBuf'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:333: first defined here
+C:\nburn/lib/MOD5441X.a(multichanneli2c.o): In function `i2cModuleSwitch(int)':
+c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/multichanneli2c.cpp:98: multiple definition of `I2CSlaveTXBuf'
+C:\nburn/lib/MOD5441X.a(i2cmulti.o):c:\jenkins-slave\workspace\012.Build.Libraries\config\all\installPlatform\MOD5441X\nburn-install\MOD5441X\system/i2cmulti.cpp:333: first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 1521  ms.  
+
+**** Build of configuration Release for project TESTBUS ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=TESTBUS.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTBUS.elf
+m68k-elf-objcopy TESTBUS.elf --strip-all --output-target=srec TESTBUS.s19
+compcode TESTBUS.s19 TESTBUS_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40025ae4 
+Block size= 149K
+Execution starts at 40000400 
+compressed 153316 bytes into 88784 bytes
+Code CheckSum= 78ffd582
+Struct CheckSum= 4951c318
+S records output with a base address of c0040000
+S records output with a final address of c0055ae8
+About to write S7...
+******************************Build summary ******************************
+Used 88808 bytes of 33292288 available flash (0.27%)
+Used 625960 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project TESTBUS
+Time consumed: 788  ms.  
+
+**** Build of configuration Release for project TESTBUS ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=TESTBUS.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTBUS.elf
+m68k-elf-objcopy TESTBUS.elf --strip-all --output-target=srec TESTBUS.s19
+compcode TESTBUS.s19 TESTBUS_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c64 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170084 bytes into 100468 bytes
+Code CheckSum= e2e10823
+Struct CheckSum= df702153
+S records output with a base address of c0040000
+S records output with a final address of c005888c
+About to write S7...
+******************************Build summary ******************************
+Used 100492 bytes of 33292288 available flash (0.30%)
+Used 642728 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.7
+Build complete for project TESTBUS
+Time consumed: 879  ms.  
+
+**** Build of configuration Release for project TESTBUS ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=TESTBUS.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTBUS.elf
+m68k-elf-objcopy TESTBUS.elf --strip-all --output-target=srec TESTBUS.s19
+compcode TESTBUS.s19 TESTBUS_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c74 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170100 bytes into 100550 bytes
+Code CheckSum= fd57aebd
+Struct CheckSum= c4f97a57
+S records output with a base address of c0040000
+S records output with a final address of c00588de
+About to write S7...
+******************************Build summary ******************************
+Used 100574 bytes of 33292288 available flash (0.30%)
+Used 642744 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.7
+Build complete for project TESTBUS
+Time consumed: 1045  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8b4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189620 bytes into 102222 bytes
+Code CheckSum= 28485903
+Struct CheckSum= 9a083d49
+S records output with a base address of 4000
+S records output with a final address of 1cf66
+About to write S7...
+******************************Build summary ******************************
+Used 102246 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 923  ms.  
+
+**** Build of configuration Release for project TESTBUS ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=TESTBUS.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTBUS.elf
+m68k-elf-objcopy TESTBUS.elf --strip-all --output-target=srec TESTBUS.s19
+compcode TESTBUS.s19 TESTBUS_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c84 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170116 bytes into 100547 bytes
+Code CheckSum= 52a7cde
+Struct CheckSum= bd26ac29
+S records output with a base address of c0040000
+S records output with a final address of c00588db
+About to write S7...
+******************************Build summary ******************************
+Used 100571 bytes of 33292288 available flash (0.30%)
+Used 642760 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.7
+Build complete for project TESTBUS
+Time consumed: 899  ms.  
+
+**** Build of configuration Release for project TESTBUS ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=TESTBUS.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTBUS.elf
+m68k-elf-objcopy TESTBUS.elf --strip-all --output-target=srec TESTBUS.s19
+compcode TESTBUS.s19 TESTBUS_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40029c84 
+Block size= 166K
+Execution starts at 40000400 
+compressed 170116 bytes into 100547 bytes
+Code CheckSum= 112a7cde
+Struct CheckSum= b126ac29
+S records output with a base address of c0040000
+S records output with a final address of c00588db
+About to write S7...
+******************************Build summary ******************************
+Used 100571 bytes of 33292288 available flash (0.30%)
+Used 642760 bytes of 67108095 available ram (0.96%)
+NNDK release tag version:2.6.7
+Build complete for project TESTBUS
+Time consumed: 992  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8b4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189620 bytes into 102221 bytes
+Code CheckSum= 34485903
+Struct CheckSum= 8e083d4a
+S records output with a base address of 4000
+S records output with a final address of 1cf65
+About to write S7...
+******************************Build summary ******************************
+Used 102245 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 855  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8b4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189620 bytes into 102221 bytes
+Code CheckSum= 34485903
+Struct CheckSum= 8e083d4a
+S records output with a base address of 4000
+S records output with a final address of 1cf65
+About to write S7...
+******************************Build summary ******************************
+Used 102245 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 1210  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8b4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189620 bytes into 102221 bytes
+Code CheckSum= 34485903
+Struct CheckSum= 8e083d4a
+S records output with a base address of 4000
+S records output with a final address of 1cf65
+About to write S7...
+******************************Build summary ******************************
+Used 102245 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 760  ms.  
+
+**** Build of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8e4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189668 bytes into 102259 bytes
+Code CheckSum= 7c1d064d
+Struct CheckSum= 46338faa
+S records output with a base address of 4000
+S records output with a final address of 1cf8b
+About to write S7...
+******************************Build summary ******************************
+Used 102283 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 1455  ms.  

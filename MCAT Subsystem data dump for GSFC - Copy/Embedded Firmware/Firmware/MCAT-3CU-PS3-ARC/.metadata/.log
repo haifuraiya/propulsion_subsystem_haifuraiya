@@ -1,0 +1,21 @@
+!SESSION 2014-09-19 18:03:03.153 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\MCAT-3CU-PS3-ARC
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-09-19 18:04:21.680
+!MESSAGE Indexed 'MCAT-3CU-PS3-ARC' (1 sources, 13 headers) in 0.48 sec: 143 declarations; 180 references; 37 unresolved inclusions; 1 syntax errors; 241 unresolved names (42.73%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-09-19 18:06:10.111
+!MESSAGE Indexed 'MCAT-3CU-PS3-ARC' (1 sources, 60 headers) in 0.46 sec: 3,287 declarations; 2,734 references; 21 unresolved inclusions; 1 syntax errors; 59 unresolved names (0.97%)
+!SESSION 2014-09-19 18:06:28.476 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-09-19 18:07:54.389
+!MESSAGE Indexed 'MCAT-3CU-PS3-ARC' (1 sources, 60 headers) in 0.58 sec: 3,287 declarations; 2,734 references; 21 unresolved inclusions; 1 syntax errors; 59 unresolved names (0.97%)

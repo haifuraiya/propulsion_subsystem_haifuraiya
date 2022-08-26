@@ -1,0 +1,1055 @@
+# RELEASE 2.6.4 (November 2013)
+## New in this version
+* Examples
+	* Added PIT timer for the SBL2E
+	* Adding wav_player examples to NANO54415 and MOD5441X platforms
+* PK70
+    * PK70-232CR, -485CR, and -MMSCR devices now supported by secure factory app
+* Serial
+    * Added SerialSendComplete(), which will check to see if all serial characters are sent
+* System
+	* Added task time logging feature. To enable it, the system library needs to be compiled with the macro UCOS_TIME defined in constants.h
+	* Adding support in uc/os for handling OS_TCBs changing in size without recompiling debug Ethernet drivers. Allows for using stack checking with the debug driver
+
+## Corrections in this version
+* MCF5441X
+	* Fixed so that chip select mask values for DSPIInit did matches their description and behavior of the qspi driver
+	* Fixed multi channel i2c driver to not rely on DEFAULT_I2C_MODULE definition by replacing calls such as i2cinit with multichannel_i2cinit calls internally.
+* MOD5441X
+	* Fixed pin_irq class error on IRQ6
+	* Modified pinio class to reflect hardware revision changes (J1-9/10, J2-17/18)
+* SBL2e
+	* Documentation updated to more clearly state the 768 stack size value represents 32-bit values, not bytes.
+	* Fixed TCP Buffered connect error not clearing error variable
+* SNMP
+    * Fixed error reporting issues
+    * Fixed getNext with null OID
+    * Fixed too big error so errors are properly reported and system does not hang
+* System
+	* WriteHtmlVariable() fixed. Was writing last byte of MAC address incorrectly
+	* Fixed problem with incomplete transfers of static web resources
+	* Fixed DHCP discover on fast boot with lossy networks
+* TCP
+    * Fixed scheduling issues with TCP which caused 1 tick busy waits in lower priority tasks
+* WIFI
+    * Fixed error in AddWifiInterfaceWithName() which could case flash corruption with erratic power
+
+
+
+# RELEASE 2.6.3 (July 2013)
+## New in this version
+* Examples
+	* Added Twitter Bootstrap example, a web css framework for UI features on web pages.
+	* Added AJAX real time data graph example
+	* Added example on SBL2E serial callbacks
+* Github
+	* Several examples open sourced and moved to github.com/netburner
+* HTTP
+    * Documented <!-- CPPCALL --> web function. Works like FUNCTIONCALL, but allows support for C++ functions
+    * Added robots.txt to disallow search engine crawling of examples by default
+* MCF5441X
+	* Added DSPI driver and example
+	* Added multi channel i2c driver
+* NANO54415
+	* Added SetDefPinUsage() to set default pin assignments
+* SBL2e
+	* Added serial callback functions to SBL2e serial drivers
+* SSL
+	* Added 4096 key support
+	* Added RSA_RC4_SHA1 cipher
+* System
+    * Added FreeBufferList() utility function to free buffer list
+    * Added init() and initWithWeb() utility functions. These functions provide standard initialization for apps
+* TCP
+    * Added NoBlockConnect() non blocking connect function
+* Tools
+    * MTTTY updated with better USB/Serial port support
+
+## Corrections in this version
+* Ethernet
+    * Fixed maximum packet size error
+* Examples
+	* Fixed NTP app/example bug which reduced time accuracy
+	* Fixed MCF54415 PWM examples for edge aligned PWMs bug to remove dead time
+* MCF5441X
+	* Fixed i2c default baud rate
+	* IRQ Vector table moved in to SRAM from external DDR
+	* Created unified i2cstruct definition, which allows a single type access to all i2c modules
+	* Fixed critical processor latency bug which caused 0.5 ms processor hangs
+* SNMP
+	* Added ability to handle octet writes with embedded zeros
+* SSL
+    * Fixed TCP socket leak on SSL failures
+* System
+	* Fixed default timezone parsing so default daylight savings time is 2am, not midnight
+* TCP
+    * Increased speed of duplicate ack retransmission on a lossy network
+* Tools
+    * Fixed issue where IPSetup did not see multi interfaces that are not exposed to network
+
+
+# RELEASE 2.6.2 (April 2013)
+## New in this version
+* Ethernet
+	* Added callback for custom ethernet handlers with RX of ethernet frames
+* Examples
+	* Examples for StandardStack platforms moved to StandardStack directory hierarchy
+	* Added SSH Server example
+	* Added BufferedAD example to MCF54415
+* NANO54415
+	* Added driver for internal RTC
+* MOD54415
+	* Multiple CAN drivers support added
+## Corrections in this version
+* MOD54415
+	* Fixed ExternalIRQ example
+	* Fixed card detection/write protection on off-board memory card reader
+* NBEclipse
+	* Fixed bug in which Rebuild Libraries failed on imported projects
+	* Fixed bug in which MOD5213 failed to load an application on to the device
+	* Updated version tag
+* Tools
+	* IPSetup/Autoupdate run on any socket. This allows multiple instances to run at once
+	* IPSetup/Autoupdate bug fix that prevented find from seeing devices with multiple interfaces
+
+# RELEASE 2.6.1 (February 2013)
+## New in this version
+* Ethernet
+	* Added EtherLinkCallBack() callback function to all ethernet drivers. Does not get called in debug mode
+	* Moved DoRX ethernet RX function out of individual platforms and made a common NetDoRx function in the system directory. Debug drivers do call this function. Customer modified ethernet drivers should be amended to support this function
+* Examples
+	* Added DAC example to MCF54415
+	* Added OnChip RTC example to MCF54415
+	* Added PWM example to MCF54415
+	* Added UDPNotify to standard stack examples
+	* Added CB34EX support to SecureEthToSer example
+	* Added ExternalIRQ example to MCF54415
+	* Added EFFS-RAM RAM drive example
+	* Added PIT timer example to MCF54415
+* L2e
+	* Added XON XOFF flow control
+	* Added ability to disable serial update on individual ports. Some serial binary data was triggering update logic on the device
+* MCF5213
+	* Added XON XOFF flow control
+	* Added ability to disable serial update on individual ports. Some serial binary data was triggering update logic on the device
+* MCF54415
+	* Added proper support to sim structure for RTC and DMA
+	* Added pin_irq class support
+	* Added beta DMA SPI driver
+	* Added DSPI driver and examples to demonstrate usage
+* LUA
+	* Added support for LUA scripting language
+	* Added several examples to demonstrate LUA usage
+* System
+	* Added getFunctions to pinIO. This allows current pin function to be read
+	* Smarttrap now includes additional message which reports spurious interrupts
+* Tools
+	* Added no reboot option to autoupdate
+	* Added BatchUpdate script in pctools. This script can be used to batch update several NetBurner modules with a single application
+	* NBEclipse updated for OSX and Windows
+	* NBEclipse now support names in NBLIBRARY files. This file allow NBEclipse to automatically link libraries in all projects.
+## Corrections in this version
+* AutoIP
+	* Changed getState member function from private to public. This function returns the current state of the auto IP client
+	* Fixed issue where disabling AutoIP in predef.h was causing compilation errors.
+* DHCP
+	* DHCP is now more random in initial DHCP request. This helps prevent IP conflicts when multiple devices come online simultaneously
+* EFFS
+	* Fixed mutex bug that generated problems when simultaneous SD cards are used on MOD5441X
+	* Changed ram_mcf.cpp from a per-Platform file to a per-Project file. This allows for different sized drives.
+* HTTP
+	* Fixed extraneous 0xFF sent at the end of some http responses
+* I2C
+	* Added mutex guards to i2cmulti and i2cmaster headers. Including both now results in a compile error
+* MCF54415
+	* Fixed missing sim error
+	* Fixed support for both can devices
+* NANO544115
+	* Fixed spaceleft() function, which calculates head size
+	* Fixed startup flash memory sequence error
+* SBL2e
+	* Factory application properly enabled RTS when flow control is disabled
+* System
+	* putled() and getdipsw() functions now have proper support for platforms that don't use these functions
+	* Added microsecond delays to HiResTimer
+	* Fixed incorrect constant in MOD5270 pinconstant.h
+* WIFI
+	* RTL8711 library support was mistakenly removed from 2.6.0. This has be re-added
+
+# RELEASE 2.6.0 (September 2012)
+## New in this version
+* Examples
+	* Added EFFS/WIFI shared QSPI example
+	* Added external RTC clock example to MOD54415
+* Tools
+	* CompHTML now allos user to ignore individual files
+## Corrections in this version
+* Installer
+	* Fixed case where USB driver not installed automatically
+* MOD54415
+	* Fixed unchangeable timetick bug
+	* Added missing can driver
+* NANO54415
+	* Fixed unchangeable timetick bug
+	* Added missing can driver
+* SBL2e
+	* Fixed TCP duplicate ACK bug
+* Tools
+	* Added required dll to MTTTY
+
+# RELEASE 2.6.0.026 BETA ADDENDUM (AUGUST 2012)
+## Corrections in this version
+* I2C
+	* Fixed build error in mod5213
+* MOD54415
+	* Fixed usable memory space. Was 16MB, now up to 32MB available
+* NANO54415
+	* Added new pit timer access class
+* System
+	* Fixed system library build error
+
+# RELEASE 2.6.0.024 BETA ADDENDUM (AUGUST 2012)
+## New in this version
+* Examples
+	* Merged multiplatform SSH examples in to one app
+* MOD54415
+	* Added RapidGPIO example (Pulses GPIO pin at max speed)
+* NANO54415
+	* Added PDF documentation
+* SBL2e
+	* Added new Software Watchdog example
+* Utility
+	* Fixed slow bootup time caused by AutoIP
+	* Added documentation for AutoIP functions to NetBurner Runtime Librarys PDF
+
+## Corrections in this version
+* EFFS
+	* Fixed race condition which caused unreadable drive error
+* MOD54415
+	* Fixed I2C driver bug
+* NBEclipse
+	* Fixed debugging timeout/disconnect/breakpoint errors
+	* Fixed missing library error when changing platforms in a project
+* PK70 NTP Application
+	* Fixed username/password bug
+	* Fixed floating point precision bug
+* TCP
+	* Fixed multihome error state when using the connect() function.
+
+# RELEASE 2.6.0 BETA ADDENDUM (JUNE 2012)
+## New in this version
+* MOD5441X
+	* Added I2C driver
+	* Added RTC driver
+* NANO54415
+	* Added I2C driver
+	* Added interrupt definitions
+* Utility
+	* Added AutoIP capability and example on use
+
+## Corrections in this version
+* Installer
+	* Fixed compcode hang bug introduced in previous beta
+	* Fixed missing platform documents in new installs
+* MOD5441X
+	* Added missing InitNetworkGDB_and_Wait() function
+* NANO54415
+	* Fixed SPI flash section misalignment bug
+	* Fixed time ticks setup. Was running to quickly and ignored the settings
+* NBEclipse
+	* Fixed missing m68k-elf-gdb target in new run configurations
+
+
+# RELEASE 2.6.0 BETA (MAY 2012)
+## New in this version
+* New products
+    * NANO54415
+    * MOD5441X
+* FAT
+    * Added the ability to support multiple drives/SD Cards
+* IP
+    * Asymmetric route checking added
+* OS X
+    * Support added for Mac
+* PC Tools
+    * CompHTML now supports arbitrary file types and extensions. To add/modify a file type, modify pcbin\MIME_Magic.txt
+    * TCP Send - Allows you to send a file from PC to module over TCP
+    * Compcode - added binary output option
+* RTOS/UCOS
+    * Moved UC/OS initialization to allow global static objects to use rtos functions
+* Utility
+    * Added HiResTimer. An easy to use configurable time delay/stopwatch functionality with a DMA timer
+
+## Corrections in this version
+
+* DHCP
+    * Fixed bug in which DHCP was not handling infinite rebind times
+* Ethernet
+    * Improved Ethernet status reporting in dynamically changing speed and duplex configurations
+* FTP/TCP
+    * Fixed 32Kb long get request attack which caused NetBurner web server to lock up.
+    * Fixed FTP server bug in which directories were not properly displayed by some clients
+* I²C
+    * Cleaned up I²C bug that caused a periodical lock up during a re-init call.
+    * Fixed timeout bug in MultiI2CRestart()
+* IP
+    * Fixed IP Checksum error in some debug releases
+    * Fixed broadcast filter for fragments and for broadcast packets not on the local subnet.
+* L2E
+    * Fixed bug in which buffered tcp data object had an error in report charavail().
+    * Fixed bug with receiving zero window probe requests
+* SSL Certs
+    * Fixed error in conversion code that incorrectly converted some certs
+* SSL Sendmail
+    * Fixed bug in which TCP socket was lost left half open on an SMTP email failure
+* UC/OS
+    * Fixed race condition during boot up with slow-boot memories (SERIAL). Does not affect existing platforms, might affect custom platforms
+
+Release 2.5.3 (Jan 2012)
+ New in this version
+	* New Platform
+		o MOD54415 support added
+		o PINK example added
+	* EFFS
+		o Upgraded EFFS-STD from 1.631 to 1.91.
+			: With version change, you must reformat file systems using older versions. This does not apply to SD cards using the EFFS
+		o Added multi-threading support
+		o Wildcard searches now follow DOS conventions ( *.* for files, * for everything )
+	* HTTP
+		o Added 2 new globals for HTTP server
+			#define MAX_HTTP_PENDING_SOCKETS (5) // Number of sockets allowed to be pending on listening socket, performance will degrade < 3
+			#define MAX_HTTP_CONNECTED_SOCKETS (3) // Number of sockets allowed to be connected to http server simultaneously
+	* I2C
+		o Added slave i2c callback functions
+	* Mail
+		o Added port parameter option to SendMailAuth
+	* PC Tools
+		o Added java version of autoupdate and ipsetup for upcoming OSX release
+		o Added command line interface to ipsetup. Allows for script support
+	* System
+		o Added dual boot and ABOOT commands
+
+ Corrections in this version
+	* Ethernet
+		o Fixed IP source address error in Ping and SendICMPError. These functions could generate corrupt 	packets when programmed incorrectly.
+		o Debug ethernet driver functions pulled out to allow changing of system constants in the debug ethernet driver
+		o Fixed rare soft reboot lockup on MOD5272 micrel PHY
+		o Fixed problem with MOD5272 failing to communicate with PHY after soft reboot
+		o Fixed some newtork code flow to remove confusing conditionals
+		o Modified checking of PHY ID to focus on OUI ID so most Micrel, Davicom, National and AMD PHYs should now work without any software modification.
+	* HTTP
+		o Fixed IE9 issue in which IE9 opens 2 sockets for every web page and handles all communication on the second socket, leaving the first socket hanging. All open sockets are now placed in a select statement to handle this situation properly
+	* L2e Platform
+		o Fixed sprintf error case
+		o Fixed PostHandler bug that occurs when searching through multiple filenames
+		o Fixed Get handler to not capatilize all url encodiing
+		o Fixed bad timeout in connect
+		o Fixed bad pointer on failed connect
+	* MCF5272
+		o Fixed Flash size error in monitor ld file
+		o Fixed UDP error in which network driver would sometimes deliver out of order or duplicate packets when receiving full size ethernet frames
+	* PC Tools
+		o Improved network communication on Win7/Vista
+		o Fixed clinetool for script support of autoupdate
+		o Fixed pythonfind example to work with 3.0 release of Python
+		o Fixed socket open error in TCPUpdate
+		o Fixed javascript MIME encoding in comphtml
+	* RTOS
+		o Fixed trap occuring when UCOS_TASKLIST was enabled
+		o Increased performance for applications using atomicity macros
+	* Serial
+		o Fixed SendBreak() function for use with RS-422/485 mode
+		o Added custom baud rate support for MCF5272 processors
+	* SNMP
+		o Fixed case when SNMP task is stuck in a loop when a string larger than 254 chars is written.
+	* SSH/SSL
+		o Fixed memory leak/cleanup support in TCP error state
+	* System
+		o Fixed itoa library function for large hex values
+		o Fixed printf bug, not printing all characters of an unsigned long decimal (5213/L2e Devices)
+	* TCP
+		o TCP errors in Release 2.5.2 are significant and can the TCP stack and/or user tasks to permanently hang up..
+			Symptoms include:
+			o Locking TCP connections
+			o Freezing web pages after consecutive reloads
+			o Freezing web pages after days of idle time.
+		o Fixed TCP timeout processing of closed sockets
+		o Fixed TCP hangup and half closed sockets memory leak
+		o Performace imporvement
+		o Fixed incorrect arp caching scenario
+		o Fixed Accept close race in TCP
+		o Fixed bug that can cause TCP task to remain in infinite loop.
+
+Release 2.5.2 (Jan 2011)
+ New in this version
+	* L2e family
+		o Added I2C driver
+		o Added I2C example
+		o Added NTP example
+		o Added advanced SBL2e examples (SendmailCallback, TcpClientCallback, TcpServerCallback, TcpWriteCallback)
+	* PC Tools
+		o Added NTPTest application
+	* PK70
+		o Added FPGA blade board documentation and example
+
+
+ Corrections in this version
+ 	* L2e family
+		o Fixed bug in serial rx state machine
+		o Fixed tcp_printf error
+		o Added stack check ability to taskscan
+		o Fixed error in large integer printf
+	* SB70
+		o Fixed a makefile error during SB70B builds
+	* TFTP
+		o Fixed intermitent TFTP on noisy networks
+
+
+Release 2.5.1 (Dec 2010)
+ New in this version
+	* New Platform
+		o Released NTP Blade board
+	* FTP
+		o Added ftpd timeout ability
+	* HTTP
+		o Added function to allow http page remap
+	* L2e
+		o New GPIO level shifting example
+		o Enhanced support using 2 serial ports in dual serial factory app
+	* System
+		o New malloc/mallinfo example
+
+
+ Corrections in this version
+	* FTP
+		o Fixed buffer overrun when renaming files during an FTP session
+	* L2e
+		o Fixed SBL2e autoupdate bug that corrupted platform name during update
+		o Added dynamic DNS to L2e factory app
+		o Updated factory app UI
+	* SB70LC
+		o Fixed DNS cache clear on connect bug in factory app
+	* SB700EX
+		o Fixed DNS cache clear on connect bug in factory app
+		o Fixed RTC failure during some initialization scenarios
+	* System
+		o Increased speed and reliability when updating application of Ethernet
+		o Fixed GetReleaseTag() usage error
+	* Tools
+		o Increased default font size in MTTTY
+
+
+Release 2.5.0 (Sept 2010)
+ New in this version
+	* New Platform
+		o Added support for SBL2eX
+		o Added support for SBL2eXA
+		o Added support for SBL2e Chips
+	* SSL
+		o New new mail example
+		o New mailto function
+	* SSH
+		o Added SSHServerUserKey and SSHMinimalServer examples
+	* PPP
+		o Added 3rd UART support
+		o Added magic number support
+	* WIFI
+		o Added QOS support
+		o Improved ad hoc support
+		o Added regulatory domain support
+	* L2e
+		o Added new pins class
+		o New NTP Client code and example
+		o New http password example
+		o New post example
+	* System
+		o Added ATCommands
+		o Added const char * GetReleaseTag(), which returns the current NNDKRelease tag
+		o Added OSSimpleTaskCreateSRAM, OSSimpleTaskCreatewNameSRAM to create tasks in SRAM
+	* TCP/UDP
+		o Added selective acknowledgment (SACK)
+		o Added window scaling options
+		o Added out of order TCP user options
+		o New functions TcpGetSocketState, TcpAllDataACked, WaitForSocketFlush (see tcp.h)
+
+ Corrections in this version
+	* SSL
+		o Fixed buffer error related to simultaneous RX/TX
+	* Tools
+		o Fixed crashing bug in comphtml
+		o Updated Virtual Comm application with bug fix and added documentation
+	* MOD5213
+		o Fixed bad system header in iosys.h
+	* MOD5234
+		o changed interrupt levels and priorities in TPU to avoid conflicts
+	* MCF5208 (License)
+		o Fixed interrupt vector issues with SetIntC
+	* L2e
+		o Fixed monitor to set proper 50MHz CPU frequency
+		o Fixed serial timeout problem in L2e factory applications
+		o Fixed Post HTML bug in which variable would lose their last char
+		o Fixed bug that sent extraneous RST packets
+		o Fixed bug that caused lost SYN packets on connection, slowing down TCP connections
+	* System
+		o GATHER_RANDOM is now enabled by default
+		o Fixed MS Vista/7 issue that caused autoupdate and IPSetup to sometimes fail
+		o Updated timezones calculation feature
+		o Updated taskscan stack size reporting to show bytes instead of DWORDs
+		o Fixed buffer overrun error in mailto
+		o Fixed error in mail subject lines
+		o Fixed stack alignment in OSTaskCreate when passed misaligned stack
+	* TCP/UDP
+		o Fixed TCP timeout race condition
+		o Fixed TCP close race condition
+		o Updated window size on TCP connect and accept to not be 0
+		o Fixed ARP race condition causing network buffer corruption
+	* I2C
+		o Changed interrupt from level 5 prio 1 to level 3 prio 4 to avoid CAN conflicts
+
+Release24_RC2 (December 10, 2009)
+ New in this version
+    * MAIL
+        o Added date/time stamps to outgoing email messages
+    * EFFS
+		o Support for Compact Flash cards up to 128GB
+	* TCP
+		o Added extra parameter to Connect() function allowing specification of interface
+
+ Corrections in this version
+    * FTP
+		o Increased FTP Buffers to support up to 256 byte paths and filenames
+		o Fixed flow control issue with f_read/f_write in FTP example applications
+    * EFFS
+		o Fixed size reporting with large SD cards
+
+    * Debug
+		o Fixed debug warm reboot bug with Micrel PHY
+
+
+Release24_RC1 BETA (November 3, 2009)
+ New in this version
+    * SBL2e
+          o Added support for new platform
+    * SB700EX
+          o Added support for new platform
+    * WIFI IEEE802.11b/g Network Interface Controller (NIC)
+          o WIFIUG-200CR (RealTek RTL8711 Wireless LAN NIC) released.
+          o Added WIFIUG_200CR driver and support (rtl8711Library)
+          o Added progress routine callback to support managing connection changes.
+    * CAN
+          o Added method to send RTR (CanSendRTR).
+    * uC/OS
+          o Added post to front of queue & example (OSQPostFirst). See uC/OS RTOS Library manual.
+    * STDIO
+          o Added function: int CurrentStdioFD( int stdio_fd ) to return current FD mapped to stdio
+    * NETBIOS
+          o Added NETBIOS naming and example program.
+    * TCP
+          o Added keep-alive functionality and example.
+
+ Updates in this version
+    * WIFI Interface
+          o Removed WIFI_100CR driver (Netgear MA 701, Intersil PRISM) available through support.
+          o Removed NXP BGW211g driver.
+          o Added parameters to WIFI interfaces to support future devices.
+    * Examples
+          o CB34EX-SerialToEthernet - Added LED feedback.
+          o TestDHCP - Added state debugging messages.
+          o multicast - Improved feedback messages.
+          o EFFS STD - new example for standard flash file system.
+          o UDP - Added Simple UDP to Serial example.
+    * Mail
+          o Added SSL mail support & example (Requires Embedded SSL & SSH Security Suite license)
+    * SSL
+          o Increased key size to 4096. Large key size affects performance.
+          o Client authentication.
+    * Tools
+          o Silent installation of USB driver for MOD-DEV-100(70), driver is digitally signed.
+    * Real Time Clock
+          o Applies to hardware platforms that support a real-time clock. Added alarm and timer functions.
+            Both of these functions use external IRQ 1.
+
+
+ Corrections in this version
+    * ARP
+          o Fixed possible race condition in which an ARP entry could be aged out while being used.
+    * DHCP
+          o Fixed problem with rebind, in which it was possible a DHCP rebind request would not request
+            the previously assigned IP.
+    * HTTP
+          o Corrected buffer overrun on post of large web pages.
+          o Fixed problem in which HTTP POSTs or GETs would fail if the data was received in more than
+            one packet.
+    * Ethernet
+          o Corrected PHY latching on soft reset on Modules with MICREL PHY.
+    * SSL
+          o Corrected multiple socket connection data contention.
+    * Serial
+          o Corrected hardware (RTS/CTS) and software (XON/XOF) flow control issues.
+          o Merged serial software driver source code for similar platforms.
+    * Tools
+          o Corrected printf floating point reentrancy data contention.
+    * MAIL
+          o SMTP: Corrected error condition in which SendMail() and SendMailEx() would not immediately release the
+            TCP socket if the connection was refused by the SMTP Server.
+          o POP3: Modified function POP3_RetrieveMessage to return error if message is bigger than the given buffer
+            size instead of stalling.
+    * PPP
+          o Modified PPP LCP NAK and modem initialization to prevent deadlock conditions during multiple attempts
+            to connect. Fixed changing of ACCM before and after LCP negotiation and after LCP negotiation.
+    * I2C
+          o Improved reliability of receving bytes in I2C driver.
+
+
+Release23_RC7a (April 30, 2009)
+ Updates in this version
+    * Addendum to RC7
+          o Fixed MOD5213 compilation issue
+          o Fixed NBEclipse debugger optimization error
+
+
+Release23_RC7
+ Updates in this version
+    * EFFS
+          o Added option to enable CRC checking on SD/MMC cards
+          o Fixed EFFS retransmission issue affecting connections with slow speed
+          o Fixed EFFS date formatting bug
+    * Examples
+          o Added NTP timezone examples
+          o Added TCP Keep Alive example
+    * I/O
+          o Added speed enhancements to A/D driver on PK70 multi blade NBPKBM-100CR.
+          o Adjusted CAN timing for the 1mbit baud to be 983KHz instead of 1.02mhz.
+    * Network
+          o Added tcp keep alive
+          o Added more random tcp sequencing to prevent sequence guessing attacks.
+          o Added ability to transmit using UDP fragments. Must turn UDP fragment option on in predef.h to send or recrive UDP fragments
+          o Added Etherlink() function to debug Ethernet driver.
+          o Fixed bug in which the debug version of the Ethernet driver did not respong to ARP requests properly.
+          o Add DHCP option 60 (Vendor Class-Identifier) which should cause DHCP Server to send option #43 (vendor specific) in DHCP reply
+    * NNDK Kit and Build System
+          o Added support for SB70LC platform
+          o Added support for SB700EX platform
+          o Added support for PK70 blades: Quad 232, Quad 485
+          o Added USB PC serial driver to release for dev boards with a USB interface
+          o Added CPU type definitions for common files
+          o Fixed bug in PK70 digital I/O on multi blade NBPKBM-100CR
+          o Fixed IOBoardRTC.h functions so they are redefined into rtc.h
+          o RTC clock chip was discontinued by vendor. Added new RTC drivers to support RTC chip replacement on development boards.
+          o Added three new function: RTCSetAlarm(bts), RTCTimerSeconds(count), (RTCTimerMinutes(count). These functions can be used to set an external timer or alarm to interrupt and/or wake up the modchip from low power mode. The interupt is set on IRQ1, and the interrupt level is 1.
+    * Security
+          o Added SSH support and examples as part of optoinal SSL sofware package
+          o Added SSL Client Certificate support and example
+          o Fixed SSL Client buffer leak that could occur for multiple simultaneous client socket connections
+          o Increased ssl maximum key size to 4096 bits. Using keys this large will significantly increase negoation times by a factor of 32.
+    * Serial
+          o Fixed RS-485 half-duplex to work on all h/w serial ports.
+    * UCOS
+          o Fixed UserMain task stack size bug.
+          o Fixed printf multi-threaded re-entrency bug
+    * Web
+          o Fixed XML bug where dynamic pages' lengths could not be determined beforehand.
+
+
+Release23_RC1
+ New Features
+    * Upgraded to Eclipse 3.4 Ganymede Release
+    * IP/Platform information stored
+    * Auto-created run configuration (One-Click Build and Load)
+    * Platform Properties file format supported for quick addition of custom platforms
+    * NBEclipse can now be run as an independent plug-in to a standard Eclipse install
+    * GNU Code formatter now included (Right-Click->Source->Format)
+    * Can now directly connect to debug session without updating new code
+    * Rebuild System files revamped and sped up
+
+Release22_RC3
+ Features
+    * DHCP renew fix
+
+
+Release22_RC2
+ New Features
+    * Added Fast RAM feature. This feature uses on-chip fast static ram for RTOS stacks, variables and network buffers. This should improve task switching, interrupt latency and network performance. In most applications it will improve performance by 50%. This feature is on by default. If you are using on-chip SRAM for your own purposes, you will need to disable this feature in \nburn\include\constants.h.
+    * Added support for Email MIME attachments as text or binary, and associated examples.
+    * Added a build status report each time NBEclipse builds a project that shows flash usage, ram usage and the tools revision number.
+    * Added ability to name uC/OS tasks, and names are now supported by Task Scan, Smart Traps and the NBEclipse debugger. The new function are:
+          o BYTE OSTaskCreatewName( void ( *task ) ( void *dptr ),
+          o void *data,
+          o void *pstktop,
+          o void *pstkbot,
+          o BYTE prio, const char * name);
+          o OSSimpleTaskCreatewName( void( *task ) (void *dprt ),
+          o BYTE priority,
+          o const char *name )
+ Example Programs
+    * Reorganized the c:\nburn\examples directory to group examples by function, such
+    as TCP, Serial, FTP, etc.
+    * Changed web page image in PK70 factory example from mod-dev-100 to PK70.
+    * Added FlashDemo example to \nburn\examples\Mod5270, Mod5234 and Mod5282.
+    * Added Email attachment examples in \nburn\examples\Email .
+    * Added RTOS examples from Programmers Guide to \nburn\examples\RTOS.
+    * Added ChangeIP example from Programmers Guide to \nburn\examples.
+    * Added DNS Device Name example.
+    * Added DNS example.
+    * Added TCP examples for clients, multiple sockets and use of the select() function to \nburn\examples\TCP.
+    * All web page related examples moved to \nburn\examples\web. Embedded Flash File System
+    * Added command parser options to the example EFFS_HTTP to allow SD card formatting and usage reports using MTTTY and the serial port.
+ Documentation
+    * Updated the MCF5272 Freescale Reference Manual to the latest revision.
+    * Added Sendmail attachment function calls.
+    * Added schematic for revision 1.09 mod-dev-100 development board. Hardware
+    * Support for the MOD-DEV-70 development board with the MOD5234 has been added. "ioboard.c" is removed and replaced with "ioboard.cpp", with changes made to the "makefile" to take this into account. This change in file extension is required in order to include support for C++-specific syntax used by the ETPU system files, and the if-else condition abbreviation statements.
+    * Support for the MOD-DEV-70 development board with the MOD5282 has been added. "ioboard.c" is removed and replaced with "ioboard.cpp", with changes made to the "makefile" to take this into account. This change in file extension is required in order to include support for C++-specific syntax used by the if-else condition abbreviation statements.
+    * Follow-up on MOD5234/82 compatibility with MOD-DEV-70 development board: Comments have been added near the top of each platform's ioboard.cpp file to indicate what pins are being used for getdipsw() and putleds(), and the cautions of using the pins for a custom application while calling the two functions mentioned.
+    * Added support for new NXP Real Time Clock used on mod-dev-70 and mod-dev-100 new revision development boards. The previous RTC has been discontinued by the manufacturer.
+ Software
+    * FTP Client and Server Compatibility Change. The definition of FTP_OK and FTP_FAIL were different for the FTP Client and FTP Server. All references to FTP_OK and FTP_FAIL used in FTP Server functions (denoted by FTPD in function names and file names) have been changed to FTPD_OK and FTPD_FAIL in the following files: \nburn\include\ftpd.h, \nburn\system\ftpd.cpp and \nburn\examples\effs\effs-http\fat_f.cpp. If you have an application based on the EFFS-HTTP or EFFS-FTP example code that uses ftp_f.cpp, you will need to replace FTP_OK and FTP_FAIL with FTPD_OK and FTPD_FAIL.
+    * The GatherRandom function used by SSL had a bug in that corruption could occur for multiple interrupts. This has been corrected.
+    * The TCP SockReadWithTimeout( ) function had an error where it could get stuck in an infinite loop when TCP was stressed with a half-open denial-of-service attack. This has been corrected.
+    * Fixed stream update functions used by EFFS update, HTTP update and TCP update for PK70 platform.
+    * Added gratuitous ARP function.
+    * Fixed DHCP Renew to include the device name with the renew request.
+    * Removed leading whitespace in FTP server functions that list file names. This had prevented some FTP Clients from properly displaying the file names.
+    * Fixed a bug in passive mode FTP that could prevent some connections through firewalls.
+    * Fixed problem with writesafestring() and writeallsafestring() functions in which the last character was not written.
+    * Fixed problem with the HTTP password function in that caused erratic behavior when HTTP reserved characters were used.
+    * Added return error code when OSTaskCreate( ) is called and no more task control blocks are available.
+    * Added extern function prototype declaration for GetPreciseTime(). With this function call, one can use a higher resolution time tick than the default "TimeTick" on the MOD5234, MOD5270, and MOD5282. Resolutions are ~0x.868 microseconds per tick for the MOD5234 and MOD5270, and ~1.929 microseconds per tick for the MOD5282.
+    * Upgraded EFFS to version 3.3.1, which adds SDHC support for SD cards larger than 2GB.
+    * Fixed I2C to recover when address is not acknowledged with the SendBuf and ReadBuf functions. BasePutChar() has been modified to test whether the member function WriteData() wrote a character to the buffer successfully or not. In the event that WriteData() was not successful, SetDataAvail() would be called anyways to indicate that the file descriptor has available data in the pool buffer for reading, when it really does not. This would cause the select() function in serreadwto() to indicate there is data available, while the member function ReadData() will always return '0', causing an endless while loop.
+    * Modified SerialClose( ) to reset the buffer FIFO instead of calling init to correct a possible memory leak.
+    * Fixed outgoing ARP problems when running the debug Ethernet driver. This would affect debug builds in which the NetBurner device was making an outgoing connection to a computer other than the on used for debug.
+    * Added drivers and examples for new PK70 blade boards.
+
+Release21_RC2
+ NBEclipse
+  Now supports Vista
+  Updated CDT core to 3.1.2
+  Updated GCC compiler to 4.2
+  Updated Eclipse core to 3.2
+  Corrected problem in which the project properties advanced tab were not saved
+  Corrected problem with memory map range in MOD5234 and CB34EX
+  Added platform support for PK70
+ Embedded Flash File System (EFFS)
+  Upgraded EFFS to release 3.2.2
+ Deployment Tools
+  All PC utilities that communicate with the serial port interface now support comm port numbers higher than 9
+
+Version 2.1:
+  Fixed issue with ARP requests being made while in debug mode for the following platforms:
+      CB34EX, MCF5208, MCF5275, MOD5234, MOD5270, MOD5272, MOD5282, PK70, SB70, SB72 and SB72EX.
+  Changed documentation format from chm to PDF and reorganized the /Nburn/doc directory.
+
+Version 2.0:
+  Added the NBTime Library and Documentation.
+  Added MOD5234 Support and Documentation.
+  Added additional functions (and supporting documentation) to the NetBurner Runtime Libraries.
+  Added NBEclipse (MinGW) IDE, Tools, Debugger, and Documentation.
+  Removed Insight GUI.
+
+Version 1.99:
+   Added security to IP Setup.
+   Modified the MOD5213 Libraries, now the RTOS code is not linked in the NoRtos case. Note: The resultant application is not 800 bytes.
+   Added a flags object to the NetBurner UCOS release.
+   Added FAT file system support for SD Cards and Compact Flash Cards (MOD5282, MOD5234, MOD5270, and MOD5272 only).
+   Added a pins class (Mod5213, MOD5234, MOD5282, MOD5270, and MOD5272 only).
+   Added CHAP to PPP.
+   Updated CAN driver for Mod5213.
+   Added I²C Multimaster IRQ driver for Mod5213.
+   Added CB34EX Support and Documentation.
+   Added ModL2E Support and Documentation.
+   Added SB72EX Support and Documentation.
+   Fixed more Documentation Bugs.
+
+Version 1.98:
+   Added Mod5213 Support and Documentation.
+   Added Network Debugger (all platforms except CFV2-40 and Mod5213).
+   Fixed a problem with the network debug stub (all platforms except CFV2-40 and Mod5213).
+   Fixed slow single step problem w/ network debugging (all platforms except CFV2-40 and Mod5213).
+   Added WiFi support for Mod5270.
+   Added SB70 Support and Documentation.
+   Fixed more Documentation Bugs.
+
+Version 1.97:
+
+  Upgrade of GNU C/C++ compiler from 3.3.1 to 3.4.2.
+   Added Documentation for SmartTrap, TaskScan, uC/OS, Send Mail, and FTP Functions.
+   Added Documentation for the Serial and Command Libraries
+   Added additional functions (and supporting documentation) to the NetBurner Runtime Libraries.
+   Added Mod5270 Support and Documentation.
+
+Version 1.96:
+
+   Fixed TCP bug for over 1 failure in 700 simultaneous connection requests on a single socket.
+   Fixed PPP ARP ping problem with PPP interface that comes up and down.
+   Added additional filler in ping packets to match common host format.
+   Fixed DHCP option 55, 3 and 6 for DNS server and Gateway in initial discover message.
+   Added dynamic half/full 100Mbit duplex detection and settings on all 10/100 platforms.
+   Added Beta Mod5270 release for ColdFire 5270 processor.
+   Added Smart Trap functionality for debugging.
+   Added Task Scan utility for debugging over a network connection.
+   Added smarter serial RS-485 half duplex echo suppression for SB72 and SB72EX.
+   Added Platform detection to TCP Autoupdate utility.
+   Added FTP daemon stop request function, and additional error detection for FTPD start.
+   Modified CAN function to allow mask high/low for Mod5282.
+
+Version 1.95:
+
+   Added Task Scan Tool to the NetBurner tool set.
+   Fixed 485 in SB72EX.
+   Fixed Arp problems (Fixed UDP Tx and PPP).
+   Added support for multiple network interfaces.
+   Added WiFi support (Mod5272 and Mod5282).
+   Added WiFi examples (Infrastructure and Ad-Hoc).
+   Added WiFi documentation to the NNDK User Manual.
+   Fixed DHCP bug.
+   Added SB72-EX support.
+   Added SB72-EX factory example application.
+   Added SB72-EX hardware documentation.
+   Modified IP Setup and AutoUpdate to support multiple interfaces.
+   Made device discovery more robust with lots of modules.
+   Fixed several serial Flow control issues with 5272 serial drivers.
+   Added specialized fast TCP send mode for no copy send performance.
+   Fixed more documentation bugs.
+
+Version 1.90:
+
+   Added a new version of the GCC compiler - Rev 3.2.3.
+   Added NetBurner's Dev C++ IDE.
+   Better optimization and performance.
+   Added support for the Standard Template Library.
+   Added support for C++ I/O cout and cin.
+   Added cache support for the Mod5282.
+   Added two new functions to the DHCP Client Library.
+   TCP performance enhancements.
+   Several TCP bug fixes.
+   DHCP timeout bug fix.
+   New HTML download example.
+   Fixed more documentation bugs.
+
+Version 1.83:
+
+   Added Application Identification for IP Setup Tool and AutoUpdate Find.
+   Fixed more documentation bugs.
+
+Version 1.82:
+
+   Added new Mod5282 support package and monitor to prevent possible flash memory overwrites of monitor program.
+    Added Mod5282 Factory Demo Example
+    Added Mod5272 Factory Demo Example
+    Added support for the new Ethernet physical layer chips. (Required for Mod5282 revision 1.02.)
+    Documentation corrections for Mod5272 and Mod5282 memory maps.
+    Mod5282 Ethernet Driver bug fixed.
+    Mod5282 CAN Driver bug fixed.
+    Fixed more documentation bugs.
+
+Version 1.81:
+
+    Added the NetBurner Mod5282 I/O Board RTC Library Module.
+    Added additional Mod5282 code.
+    Added an A/D Example Program for the Mod5282.
+    Added a RTC Example Program for the Mod5282.
+    Added a LED Display Example Program for the Mod5282.
+    Added a GPIO Example Program for the Mod5282.
+    Added a PITR Example Program for the Mod5282.
+    Fixed more documentation bugs.
+
+  Version 1.80:
+
+    Fixed install errors with binary evaluation releases.
+    Fixed a TCP bug involving RTOS and Critical sections.
+    Cleaned up TCP re-transmit logic.
+    Fixed a PPP bug.
+    Fixed Multicast on Mod5272 and Mod5282.
+    Added Mod5282 support.
+    Added Mod5282 documentation.
+    Added Mod5272 documentation.
+
+Version 1.79:
+
+    Updated the Insight debugger with a more stable release.
+    Fixed AutoUpdate so it will give you the ability to update SB72 with SB72-512.
+    Fixed TCP MSS size to maximize performance.
+    Fixed TCP priority race condition.
+    Changed documentation format from HTML to CHM .
+
+Version 1.78:
+
+    Add a new Application Generation wizard.
+    Fixed TCP Retransmit bug so it does not time out when sending lots of small packets.
+    Fixed library bug so iprintf and printf support long variables.
+    Improved installation so it works better when installing over old installations.
+    Improved both the IPSETUP and AutoUpdate.
+    Added SB72-512 large SB72 support.
+    Modified the TCP stack to help support add ons like SSL.
+    Modified the document system to support add on documentation.
+    Added the ability to have a multihomed device.
+
+Version 1.77:
+
+    Added Help on using GDB.
+    Added GDB demo program to examples.
+    Added NTP client program to examples.
+    Improved the robustness and functionality of the debugger.
+    Added name specification capability to DHCP.
+    Added SB72 serialburner example application.
+    Added Object Code only (i.e. no source) low cost evaluation capability.
+    Fixed a 5272 SB72 Ethernet bug.
+    Fixed a multithread select bug.
+
+Version 1.76:
+
+    Fixed a DEBUG build problem with SNMP.
+    Fixed a TCP retransmit and Listen overflow bugs.
+    Fixed a build problem with the tools on windows XP.
+
+Version 1.75:
+
+    Fixed a 5272 ethernet driver problem.
+    Added trap support to the SNMP system.
+    Added platform type in the IPSETUP packets.
+    Modified IPSETUP and AutoUpdate to use platform type.
+    Fixed an ARP problem on busy networks.
+    Fixed a build problem with the tools on windows XP.
+
+Version 1.74:
+
+    Fixed a RTOS problem with interrupts in cfinter.h.
+    Fixed a DHCP negotiation problem with some DHCP servers.
+    Fixed an Ethernet driver problem in the CFV2-66 ethernet driver.
+    Fixed a TCP close retransmit problem.
+    Fixed a TCP seq rollover problem on retransmit .
+    Added support for SB72 platform.
+
+Version 1.73:
+
+    Fixed several SNMP bugs.
+    Fixed TCP connect problem.
+
+Version 1.72:
+
+    Added FTP capability see:FTP Client and FTP Server.
+    Added additional TCP information functions.
+
+Version 1.71:
+
+    Fixed several SNMP bugs.
+    Fixed command processor error handling.
+    Fixed CFV2-40I485 ethernet driver buffer overflow bug.
+
+Version 1.70:
+
+    Fixed several linker problems associated with memory size. on CFV2-66.
+    Added MPEG file type to html compress and decompress.
+    Added HTML password example application.
+
+Version 1.69:
+
+   Improved TCP performance.
+        *  CFV2-40 is now capable of 750K bytes/sec TCP performance.
+        *  CFV2-66 is now capable of 1.5M bytes/sec TCP performance.
+   Added BETA SNMP support (extra cost option).
+   Fixed CFV2-66 memory size problem.
+   Fixed CFV2-66 Ethernet bug.
+   Fixed Local IP Loopback operation.
+   Fixed CFV2-40I485 Buffer overrun Ethernet Bug.
+   Added Platform definition to compile time predefined symbols.
+        *  See an Example of this in the TicTacToe example program look for #ifdef CFV2_66.
+
+Version 1.68:
+
+   Modified environment to better handle multiple target systems.
+   Added IGMP V1 (RFC1112) and V2 (RFC 2236) support.
+
+Version 1.67:
+
+    Added POP3 mail capabilities.
+    Fixed a volatile bug in select logic.
+
+Version 1.66:
+
+    Fixed ARP problem on Large networks.
+
+Version 1.65:
+
+    Cleaned up some documentation.
+    Worked on the reliability of the TCP stack.
+    Fixed several timeout and re-transmission problems.
+    Added serial burner example code.
+    Added the Insight source level debugger.
+
+Version 1.64 (never really released):
+
+    Cleaned up some documentation.
+    Fixed GDB stub bug.
+    Added a new demo application.
+    Rebuilt compiler and Newlib with latest sources.
+    Added a "Mail Sample" sample application.
+    Added time of reception to ethernet driver.
+    Made build modification to work with Linux.
+    Fixed TCP Receive Bug.
+
+Version 1.63:
+
+    Fixed buffer starvation problem with TCP on slow links.
+    Added DMA registers to sim5206e.h
+    Fixed a DNS bug with aliased responses.
+    Added the ability to log what is on the screen to the mttty utility.
+    Added NoWait version of all the UCOS primitives.
+    Added a NoWait version of Select.
+    Fixed a Nasty 802.3 Ethernet driver bug.
+    Improved interrupt latency by removing extra locks.
+    Added sbrk to bsp.c to fix a malloc bug.
+    Improved buffer management code.
+    See the Revision history.
+
+Version 1.62:
+
+    Added 802.3 Encapsulation.
+    Added BOOTP support.
+    Fixed an ARP and PPP bugs.
+    Cleaned up headers to work with straight 'C'.
+    See the Revision history.
+
+Version 1.61:
+
+    Added HTTP password support.
+    Fixed several TCP and Ethernet bugs.
+    Restructured the code to help support different ColdFire hardware platforms.
+    See the Revision history.
+
+Version 1.60:
+
+    Changed the 2.95 version of GCC/EGCS.
+    Converted the Object format to ELF not COFF so we are compatible with more third party debuggers.
+    Added support for DHCP.
+    Added support for the GNU GBS debugger
+    Added some diagnostics notes.
+
+Version 1.53:
+
+    Changed the 2.95 version of GCC/EGCS.
+    Added support for expansion FD type devices like the external Serial board.
+    Fixed more documentation bugs.
+    Fixed a Buffers bug that caused corruption when socket connections where aborted.
+
+Version 1.52:
+
+    Fixed a TCP bug that was causing the system to crash when it received RST packets on a busy network.
+    Fixed some bugs in the sample code and documentation related to source control corrupting gif and pdf files.
+
+Version 1.51:
+
+    PPP for both connection initiation and call answering using a standard AT command set Modem.
+    Send Mail - The ability to send E-Mail from the NetBurner board, using any Send Mail server.
+    Telnet Command processing.
+    Simple DNS.
+    Code Update - The ability to update running code from any PC over the network.
+    Bug Fixes.
+
+
+
+
+
+
+

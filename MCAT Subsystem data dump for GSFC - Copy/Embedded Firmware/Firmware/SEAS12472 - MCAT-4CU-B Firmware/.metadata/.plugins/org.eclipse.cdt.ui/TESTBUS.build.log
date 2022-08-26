@@ -1,0 +1,53 @@
+
+**** Rebuild of configuration Release for project TESTBUS ****
+
+**** Internal Builder is used for build               ****
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 74 bytes
+Result counts = 57 total_ends :29
+32 bytes out of 57 original encode out of 74 total original 
+Processing /index.htm 74 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+..\main.cpp: In function 'void mcatSendSampleCMD2()':
+..\main.cpp:263: warning: unused variable 'cmdMode'
+..\main.cpp:264: warning: unused variable 'mcatModeIdle'
+..\main.cpp:265: warning: unused variable 'mcatModeStandby'
+..\main.cpp:266: warning: unused variable 'mcatModeRun'
+..\main.cpp: In function 'void mcatSendSampleCMD()':
+..\main.cpp:418: warning: unused variable 'cmdMode'
+..\main.cpp:420: warning: unused variable 'mcatModeStandby'
+..\main.cpp:421: warning: unused variable 'mcatModeRun'
+..\main.cpp:422: warning: unused variable 'mcatModeFire'
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-4CU-B-FSW -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o ..\main (Samudra Haque N3RDX's conflicted copy 2015-01-22).cpp
+m68k-elf-g++ main.o main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o htmldata.o -Wl,-Map=TESTBUS.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTBUS.elf
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o: In function `menu()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main (Samudra Haque N3RDX's conflicted copy 2015-01-22).cpp:219: multiple definition of `menu()'
+main.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main.cpp:240: first defined here
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o: In function `Ascii2Byte(char*)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main (Samudra Haque N3RDX's conflicted copy 2015-01-22).cpp:201: multiple definition of `Ascii2Byte(char*)'
+main.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main.cpp:222: first defined here
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o: In function `UserMain':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main (Samudra Haque N3RDX's conflicted copy 2015-01-22).cpp:74: multiple definition of `UserMain'
+main.o:C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main.cpp:102: first defined here
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o: In function `menu()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main (Samudra Haque N3RDX's conflicted copy 2015-01-22).cpp:219: multiple definition of `buffer'
+main.o:(.bss+0x2088): first defined here
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o:(.data+0x4): multiple definition of `inbuf'
+main.o:(.data+0x2c): first defined here
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o: In function `menu()':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main (Samudra Haque N3RDX's conflicted copy 2015-01-22).cpp:230: multiple definition of `I2CInputBuffer'
+main.o:(.bss+0x2148): first defined here
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o: In function `Ascii2Byte(char*)':
+C:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\TESTBUS\Release/..\main (Samudra Haque N3RDX's conflicted copy 2015-01-22).cpp:204: multiple definition of `I2CStat'
+main.o:(.bss+0x2188): first defined here
+main (Samudra Haque N3RDX's conflicted copy 2015-01-22).o:(.data+0x0): multiple definition of `AppName'
+main.o:(.data+0x28): first defined here
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 14400  ms.  

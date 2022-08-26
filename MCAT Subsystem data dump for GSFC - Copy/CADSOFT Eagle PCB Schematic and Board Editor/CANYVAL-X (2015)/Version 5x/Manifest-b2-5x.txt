@@ -1,0 +1,13 @@
+Partlist
+
+Exported from MCAT-CANVYAL-B2-5X.brd at 2/24/2015 10:55:23 AM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value                 Package                 Library           Position (mil)        Orientation
+
+B3       MCAT-4CU-C-PCB/MID    MCAT-4CU-C-MID-V4-BLANK gwu_mpnl_ucat_v10 (5905.51181 1968.50394) R0
+THL2:TH2 MCAT-TH-G4X-YONSEI/LH MCAT-TH-G4X-LH          gwu_mpnl_ucat_v10 (3759.44882 1869.05512) SMR270
+THR1:TH2 MCAT-TH-G4X-YONSEI/RH MCAT-TH-G4X-RH          gwu_mpnl_ucat_v10 (4744.25197 1869.05512) SMR0

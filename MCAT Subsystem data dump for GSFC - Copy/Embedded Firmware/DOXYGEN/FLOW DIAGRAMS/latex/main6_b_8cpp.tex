@@ -1,0 +1,842 @@
+\hypertarget{main6_b_8cpp}{}\section{C\+:/\+Users/samudra/\+Google Drive/\+M\+C\+A\+T4\+C\+U\+F\+S\+W/main6\+B.cpp File Reference}
+\label{main6_b_8cpp}\index{C\+:/\+Users/samudra/\+Google Drive/\+M\+C\+A\+T4\+C\+U\+F\+S\+W/main6\+B.\+cpp@{C\+:/\+Users/samudra/\+Google Drive/\+M\+C\+A\+T4\+C\+U\+F\+S\+W/main6\+B.\+cpp}}
+{\ttfamily \#include \char`\"{}predef.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include $<$startnet.\+h$>$}\\*
+{\ttfamily \#include $<$autoupdate.\+h$>$}\\*
+{\ttfamily \#include $<$dhcpclient.\+h$>$}\\*
+{\ttfamily \#include $<$taskmon.\+h$>$}\\*
+{\ttfamily \#include $<$smarttrap.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$multichanneli2c.\+h$>$}\\*
+{\ttfamily \#include $<$sim5441x.\+h$>$}\\*
+{\ttfamily \#include $<$cfinter.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}mcat\+\_\+config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mcat\+\_\+cmd\+\_\+packet.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mcat\+\_\+timing.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}periph\+\_\+clocks.\+h\char`\"{}}\\*
+Include dependency graph for main6\+B.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main6_b_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main6_b_8cpp_af3350bd69feae78ebcd4f766916eeb67}{parse\+C\+M\+D\+Packet} (char C\+M\+D\+Packet\mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]})
+\item 
+void \hyperlink{main6_b_8cpp_aa3032893ba2f121a12d4cecf88277580}{parse\+Block\+G} (string Block\+G)
+\item 
+void \hyperlink{main6_b_8cpp_ab8ff54f4b027d2dfb6d3b63194fc15a4}{parse\+Block\+C\+U} (string Block\+C\+U)
+\item 
+void \hyperlink{main6_b_8cpp_a72e39dd7a2538b8b278f927ffd051bde}{parse\+Block\+I\+P\+D} (string Block\+I\+P\+D)
+\item 
+void \hyperlink{main6_b_8cpp_a8109658a433363943c469e7743c238ab}{parse\+Block\+P\+P\+U} (string Block\+P\+P\+U)
+\item 
+B\+Y\+T\+E \hyperlink{main6_b_8cpp_a22bb15ed96d4891d904b55838e451124}{Ascii2\+Byte} (char $\ast$buf)
+\item 
+void \hyperlink{main6_b_8cpp_ad16e5e62f3579a7048e6b981b172885e}{menu} (void)
+\item 
+void \hyperlink{main6_b_8cpp_ace7b2f4c33cbf41f3a43c7be01ff7aec}{User\+Main} (void $\ast$pd)
+\item 
+void \hyperlink{main6_b_8cpp_a486c7b37eb37847afaeeb6c73de398b9}{display\+Config} ()
+\item 
+void \hyperlink{main6_b_8cpp_a11ee600b69b27b0bb2d1b5b6e8ece140}{stop\+Pulses} (void $\ast$pdata)
+\item 
+void \hyperlink{main6_b_8cpp_a10570e6420ce0f0a076e1e9d3518d305}{init\+D\+M\+A\+T\+I\+M\+E\+R1} ()
+\item 
+void \hyperlink{main6_b_8cpp_a7c3f73193878c079945a21075f128059}{Set\+Intc} (long func, int vector, int level, int prio)
+\item 
+void \hyperlink{main6_b_8cpp_a8a64466bfb43094b3aec845670b959b4}{set\+Defaults} ()
+\item 
+void \hyperlink{main6_b_8cpp_a238885c747f586049b766fa4fcd5ec12}{disable\+All} ()
+\item 
+void \hyperlink{main6_b_8cpp_af2e78c1a970cd9490fcc3a5ac8015e6b}{debug\+Print} (string debug\+Msg)
+\item 
+\hyperlink{main6_b_8cpp_a89200d64c07024287b4ef31901f44e15}{I\+N\+T\+E\+R\+R\+U\+P\+T} (func\+\_\+isr, 0x2600)
+\item 
+void \hyperlink{main6_b_8cpp_acbfa28dfc2a41cc9cea58425f9b75178}{control\+P\+M\+A} (B\+O\+O\+L P\+M\+Flag)
+\item 
+void \hyperlink{main6_b_8cpp_ae4e046c7843050c83a5f70092acdbe1d}{control18\+L} (int requested\+Channel, int L\+Flag)
+\item 
+void \hyperlink{main6_b_8cpp_a2f5a551d47d5257bf34046aede82024e}{control18\+Hmanual} (int requested\+Channel, int H\+Flag)
+\item 
+void \hyperlink{main6_b_8cpp_a92a0eb6ae19d1612e39cbf1fd318d406}{set\+T\+P1} (long Frequency)
+\item 
+void \hyperlink{main6_b_8cpp_a8f5495a6630209795a3fbd7fa61a18e8}{control\+T\+P1} (B\+O\+O\+L T\+P1\+Flag)
+\item 
+void \hyperlink{main6_b_8cpp_a0ecec396fb6600a2f4897e7f30318159}{go\+F\+I\+R} ()
+\item 
+void \hyperlink{main6_b_8cpp_a2d0df7e0313c78e94bb4fafbc5752d67}{go\+F\+I\+Rfrom\+R\+U\+N} ()
+\item 
+void \hyperlink{main6_b_8cpp_ae0014243028b5cd808de963c18d01b11}{go\+F\+I\+Rfrom\+S\+B\+Y} ()
+\item 
+void \hyperlink{main6_b_8cpp_affc7dbdeb188c8169ccc6478143538d6}{go\+F\+I\+Rfrom\+I\+D\+L} ()
+\item 
+void \hyperlink{main6_b_8cpp_af57dea23daabb0f6e6d27f2ef21c9a54}{go\+R\+U\+N} ()
+\item 
+void \hyperlink{main6_b_8cpp_a6d712eb455e679cbf844c6742e7be6a0}{go\+R\+U\+Nfrom\+F\+I\+R} ()
+\item 
+void \hyperlink{main6_b_8cpp_a4770c1a01b1be1b23772d600b787d411}{go\+R\+U\+Nfrom\+S\+B\+Y} ()
+\item 
+void \hyperlink{main6_b_8cpp_a300391508ed006e4cd4ee0f9f316f3b4}{go\+R\+U\+Nfrom\+I\+D\+L} ()
+\item 
+void \hyperlink{main6_b_8cpp_a646dbe8155e1ee44efac5d50a7de878e}{go\+S\+B\+Y} ()
+\item 
+void \hyperlink{main6_b_8cpp_ae0ed43b60101aed3be6bea960293275d}{go\+S\+B\+Yfrom\+F\+I\+R} ()
+\item 
+void \hyperlink{main6_b_8cpp_a2d0b911e7b667c6a18000005acb28777}{go\+S\+B\+Yfrom\+R\+U\+N} ()
+\item 
+void \hyperlink{main6_b_8cpp_a37a57a2b0feb89b22b270931ae440c35}{go\+S\+B\+Yfrom\+I\+D\+L} ()
+\item 
+void \hyperlink{main6_b_8cpp_aa8d8f1cf694be5de1ac89b91627c0f51}{go\+I\+D\+L} ()
+\item 
+void \hyperlink{main6_b_8cpp_a3e3cc85ab7a91d6808984a0f78a5f9f8}{go\+I\+D\+Lfrom\+S\+B\+Y} ()
+\item 
+void \hyperlink{main6_b_8cpp_a690d16feac877ce7000b00e151dffd82}{go\+I\+D\+Lfrom\+R\+U\+N} ()
+\item 
+void \hyperlink{main6_b_8cpp_ae5438692f2a6c279129ecc19a91568f2}{go\+I\+D\+Lfrom\+F\+I\+R} ()
+\item 
+void \hyperlink{main6_b_8cpp_a9b07c4b395adfe387d12241e7ebaaae6}{set\+New\+Mode} (string cmd\+Mode\+Request, string \hyperlink{main6_c_8cpp_ab996ab5995af95792f5af3586d943d58}{cmd\+Mode\+Current})
+\item 
+void \hyperlink{main6_b_8cpp_a5b251dff1da28eda51e8b51bc4b2baf7}{do\+Setup\+I\+O} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{main6_b_8cpp_a7f7c6b9d49f7b1a42e631ec964d939b9}{id\+C\+U} \mbox{[}80\mbox{]}
+\item 
+string \hyperlink{main6_b_8cpp_a405cdd34a0ec61abf8c5205c7a8c3182}{cmd\+Version} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a8a9767341d04352fccd7068bc1d7c370}{cmd\+Mode} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_ab996ab5995af95792f5af3586d943d58}{cmd\+Mode\+Current} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_ad9049cc701250fb177b8e99713039762}{s\+\_\+freq\+T\+P1} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a396dd1e7a6a9a4dc8b908980e2e1ded4}{s\+\_\+freq\+T\+P2} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a62d24bc7666ac0bb0d8728dba649a256}{s\+\_\+freq\+T\+P3} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a6a2b49919f4f32a4af53700ed1cde8ed}{s\+\_\+freq\+T\+P4} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a4ba85625fa845776a2d64a3f58f36c42}{s\+\_\+count\+Ch1} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a88730d26d9b63cdf8e4ca277a76b638d}{s\+\_\+count\+Ch2} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a09052171565a4f15cbfdbc2ebcdd3fff}{s\+\_\+count\+Ch3} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a32bb7a1f63c92a94ec3d098853bd883b}{s\+\_\+count\+Ch4} =\char`\"{}\char`\"{}
+\item 
+long \hyperlink{main6_b_8cpp_a7d2353ca53d5b5b259a823a92b7b519e}{freq\+T\+P1} = 10
+\item 
+long \hyperlink{main6_b_8cpp_a511164d7a4515d9a1f07ccfbda7ea294}{freq\+T\+P2} = 10
+\item 
+long \hyperlink{main6_b_8cpp_afae1443270cbb13745f612d5425f94a7}{freq\+T\+P3} = 10
+\item 
+long \hyperlink{main6_b_8cpp_a7cc56f796c77e7b30948d992bacc0429}{freq\+T\+P4} = 10
+\item 
+long \hyperlink{main6_b_8cpp_a9a1f402dd7e47f25ca3aa9ae7a8d0dc6}{count\+Ch1} = 0
+\item 
+long \hyperlink{main6_b_8cpp_a49801da896cbdab7c4b39b8e012c1a18}{count\+Ch2} = 0
+\item 
+long \hyperlink{main6_b_8cpp_a0582794ca95bdcf8787638b7def0177c}{count\+Ch3} = 0
+\item 
+long \hyperlink{main6_b_8cpp_a1de46864f078711d257187f01dfff541}{count\+Ch4} = 0
+\item 
+string \hyperlink{main6_b_8cpp_a37ec136ae86c4b7dc81f393bb1a01af7}{s\+\_\+cmd\+P18\+H1} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a46ce373f60085f5900464cd0731fa20e}{s\+\_\+cmd\+P18\+H2} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a909acdc96889fb5885793e8bc70b083e}{s\+\_\+cmd\+P18\+H3} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{main6_b_8cpp_a607e82175ad61b864bfa84e686437947}{s\+\_\+cmd\+P18\+H4} =\char`\"{}\char`\"{}
+\item 
+bool \hyperlink{main6_b_8cpp_a1a10d6a42e7c3ba1ad7f396b687a7eb7}{cmd\+P18\+H1}
+\item 
+bool \hyperlink{main6_b_8cpp_a03df8cc8ee6b4d7ba8a3d2ad50914508}{cmd\+P18\+H2}
+\item 
+bool \hyperlink{main6_b_8cpp_aba803fecbea259c5af71f0b9f2e9fa5a}{cmd\+P18\+H3}
+\item 
+bool \hyperlink{main6_b_8cpp_a74d16dd0ede9be1a1645027bd2e6fb21}{cmd\+P18\+H4}
+\item 
+B\+Y\+T\+E \hyperlink{main6_b_8cpp_a750abfb0120c1735c922980bd47640a5}{buffer} \mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}
+\item 
+char \hyperlink{main6_b_8cpp_af54d77a991da4ba360d594c2589140df}{I2\+C\+Input\+Buffer} \mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}
+\item 
+char $\ast$ \hyperlink{main6_b_8cpp_abed0c40696905e144ed4118061acf700}{inbuf} = \hyperlink{_v2_01main_8cpp_af54d77a991da4ba360d594c2589140df}{I2\+C\+Input\+Buffer}
+\item 
+B\+Y\+T\+E \hyperlink{main6_b_8cpp_a92fb5ea5b6a7d108dea33dd07809152d}{address} = \hyperlink{mcatsubsystemconfig_8h_a8fe248bd745b90e2bfe94d8c5fce0a53}{C\+U\+\_\+\+I2\+C\+\_\+\+S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R}
+\item 
+B\+Y\+T\+E \hyperlink{main6_b_8cpp_a6c3dedd37414833dd07e72ee4a642d13}{I2\+C\+Stat}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main6_b_8cpp_a22bb15ed96d4891d904b55838e451124}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!Ascii2\+Byte@{Ascii2\+Byte}}
+\index{Ascii2\+Byte@{Ascii2\+Byte}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{Ascii2\+Byte}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E Ascii2\+Byte (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a22bb15ed96d4891d904b55838e451124}
+
+
+Definition at line 1175 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a2f5a551d47d5257bf34046aede82024e}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!control18\+Hmanual@{control18\+Hmanual}}
+\index{control18\+Hmanual@{control18\+Hmanual}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{control18\+Hmanual}]{\setlength{\rightskip}{0pt plus 5cm}void control18\+Hmanual (
+\begin{DoxyParamCaption}
+\item[{int}]{requested\+Channel, }
+\item[{int}]{H\+Flag}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a2f5a551d47d5257bf34046aede82024e}
+
+
+Definition at line 368 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ae4e046c7843050c83a5f70092acdbe1d}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!control18\+L@{control18\+L}}
+\index{control18\+L@{control18\+L}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{control18\+L}]{\setlength{\rightskip}{0pt plus 5cm}void control18\+L (
+\begin{DoxyParamCaption}
+\item[{int}]{requested\+Channel, }
+\item[{int}]{L\+Flag}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_ae4e046c7843050c83a5f70092acdbe1d}
+
+
+Definition at line 246 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_acbfa28dfc2a41cc9cea58425f9b75178}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!control\+P\+M\+A@{control\+P\+M\+A}}
+\index{control\+P\+M\+A@{control\+P\+M\+A}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{control\+P\+M\+A}]{\setlength{\rightskip}{0pt plus 5cm}void control\+P\+M\+A (
+\begin{DoxyParamCaption}
+\item[{B\+O\+O\+L}]{P\+M\+Flag}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_acbfa28dfc2a41cc9cea58425f9b75178}
+
+
+Definition at line 229 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a8f5495a6630209795a3fbd7fa61a18e8}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!control\+T\+P1@{control\+T\+P1}}
+\index{control\+T\+P1@{control\+T\+P1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{control\+T\+P1}]{\setlength{\rightskip}{0pt plus 5cm}void control\+T\+P1 (
+\begin{DoxyParamCaption}
+\item[{B\+O\+O\+L}]{T\+P1\+Flag}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a8f5495a6630209795a3fbd7fa61a18e8}
+from 5270 code set /// D\+O N\+O\+T U\+S\+E Set\+Intc((long) \&func\+\_\+isr, 19, 1, 1); 
+
+Definition at line 560 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_af2e78c1a970cd9490fcc3a5ac8015e6b}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!debug\+Print@{debug\+Print}}
+\index{debug\+Print@{debug\+Print}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{debug\+Print}]{\setlength{\rightskip}{0pt plus 5cm}void debug\+Print (
+\begin{DoxyParamCaption}
+\item[{string}]{debug\+Msg}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_af2e78c1a970cd9490fcc3a5ac8015e6b}
+
+
+Definition at line 154 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a238885c747f586049b766fa4fcd5ec12}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!disable\+All@{disable\+All}}
+\index{disable\+All@{disable\+All}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{disable\+All}]{\setlength{\rightskip}{0pt plus 5cm}void disable\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a238885c747f586049b766fa4fcd5ec12}
+
+
+Definition at line 772 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a486c7b37eb37847afaeeb6c73de398b9}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!display\+Config@{display\+Config}}
+\index{display\+Config@{display\+Config}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{display\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void display\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a486c7b37eb37847afaeeb6c73de398b9}
+\hypertarget{main6_b_8cpp_a5b251dff1da28eda51e8b51bc4b2baf7}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!do\+Setup\+I\+O@{do\+Setup\+I\+O}}
+\index{do\+Setup\+I\+O@{do\+Setup\+I\+O}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{do\+Setup\+I\+O}]{\setlength{\rightskip}{0pt plus 5cm}void do\+Setup\+I\+O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a5b251dff1da28eda51e8b51bc4b2baf7}
+
+
+Definition at line 833 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a0ecec396fb6600a2f4897e7f30318159}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+F\+I\+R@{go\+F\+I\+R}}
+\index{go\+F\+I\+R@{go\+F\+I\+R}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+F\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}void go\+F\+I\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a0ecec396fb6600a2f4897e7f30318159}
+
+
+Definition at line 594 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_affc7dbdeb188c8169ccc6478143538d6}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+F\+I\+Rfrom\+I\+D\+L@{go\+F\+I\+Rfrom\+I\+D\+L}}
+\index{go\+F\+I\+Rfrom\+I\+D\+L@{go\+F\+I\+Rfrom\+I\+D\+L}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+F\+I\+Rfrom\+I\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}void go\+F\+I\+Rfrom\+I\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_affc7dbdeb188c8169ccc6478143538d6}
+
+
+Definition at line 628 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a2d0df7e0313c78e94bb4fafbc5752d67}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+F\+I\+Rfrom\+R\+U\+N@{go\+F\+I\+Rfrom\+R\+U\+N}}
+\index{go\+F\+I\+Rfrom\+R\+U\+N@{go\+F\+I\+Rfrom\+R\+U\+N}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+F\+I\+Rfrom\+R\+U\+N}]{\setlength{\rightskip}{0pt plus 5cm}void go\+F\+I\+Rfrom\+R\+U\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a2d0df7e0313c78e94bb4fafbc5752d67}
+
+
+Definition at line 599 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ae0014243028b5cd808de963c18d01b11}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+F\+I\+Rfrom\+S\+B\+Y@{go\+F\+I\+Rfrom\+S\+B\+Y}}
+\index{go\+F\+I\+Rfrom\+S\+B\+Y@{go\+F\+I\+Rfrom\+S\+B\+Y}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+F\+I\+Rfrom\+S\+B\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void go\+F\+I\+Rfrom\+S\+B\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_ae0014243028b5cd808de963c18d01b11}
+
+
+Definition at line 624 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_aa8d8f1cf694be5de1ac89b91627c0f51}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+I\+D\+L@{go\+I\+D\+L}}
+\index{go\+I\+D\+L@{go\+I\+D\+L}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+I\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}void go\+I\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_aa8d8f1cf694be5de1ac89b91627c0f51}
+
+
+Definition at line 675 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ae5438692f2a6c279129ecc19a91568f2}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+I\+D\+Lfrom\+F\+I\+R@{go\+I\+D\+Lfrom\+F\+I\+R}}
+\index{go\+I\+D\+Lfrom\+F\+I\+R@{go\+I\+D\+Lfrom\+F\+I\+R}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+I\+D\+Lfrom\+F\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}void go\+I\+D\+Lfrom\+F\+I\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_ae5438692f2a6c279129ecc19a91568f2}
+
+
+Definition at line 688 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a690d16feac877ce7000b00e151dffd82}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+I\+D\+Lfrom\+R\+U\+N@{go\+I\+D\+Lfrom\+R\+U\+N}}
+\index{go\+I\+D\+Lfrom\+R\+U\+N@{go\+I\+D\+Lfrom\+R\+U\+N}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+I\+D\+Lfrom\+R\+U\+N}]{\setlength{\rightskip}{0pt plus 5cm}void go\+I\+D\+Lfrom\+R\+U\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a690d16feac877ce7000b00e151dffd82}
+
+
+Definition at line 684 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a3e3cc85ab7a91d6808984a0f78a5f9f8}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+I\+D\+Lfrom\+S\+B\+Y@{go\+I\+D\+Lfrom\+S\+B\+Y}}
+\index{go\+I\+D\+Lfrom\+S\+B\+Y@{go\+I\+D\+Lfrom\+S\+B\+Y}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+I\+D\+Lfrom\+S\+B\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void go\+I\+D\+Lfrom\+S\+B\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a3e3cc85ab7a91d6808984a0f78a5f9f8}
+
+
+Definition at line 680 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_af57dea23daabb0f6e6d27f2ef21c9a54}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+R\+U\+N@{go\+R\+U\+N}}
+\index{go\+R\+U\+N@{go\+R\+U\+N}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+R\+U\+N}]{\setlength{\rightskip}{0pt plus 5cm}void go\+R\+U\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_af57dea23daabb0f6e6d27f2ef21c9a54}
+
+
+Definition at line 633 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a6d712eb455e679cbf844c6742e7be6a0}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+R\+U\+Nfrom\+F\+I\+R@{go\+R\+U\+Nfrom\+F\+I\+R}}
+\index{go\+R\+U\+Nfrom\+F\+I\+R@{go\+R\+U\+Nfrom\+F\+I\+R}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+R\+U\+Nfrom\+F\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}void go\+R\+U\+Nfrom\+F\+I\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a6d712eb455e679cbf844c6742e7be6a0}
+
+
+Definition at line 644 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a300391508ed006e4cd4ee0f9f316f3b4}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+R\+U\+Nfrom\+I\+D\+L@{go\+R\+U\+Nfrom\+I\+D\+L}}
+\index{go\+R\+U\+Nfrom\+I\+D\+L@{go\+R\+U\+Nfrom\+I\+D\+L}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+R\+U\+Nfrom\+I\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}void go\+R\+U\+Nfrom\+I\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a300391508ed006e4cd4ee0f9f316f3b4}
+
+
+Definition at line 652 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a4770c1a01b1be1b23772d600b787d411}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+R\+U\+Nfrom\+S\+B\+Y@{go\+R\+U\+Nfrom\+S\+B\+Y}}
+\index{go\+R\+U\+Nfrom\+S\+B\+Y@{go\+R\+U\+Nfrom\+S\+B\+Y}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+R\+U\+Nfrom\+S\+B\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void go\+R\+U\+Nfrom\+S\+B\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a4770c1a01b1be1b23772d600b787d411}
+
+
+Definition at line 648 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a646dbe8155e1ee44efac5d50a7de878e}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+S\+B\+Y@{go\+S\+B\+Y}}
+\index{go\+S\+B\+Y@{go\+S\+B\+Y}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+S\+B\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void go\+S\+B\+Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a646dbe8155e1ee44efac5d50a7de878e}
+
+
+Definition at line 657 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ae0ed43b60101aed3be6bea960293275d}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+S\+B\+Yfrom\+F\+I\+R@{go\+S\+B\+Yfrom\+F\+I\+R}}
+\index{go\+S\+B\+Yfrom\+F\+I\+R@{go\+S\+B\+Yfrom\+F\+I\+R}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+S\+B\+Yfrom\+F\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}void go\+S\+B\+Yfrom\+F\+I\+R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_ae0ed43b60101aed3be6bea960293275d}
+
+
+Definition at line 662 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a37a57a2b0feb89b22b270931ae440c35}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+S\+B\+Yfrom\+I\+D\+L@{go\+S\+B\+Yfrom\+I\+D\+L}}
+\index{go\+S\+B\+Yfrom\+I\+D\+L@{go\+S\+B\+Yfrom\+I\+D\+L}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+S\+B\+Yfrom\+I\+D\+L}]{\setlength{\rightskip}{0pt plus 5cm}void go\+S\+B\+Yfrom\+I\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a37a57a2b0feb89b22b270931ae440c35}
+
+
+Definition at line 670 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a2d0b911e7b667c6a18000005acb28777}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!go\+S\+B\+Yfrom\+R\+U\+N@{go\+S\+B\+Yfrom\+R\+U\+N}}
+\index{go\+S\+B\+Yfrom\+R\+U\+N@{go\+S\+B\+Yfrom\+R\+U\+N}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{go\+S\+B\+Yfrom\+R\+U\+N}]{\setlength{\rightskip}{0pt plus 5cm}void go\+S\+B\+Yfrom\+R\+U\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a2d0b911e7b667c6a18000005acb28777}
+
+
+Definition at line 666 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a10570e6420ce0f0a076e1e9d3518d305}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!init\+D\+M\+A\+T\+I\+M\+E\+R1@{init\+D\+M\+A\+T\+I\+M\+E\+R1}}
+\index{init\+D\+M\+A\+T\+I\+M\+E\+R1@{init\+D\+M\+A\+T\+I\+M\+E\+R1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{init\+D\+M\+A\+T\+I\+M\+E\+R1}]{\setlength{\rightskip}{0pt plus 5cm}void init\+D\+M\+A\+T\+I\+M\+E\+R1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a10570e6420ce0f0a076e1e9d3518d305}
+from 5270 code set /// D\+O N\+O\+T U\+S\+E Set\+Intc((long) \&func\+\_\+isr, 19, 1, 1); 
+
+Definition at line 818 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a89200d64c07024287b4ef31901f44e15}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!I\+N\+T\+E\+R\+R\+U\+P\+T@{I\+N\+T\+E\+R\+R\+U\+P\+T}}
+\index{I\+N\+T\+E\+R\+R\+U\+P\+T@{I\+N\+T\+E\+R\+R\+U\+P\+T}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{I\+N\+T\+E\+R\+R\+U\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}I\+N\+T\+E\+R\+R\+U\+P\+T (
+\begin{DoxyParamCaption}
+\item[{func\+\_\+isr}]{, }
+\item[{0x2600}]{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a89200d64c07024287b4ef31901f44e15}
+
+
+Definition at line 162 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ad16e5e62f3579a7048e6b981b172885e}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!menu@{menu}}
+\index{menu@{menu}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}void menu (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_ad16e5e62f3579a7048e6b981b172885e}
+
+
+Definition at line 1193 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ab8ff54f4b027d2dfb6d3b63194fc15a4}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!parse\+Block\+C\+U@{parse\+Block\+C\+U}}
+\index{parse\+Block\+C\+U@{parse\+Block\+C\+U}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{parse\+Block\+C\+U}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+C\+U (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+C\+U}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_ab8ff54f4b027d2dfb6d3b63194fc15a4}
+
+
+Definition at line 1049 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_aa3032893ba2f121a12d4cecf88277580}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!parse\+Block\+G@{parse\+Block\+G}}
+\index{parse\+Block\+G@{parse\+Block\+G}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{parse\+Block\+G}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+G (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+G}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_aa3032893ba2f121a12d4cecf88277580}
+
+
+Definition at line 1039 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a72e39dd7a2538b8b278f927ffd051bde}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!parse\+Block\+I\+P\+D@{parse\+Block\+I\+P\+D}}
+\index{parse\+Block\+I\+P\+D@{parse\+Block\+I\+P\+D}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{parse\+Block\+I\+P\+D}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+I\+P\+D (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+I\+P\+D}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a72e39dd7a2538b8b278f927ffd051bde}
+
+
+Definition at line 1060 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a8109658a433363943c469e7743c238ab}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!parse\+Block\+P\+P\+U@{parse\+Block\+P\+P\+U}}
+\index{parse\+Block\+P\+P\+U@{parse\+Block\+P\+P\+U}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{parse\+Block\+P\+P\+U}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+P\+P\+U (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+P\+P\+U}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a8109658a433363943c469e7743c238ab}
+
+
+Definition at line 1115 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_af3350bd69feae78ebcd4f766916eeb67}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!parse\+C\+M\+D\+Packet@{parse\+C\+M\+D\+Packet}}
+\index{parse\+C\+M\+D\+Packet@{parse\+C\+M\+D\+Packet}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{parse\+C\+M\+D\+Packet}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+C\+M\+D\+Packet (
+\begin{DoxyParamCaption}
+\item[{char}]{C\+M\+D\+Packet\mbox{[}\+I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_af3350bd69feae78ebcd4f766916eeb67}
+
+
+Definition at line 894 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a8a64466bfb43094b3aec845670b959b4}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!set\+Defaults@{set\+Defaults}}
+\index{set\+Defaults@{set\+Defaults}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{set\+Defaults}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a8a64466bfb43094b3aec845670b959b4}
+
+
+Definition at line 779 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a7c3f73193878c079945a21075f128059}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!Set\+Intc@{Set\+Intc}}
+\index{Set\+Intc@{Set\+Intc}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{Set\+Intc}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+Intc (
+\begin{DoxyParamCaption}
+\item[{long}]{func, }
+\item[{int}]{vector, }
+\item[{int}]{level, }
+\item[{int}]{prio}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a7c3f73193878c079945a21075f128059}
+\hypertarget{main6_b_8cpp_a9b07c4b395adfe387d12241e7ebaaae6}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!set\+New\+Mode@{set\+New\+Mode}}
+\index{set\+New\+Mode@{set\+New\+Mode}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{set\+New\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void set\+New\+Mode (
+\begin{DoxyParamCaption}
+\item[{string}]{cmd\+Mode\+Request, }
+\item[{string}]{cmd\+Mode\+Current}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a9b07c4b395adfe387d12241e7ebaaae6}
+
+
+Definition at line 695 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a92a0eb6ae19d1612e39cbf1fd318d406}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!set\+T\+P1@{set\+T\+P1}}
+\index{set\+T\+P1@{set\+T\+P1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{set\+T\+P1}]{\setlength{\rightskip}{0pt plus 5cm}void set\+T\+P1 (
+\begin{DoxyParamCaption}
+\item[{long}]{Frequency}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a92a0eb6ae19d1612e39cbf1fd318d406}
+
+
+Definition at line 539 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a11ee600b69b27b0bb2d1b5b6e8ece140}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!stop\+Pulses@{stop\+Pulses}}
+\index{stop\+Pulses@{stop\+Pulses}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{stop\+Pulses}]{\setlength{\rightskip}{0pt plus 5cm}void stop\+Pulses (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pdata}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_a11ee600b69b27b0bb2d1b5b6e8ece140}
+\hypertarget{main6_b_8cpp_ace7b2f4c33cbf41f3a43c7be01ff7aec}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!User\+Main@{User\+Main}}
+\index{User\+Main@{User\+Main}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{User\+Main}]{\setlength{\rightskip}{0pt plus 5cm}void User\+Main (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}\label{main6_b_8cpp_ace7b2f4c33cbf41f3a43c7be01ff7aec}
+
+
+Definition at line 1224 of file main6\+B.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main6_b_8cpp_a92fb5ea5b6a7d108dea33dd07809152d}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!address@{address}}
+\index{address@{address}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{address}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E address = {\bf C\+U\+\_\+\+I2\+C\+\_\+\+S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R}}\label{main6_b_8cpp_a92fb5ea5b6a7d108dea33dd07809152d}
+
+
+Definition at line 151 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a750abfb0120c1735c922980bd47640a5}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!buffer@{buffer}}
+\index{buffer@{buffer}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E buffer\mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}}\label{main6_b_8cpp_a750abfb0120c1735c922980bd47640a5}
+
+
+Definition at line 148 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a8a9767341d04352fccd7068bc1d7c370}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!cmd\+Mode@{cmd\+Mode}}
+\index{cmd\+Mode@{cmd\+Mode}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{cmd\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}string cmd\+Mode =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a8a9767341d04352fccd7068bc1d7c370}
+
+
+Definition at line 70 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ab996ab5995af95792f5af3586d943d58}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!cmd\+Mode\+Current@{cmd\+Mode\+Current}}
+\index{cmd\+Mode\+Current@{cmd\+Mode\+Current}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{cmd\+Mode\+Current}]{\setlength{\rightskip}{0pt plus 5cm}string cmd\+Mode\+Current =\char`\"{}\char`\"{}}\label{main6_b_8cpp_ab996ab5995af95792f5af3586d943d58}
+
+
+Definition at line 71 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a1a10d6a42e7c3ba1ad7f396b687a7eb7}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!cmd\+P18\+H1@{cmd\+P18\+H1}}
+\index{cmd\+P18\+H1@{cmd\+P18\+H1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{cmd\+P18\+H1}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H1}\label{main6_b_8cpp_a1a10d6a42e7c3ba1ad7f396b687a7eb7}
+
+
+Definition at line 93 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a03df8cc8ee6b4d7ba8a3d2ad50914508}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!cmd\+P18\+H2@{cmd\+P18\+H2}}
+\index{cmd\+P18\+H2@{cmd\+P18\+H2}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{cmd\+P18\+H2}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H2}\label{main6_b_8cpp_a03df8cc8ee6b4d7ba8a3d2ad50914508}
+
+
+Definition at line 93 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_aba803fecbea259c5af71f0b9f2e9fa5a}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!cmd\+P18\+H3@{cmd\+P18\+H3}}
+\index{cmd\+P18\+H3@{cmd\+P18\+H3}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{cmd\+P18\+H3}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H3}\label{main6_b_8cpp_aba803fecbea259c5af71f0b9f2e9fa5a}
+
+
+Definition at line 93 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a74d16dd0ede9be1a1645027bd2e6fb21}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!cmd\+P18\+H4@{cmd\+P18\+H4}}
+\index{cmd\+P18\+H4@{cmd\+P18\+H4}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{cmd\+P18\+H4}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H4}\label{main6_b_8cpp_a74d16dd0ede9be1a1645027bd2e6fb21}
+
+
+Definition at line 93 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a405cdd34a0ec61abf8c5205c7a8c3182}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!cmd\+Version@{cmd\+Version}}
+\index{cmd\+Version@{cmd\+Version}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{cmd\+Version}]{\setlength{\rightskip}{0pt plus 5cm}string cmd\+Version =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a405cdd34a0ec61abf8c5205c7a8c3182}
+
+
+Definition at line 69 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a9a1f402dd7e47f25ca3aa9ae7a8d0dc6}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!count\+Ch1@{count\+Ch1}}
+\index{count\+Ch1@{count\+Ch1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{count\+Ch1}]{\setlength{\rightskip}{0pt plus 5cm}long count\+Ch1 = 0}\label{main6_b_8cpp_a9a1f402dd7e47f25ca3aa9ae7a8d0dc6}
+
+
+Definition at line 85 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a49801da896cbdab7c4b39b8e012c1a18}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!count\+Ch2@{count\+Ch2}}
+\index{count\+Ch2@{count\+Ch2}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{count\+Ch2}]{\setlength{\rightskip}{0pt plus 5cm}long count\+Ch2 = 0}\label{main6_b_8cpp_a49801da896cbdab7c4b39b8e012c1a18}
+
+
+Definition at line 86 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a0582794ca95bdcf8787638b7def0177c}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!count\+Ch3@{count\+Ch3}}
+\index{count\+Ch3@{count\+Ch3}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{count\+Ch3}]{\setlength{\rightskip}{0pt plus 5cm}long count\+Ch3 = 0}\label{main6_b_8cpp_a0582794ca95bdcf8787638b7def0177c}
+
+
+Definition at line 87 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a1de46864f078711d257187f01dfff541}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!count\+Ch4@{count\+Ch4}}
+\index{count\+Ch4@{count\+Ch4}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{count\+Ch4}]{\setlength{\rightskip}{0pt plus 5cm}long count\+Ch4 = 0}\label{main6_b_8cpp_a1de46864f078711d257187f01dfff541}
+
+
+Definition at line 88 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a7d2353ca53d5b5b259a823a92b7b519e}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!freq\+T\+P1@{freq\+T\+P1}}
+\index{freq\+T\+P1@{freq\+T\+P1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{freq\+T\+P1}]{\setlength{\rightskip}{0pt plus 5cm}long freq\+T\+P1 = 10}\label{main6_b_8cpp_a7d2353ca53d5b5b259a823a92b7b519e}
+
+
+Definition at line 81 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a511164d7a4515d9a1f07ccfbda7ea294}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!freq\+T\+P2@{freq\+T\+P2}}
+\index{freq\+T\+P2@{freq\+T\+P2}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{freq\+T\+P2}]{\setlength{\rightskip}{0pt plus 5cm}long freq\+T\+P2 = 10}\label{main6_b_8cpp_a511164d7a4515d9a1f07ccfbda7ea294}
+
+
+Definition at line 82 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_afae1443270cbb13745f612d5425f94a7}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!freq\+T\+P3@{freq\+T\+P3}}
+\index{freq\+T\+P3@{freq\+T\+P3}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{freq\+T\+P3}]{\setlength{\rightskip}{0pt plus 5cm}long freq\+T\+P3 = 10}\label{main6_b_8cpp_afae1443270cbb13745f612d5425f94a7}
+
+
+Definition at line 83 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a7cc56f796c77e7b30948d992bacc0429}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!freq\+T\+P4@{freq\+T\+P4}}
+\index{freq\+T\+P4@{freq\+T\+P4}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{freq\+T\+P4}]{\setlength{\rightskip}{0pt plus 5cm}long freq\+T\+P4 = 10}\label{main6_b_8cpp_a7cc56f796c77e7b30948d992bacc0429}
+
+
+Definition at line 84 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_af54d77a991da4ba360d594c2589140df}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!I2\+C\+Input\+Buffer@{I2\+C\+Input\+Buffer}}
+\index{I2\+C\+Input\+Buffer@{I2\+C\+Input\+Buffer}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{I2\+C\+Input\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}char I2\+C\+Input\+Buffer\mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}}\label{main6_b_8cpp_af54d77a991da4ba360d594c2589140df}
+
+
+Definition at line 149 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a6c3dedd37414833dd07e72ee4a642d13}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!I2\+C\+Stat@{I2\+C\+Stat}}
+\index{I2\+C\+Stat@{I2\+C\+Stat}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{I2\+C\+Stat}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E I2\+C\+Stat}\label{main6_b_8cpp_a6c3dedd37414833dd07e72ee4a642d13}
+
+
+Definition at line 152 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a7f7c6b9d49f7b1a42e631ec964d939b9}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!id\+C\+U@{id\+C\+U}}
+\index{id\+C\+U@{id\+C\+U}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{id\+C\+U}]{\setlength{\rightskip}{0pt plus 5cm}char id\+C\+U\mbox{[}80\mbox{]}}\label{main6_b_8cpp_a7f7c6b9d49f7b1a42e631ec964d939b9}
+
+
+Definition at line 68 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_abed0c40696905e144ed4118061acf700}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!inbuf@{inbuf}}
+\index{inbuf@{inbuf}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{inbuf}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ inbuf = {\bf I2\+C\+Input\+Buffer}}\label{main6_b_8cpp_abed0c40696905e144ed4118061acf700}
+
+
+Definition at line 150 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a37ec136ae86c4b7dc81f393bb1a01af7}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+cmd\+P18\+H1@{s\+\_\+cmd\+P18\+H1}}
+\index{s\+\_\+cmd\+P18\+H1@{s\+\_\+cmd\+P18\+H1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H1}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H1 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a37ec136ae86c4b7dc81f393bb1a01af7}
+
+
+Definition at line 89 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a46ce373f60085f5900464cd0731fa20e}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+cmd\+P18\+H2@{s\+\_\+cmd\+P18\+H2}}
+\index{s\+\_\+cmd\+P18\+H2@{s\+\_\+cmd\+P18\+H2}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H2}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H2 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a46ce373f60085f5900464cd0731fa20e}
+
+
+Definition at line 90 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a909acdc96889fb5885793e8bc70b083e}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+cmd\+P18\+H3@{s\+\_\+cmd\+P18\+H3}}
+\index{s\+\_\+cmd\+P18\+H3@{s\+\_\+cmd\+P18\+H3}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H3}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H3 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a909acdc96889fb5885793e8bc70b083e}
+
+
+Definition at line 91 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a607e82175ad61b864bfa84e686437947}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+cmd\+P18\+H4@{s\+\_\+cmd\+P18\+H4}}
+\index{s\+\_\+cmd\+P18\+H4@{s\+\_\+cmd\+P18\+H4}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H4}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H4 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a607e82175ad61b864bfa84e686437947}
+
+
+Definition at line 92 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a4ba85625fa845776a2d64a3f58f36c42}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+count\+Ch1@{s\+\_\+count\+Ch1}}
+\index{s\+\_\+count\+Ch1@{s\+\_\+count\+Ch1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+count\+Ch1}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+count\+Ch1 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a4ba85625fa845776a2d64a3f58f36c42}
+
+
+Definition at line 76 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a88730d26d9b63cdf8e4ca277a76b638d}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+count\+Ch2@{s\+\_\+count\+Ch2}}
+\index{s\+\_\+count\+Ch2@{s\+\_\+count\+Ch2}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+count\+Ch2}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+count\+Ch2 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a88730d26d9b63cdf8e4ca277a76b638d}
+
+
+Definition at line 77 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a09052171565a4f15cbfdbc2ebcdd3fff}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+count\+Ch3@{s\+\_\+count\+Ch3}}
+\index{s\+\_\+count\+Ch3@{s\+\_\+count\+Ch3}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+count\+Ch3}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+count\+Ch3 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a09052171565a4f15cbfdbc2ebcdd3fff}
+
+
+Definition at line 78 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a32bb7a1f63c92a94ec3d098853bd883b}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+count\+Ch4@{s\+\_\+count\+Ch4}}
+\index{s\+\_\+count\+Ch4@{s\+\_\+count\+Ch4}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+count\+Ch4}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+count\+Ch4 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a32bb7a1f63c92a94ec3d098853bd883b}
+
+
+Definition at line 79 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_ad9049cc701250fb177b8e99713039762}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+freq\+T\+P1@{s\+\_\+freq\+T\+P1}}
+\index{s\+\_\+freq\+T\+P1@{s\+\_\+freq\+T\+P1}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+freq\+T\+P1}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+freq\+T\+P1 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_ad9049cc701250fb177b8e99713039762}
+
+
+Definition at line 72 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a396dd1e7a6a9a4dc8b908980e2e1ded4}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+freq\+T\+P2@{s\+\_\+freq\+T\+P2}}
+\index{s\+\_\+freq\+T\+P2@{s\+\_\+freq\+T\+P2}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+freq\+T\+P2}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+freq\+T\+P2 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a396dd1e7a6a9a4dc8b908980e2e1ded4}
+
+
+Definition at line 73 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a62d24bc7666ac0bb0d8728dba649a256}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+freq\+T\+P3@{s\+\_\+freq\+T\+P3}}
+\index{s\+\_\+freq\+T\+P3@{s\+\_\+freq\+T\+P3}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+freq\+T\+P3}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+freq\+T\+P3 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a62d24bc7666ac0bb0d8728dba649a256}
+
+
+Definition at line 74 of file main6\+B.\+cpp.
+
+\hypertarget{main6_b_8cpp_a6a2b49919f4f32a4af53700ed1cde8ed}{}\index{main6\+B.\+cpp@{main6\+B.\+cpp}!s\+\_\+freq\+T\+P4@{s\+\_\+freq\+T\+P4}}
+\index{s\+\_\+freq\+T\+P4@{s\+\_\+freq\+T\+P4}!main6\+B.\+cpp@{main6\+B.\+cpp}}
+\subsubsection[{s\+\_\+freq\+T\+P4}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+freq\+T\+P4 =\char`\"{}\char`\"{}}\label{main6_b_8cpp_a6a2b49919f4f32a4af53700ed1cde8ed}
+
+
+Definition at line 75 of file main6\+B.\+cpp.
+

@@ -1,0 +1,24 @@
+
+**** Rebuild of configuration Release for project TESTCU ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/NANO54415/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DNANO54415 -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=TESTCU.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/NANO54415/lib/NANO54415.ld -Wl,-RC:\nburn/NANO54415/lib/sys.ld -Wl,--start-group,C:\nburn/lib/NANO54415.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oTESTCU.elf
+m68k-elf-objcopy TESTCU.elf --strip-all --output-target=srec TESTCU.s19
+compcode TESTCU.s19 TESTCU_APP.s19 -R 0x04000 0x800000 -PNANO54415
+Block starts at 40000400 
+Block ends at 4002e8e4 
+Block size= 185K
+Execution starts at 40004400 
+compressed 189668 bytes into 102259 bytes
+Code CheckSum= 7c1d064d
+Struct CheckSum= 46338faa
+S records output with a base address of 4000
+S records output with a final address of 1cf8b
+About to write S7...
+******************************Build summary ******************************
+Used 102283 bytes of 8372224 available flash (1.22%)
+Used 662280 bytes of 67108095 available ram (0.99%)
+NNDK release tag version:2.6.7
+Build complete for project TESTCU
+Time consumed: 12517  ms.  

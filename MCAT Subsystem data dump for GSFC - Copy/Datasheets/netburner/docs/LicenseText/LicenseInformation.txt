@@ -1,0 +1,88 @@
+1. All embedded software and source code provided in 
+this Network development kit is subject to one of 
+four possible licenses:
+
+	1. The NetBurner Tools License (most restrictive)
+	2. The NetBurner Embedded Software License 
+	3. The GNU Public License (GPL)
+	4. The Newlib license (least restrictive)
+
+2. The GNU development executables provided in the 
+Nburn\GCC-M68k directory branch are subject to the
+GNU public license. 
+
+3. The runtime libraries and include files provided in
+the Nburn\GCC-M68k directory branch are subject to the
+Newlib license (found in your Nburn\docs\GNU directory).
+
+4. The compcode application provided in the 
+Nburn\pctools\compcode directory is subject to the
+GNU public license (found in your Nburn\docs\GNU directory). 
+
+5. The other programs in the Nburn\pctools
+directory are subject to the NetBurner Tools License
+provided below.
+
+6. All other provided source code and libraries are 
+subject to the NetBurner Embedded Software License
+provided below.
+
+7. The NetBurner Tools Software License
+
+Copyright 1998-2010 NetBurner, All Rights Reserved.
+Permission is hereby granted to purchasers of the
+NetBurner Network Development Kit to use these 
+programs on one computer, and only to support the
+development of embedded applications that will run
+on NetBurner provided hardware.
+ 
+No other rights to use this program or it's derivatives,
+in part or in whole, are granted.
+ 
+It may be possible to license this or other NetBurner 
+software for use on non NetBurner hardware.  Please
+contact sales@netBurner.com for more information.
+ 
+NetBurner makes no representation or warranties
+with respect to the performance of this computer 
+program, and specifically disclaims any responsibility
+for any damages, special or consequential, connected 
+with the use of this program.
+  
+8. The NetBurner Embedded Software License
+
+Copyright 1998-2010 NetBurner, All Rights Reserved
+Permission is hereby granted to purchasers of NetBurner
+hardware to use or modify this computer program for any
+use as long as the resultant program is only executed
+on NetBurner provided hardware.
+ 
+No other rights to use this program or it's derivatives,
+in part or in whole, are granted.
+ 
+It may be possible to license this or other NetBurner 
+software for use on non NetBurner hardware.  Please 
+contact sales@netburner.com for more information.
+ 
+NetBurner makes no representation or warranties
+with respect to the performance of this computer program, 
+and specifically disclaims any responsibility for any 
+damages, special or consequential, connected with the 
+use of this program.
+ 
+ 
+9. Life Support Disclaimer:
+
+NetBurner’s products both hardware and software (including tools) are not authorized
+for use as critical components in life support devices or systems, without the express
+written approval of NetBurner, Inc. prior to use. As used herein:
+
+1. Life support devices or systems are devices or systems that (a) are intended for
+surgical implant into the body or (b) support or sustain life, and whose failure
+to perform, when properly used in accordance with instructions for use provided in
+the labeling, can be reasonably expected to result in a significant injury to the
+user.
+
+2. A critical component is any component of a life support device or system whose
+failure to perform can be reasonably expected to cause the failure of the life support
+device or system, or to affect its safety or effectiveness.

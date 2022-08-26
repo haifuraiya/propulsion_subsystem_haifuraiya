@@ -1,0 +1,10 @@
+"Part";"Value";"Device";"Package";"Description";"COPYRIGHT";"MF";"MPN";"PCBLABEL";
+"B1";"MCAT-4CU-C-PCB/BOTTOM";"MCAT-4CU-C-PCB/BOTTOM";"MCAT-4CU-C-BOTTOM-V4-BLANK";"";"(c) 2015, THE GEORGE WASHINGTON UNIVERSITY";"";"";"BOTTOM";
+"F4";"SMTRAM2-6-5";"SMTRAM2-6-5";"SMTRA-M2-6-5";"Type SMTRA - ReelFast Surface Mount Right Angle (R'ANGLE) Fastener (Metric)";"";"Penn Engineering";"SMTRAM2-6-5-DT";"";
+"F5";"SMTRAM2-6-5";"SMTRAM2-6-5";"SMTRA-M2-6-5";"Type SMTRA - ReelFast Surface Mount Right Angle (R'ANGLE) Fastener (Metric)";"";"Penn Engineering";"SMTRAM2-6-5-DT";"";
+"F6";"SMTRAM2-6-5";"SMTRAM2-6-5";"SMTRA-M2-6-5";"Type SMTRA - ReelFast Surface Mount Right Angle (R'ANGLE) Fastener (Metric)";"";"Penn Engineering";"SMTRAM2-6-5-DT";"";
+"F7";"SMTRAM2-6-5";"SMTRAM2-6-5";"SMTRA-M2-6-5";"Type SMTRA - ReelFast Surface Mount Right Angle (R'ANGLE) Fastener (Metric)";"";"Penn Engineering";"SMTRAM2-6-5-DT";"";
+"GBUS-TOP1:G1";"HIROSE-FH40-60S-0.5SV";"HIROSE-FH40-60S-0.5SV";"HIROSE-FH40-60S-0.5SV";"";"";"HIROSE/HRS";"FH40-60S-0.5SV";"G1";
+"GBUS-TOP1:G2";"HIROSE-FH40-60S-0.5SV";"HIROSE-FH40-60S-0.5SV";"HIROSE-FH40-60S-0.5SV";"";"";"HIROSE/HRS";"FH40-60S-0.5SV";"G2";
+"GBUS-TOP1:H1";"H1-H5-INBOARD-CSK-BUS-CONN";"H1-H5-INBOARD-CSK-BUS-CONN";"CONN-2X26X0.1-HDR";"H1/H5/Inboard Cubesat Kit Bus Connector";"";"SAMTEC";"ESQ-126-37-G-D";"H1";
+"GBUS-TOP1:H2";"H2-H6-OUTBOARD-CSK-BUS-CONN";"H2-H6-OUTBOARD-CSK-BUS-CONN";"CONN-2X26X0.1-HDR";"";"";"SAMTEC";"ESQ-126-37-G-D";"H2";

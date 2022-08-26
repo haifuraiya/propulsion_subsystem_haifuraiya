@@ -1,0 +1,82 @@
+*
+*
+G04 PADS 9.2 Build Number: 406656 generated Gerber (RS-274-X) file*
+G04 PC Version=2.1*
+*
+%IN "POWERDESIGN_PCB_V03_051"*%
+*
+%MOIN*%
+*
+%FSLAX35Y35*%
+*
+*
+*
+*
+G04 PC Standard Apertures*
+*
+*
+G04 Thermal Relief Aperture macro.*
+%AMTER*
+1,1,$1,0,0*
+1,0,$1-$2,0,0*
+21,0,$3,$4,0,0,45*
+21,0,$3,$4,0,0,135*
+%
+*
+*
+G04 Annular Aperture macro.*
+%AMANN*
+1,1,$1,0,0*
+1,0,$2,0,0*
+%
+*
+*
+G04 Odd Aperture macro.*
+%AMODD*
+1,1,$1,0,0*
+1,0,$1-0.005,0,0*
+%
+*
+*
+G04 PC Custom Aperture Macros*
+*
+*
+*
+*
+*
+*
+G04 PC Aperture Table*
+*
+%ADD033C,0.01*%
+%ADD040C,0.03*%
+%ADD045C,0.001*%
+*
+*
+*
+*
+G04 PC Circuitry*
+G04 Layer Name POWERDESIGN_PCB_V03_051 - circuitry*
+%LPD*%
+*
+*
+G04 PC Custom Flashes*
+G04 Layer Name POWERDESIGN_PCB_V03_051 - flashes*
+%LPD*%
+*
+*
+G04 PC Circuitry*
+G04 Layer Name POWERDESIGN_PCB_V03_051 - circuitry*
+%LPD*%
+*
+G54D33*
+G01X100500Y100500D02*
+X664000D01*
+Y536000*
+X100500*
+Y100500*
+G54D40*
+X117500Y140000D03*
+X642000Y482000D03*
+G54D45*
+X0Y0D02*
+M02*

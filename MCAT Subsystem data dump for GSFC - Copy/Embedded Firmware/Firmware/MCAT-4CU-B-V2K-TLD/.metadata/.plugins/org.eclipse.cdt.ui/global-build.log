@@ -1,0 +1,392 @@
+
+**** Rebuild of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT SS\USNA\BRICSAT\Firmware\MCAT-BRICSAT-TLD\test -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 71 bytes
+Result counts = 49 total_ends :25
+28 bytes out of 54 original encode out of 71 total original 
+Processing /index.htm 71 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT SS\USNA\BRICSAT\Firmware\MCAT-BRICSAT-TLD\test -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023e14 
+Block size= 142K
+Execution starts at 40000400 
+compressed 145940 bytes into 86718 bytes
+Code CheckSum= 63f5fd0e
+Struct CheckSum= 5e5bc06e
+S records output with a base address of c0040000
+S records output with a final address of c00552d6
+About to write S7...
+******************************Build summary ******************************
+Used 86742 bytes of 33292288 available flash (0.26%)
+Used 636568 bytes of 67108095 available ram (0.95%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 2273  ms.  
+
+**** Rebuild of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+comphtml ../html -ohtmldata.cpp
+Reading files from ../html and compressing them into htmldata.cpp
+Ignoring files and directories: CVS, cvs, .SVN, .svn, .git, .GIT
+MIME_file: C:\nburn/pcbin/MIME_magic.txt
+
+Building MIME list..... Done
+Processing /index.htm 71 bytes
+Result counts = 49 total_ends :25
+28 bytes out of 54 original encode out of 71 total original 
+Processing /index.htm 71 bytes
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023e14 
+Block size= 142K
+Execution starts at 40000400 
+compressed 145940 bytes into 86718 bytes
+Code CheckSum= 63f5fd0e
+Struct CheckSum= 5e5bc06e
+S records output with a base address of c0040000
+S records output with a final address of c00552d6
+About to write S7...
+******************************Build summary ******************************
+Used 86742 bytes of 33292288 available flash (0.26%)
+Used 636568 bytes of 67108095 available ram (0.95%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 5608  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023e14 
+Block size= 142K
+Execution starts at 40000400 
+compressed 145940 bytes into 86718 bytes
+Code CheckSum= 63f5fd0e
+Struct CheckSum= 5e5bc06e
+S records output with a base address of c0040000
+S records output with a final address of c00552d6
+About to write S7...
+******************************Build summary ******************************
+Used 86742 bytes of 33292288 available flash (0.26%)
+Used 636568 bytes of 67108095 available ram (0.95%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 888  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for test
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+..\main.cpp: In function 'void UserMain(void*)':
+..\main.cpp:44: error: 'nCounter' was not declared in this scope
+..\main.cpp:44: error: 'incrementLeds' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 416  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023624 
+Block size= 140K
+Execution starts at 40000400 
+compressed 143908 bytes into 83669 bytes
+Code CheckSum= 7a8639dd
+Struct CheckSum= 47cb9778
+S records output with a base address of c0040000
+S records output with a final address of c00546ed
+About to write S7...
+******************************Build summary ******************************
+Used 83693 bytes of 33292288 available flash (0.25%)
+Used 612104 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 967  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023634 
+Block size= 140K
+Execution starts at 40000400 
+compressed 143924 bytes into 83624 bytes
+Code CheckSum= 3a021bfc
+Struct CheckSum= 884fb576
+S records output with a base address of c0040000
+S records output with a final address of c00546c0
+About to write S7...
+******************************Build summary ******************************
+Used 83648 bytes of 33292288 available flash (0.25%)
+Used 612120 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 655  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023634 
+Block size= 140K
+Execution starts at 40000400 
+compressed 143924 bytes into 83628 bytes
+Code CheckSum= 39f81bf2
+Struct CheckSum= 8859b57c
+S records output with a base address of c0040000
+S records output with a final address of c00546c4
+About to write S7...
+******************************Build summary ******************************
+Used 83652 bytes of 33292288 available flash (0.25%)
+Used 612120 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 692  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83657 bytes
+Code CheckSum= f55257c2
+Struct CheckSum= ccff78df
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 634  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83657 bytes
+Code CheckSum= f55257c2
+Struct CheckSum= ccff78df
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 1499  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83657 bytes
+Code CheckSum= f55257c2
+Struct CheckSum= ccff78df
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 769  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83657 bytes
+Code CheckSum= f55257c2
+Struct CheckSum= ccff78df
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 701  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83657 bytes
+Code CheckSum= f55257c2
+Struct CheckSum= ccff78df
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 784  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/mod5270/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5270 -DMCF5270 -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/mod5270/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+..\main.cpp:46:2: error: #error CPP FAIL hardware not supported by this application.
+Build error occurred, build is stopped
+Time consumed: 380  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o htmldata.o htmldata.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83657 bytes
+Code CheckSum= f55257c2
+Struct CheckSum= ccff78df
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 854  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83657 bytes
+Code CheckSum= f55257c2
+Struct CheckSum= ccff78df
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 777  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+m68k-elf-g++ main.o htmldata.o -Wl,-Map=test.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5441X/lib/MOD5441X.ld -Wl,-RC:\nburn/MOD5441X/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5441X.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a -Wl,--end-group -otest.elf
+m68k-elf-objcopy test.elf --strip-all --output-target=srec test.s19
+compcode test.s19 test_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236e4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144100 bytes into 83658 bytes
+Code CheckSum= f5b657c2
+Struct CheckSum= cc9b78de
+S records output with a base address of c0040000
+S records output with a final address of c00546e2
+About to write S7...
+******************************Build summary ******************************
+Used 83682 bytes of 33292288 available flash (0.25%)
+Used 612296 bytes of 67108095 available ram (0.91%)
+NNDK release tag version:2.6.4
+Build complete for project test
+Time consumed: 3940  ms.  
+
+**** Build of configuration Release for project test ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/MOD5441X/include -IC:\nburn/gcc-m68k/m68k-elf/include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o main.o ..\main.cpp
+..\main.cpp:58:13: error: invalid suffix "fffff" on integer constant
+Build error occurred, build is stopped
+Time consumed: 524  ms.  

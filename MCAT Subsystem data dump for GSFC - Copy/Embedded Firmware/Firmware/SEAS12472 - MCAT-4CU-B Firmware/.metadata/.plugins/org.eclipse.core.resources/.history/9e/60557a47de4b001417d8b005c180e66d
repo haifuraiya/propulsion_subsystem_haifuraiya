@@ -1,0 +1,13 @@
+/*
+ * mcat_routines.cpp
+ *
+ *  Created on: Oct 4, 2014
+ *      Author: samudra
+ */
+#include <iostream>
+#include <iomanip>
+void testExtRoutine() {
+	cout << "we entered testExtRoutine" << endl;
+}
+
+

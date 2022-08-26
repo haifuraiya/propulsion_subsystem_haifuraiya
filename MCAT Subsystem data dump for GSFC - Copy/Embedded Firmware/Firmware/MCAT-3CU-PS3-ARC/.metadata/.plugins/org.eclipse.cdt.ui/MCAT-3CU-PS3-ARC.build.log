@@ -1,0 +1,11 @@
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -Ic:\nburn\include -Ic:\nburn\mod5270\include -Ic:\nburn\gcc-m68k\m68k-elf\include -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5208 -DMOD5270 -DMCF5270 -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC.map -mcpu=5208 -Wl -Wl,-n -TD:\nburn\MOD5270\lib\MOD5270.ld -Wl,-RD:\nburn\MOD5270\lib\sys.ld -Wl,--start-group,D:\nburn\lib\MOD5270.a D:\nburn\lib\NetBurner.a D:\nburn\lib\FatFile.a D:\nburn\lib\rtl8711Library.a -Wl,--end-group -oMCAT-3CU-PS3-ARC.elf
+m68k-elf-g++: D:\nburn\lib\NetBurner.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\FatFile.a: Permission denied
+m68k-elf-g++: D:\nburn\lib\rtl8711Library.a: Permission denied
+Build error occurred, build is stopped
+Time consumed: 648  ms.  

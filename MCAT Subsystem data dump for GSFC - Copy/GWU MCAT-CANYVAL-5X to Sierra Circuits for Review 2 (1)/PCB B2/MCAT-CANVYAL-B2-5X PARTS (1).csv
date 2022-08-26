@@ -1,0 +1,6 @@
+"Part";"Value";"Device";"Package";"Description";"COPYRIGHT";"MF";"MPN";"PCBLABEL";
+"B3";"MCAT-4CU-C-PCB/MID";"MCAT-4CU-C-PCB/MID";"MCAT-4CU-C-MID-V4-BLANK";"";"(c) 2015, GWU";"";"";"B2";
+"F1";"SMTRAM2-6-5";"SMTRAM2-6-5";"SMTRA-M2-6-5";"Type SMTRA - ReelFast Surface Mount Right Angle (R'ANGLE) Fastener (Metric)";"";"Penn Engineering";"SMTRAM2-6-5-DT";"";
+"F7";"SMTRAM2-6-5";"SMTRAM2-6-5";"SMTRA-M2-6-5";"Type SMTRA - ReelFast Surface Mount Right Angle (R'ANGLE) Fastener (Metric)";"";"Penn Engineering";"SMTRAM2-6-5-DT";"";
+"THL2:TH2";"MCAT-TH-G4X-YONSEI/LH";"MCAT-TH-G4X-YONSEI/LH";"MCAT-TH-G4X-LH";"Thruster for CANYVAL bus. Note LH and RH orientations are separate, and opposing pin arrangements. Layers are also flipped.";"";"";"";"";
+"THR1:TH2";"MCAT-TH-G4X-YONSEI/RH";"MCAT-TH-G4X-YONSEI/RH";"MCAT-TH-G4X-RH";"Thruster for CANYVAL bus. Note LH and RH orientations are separate, and opposing pin arrangements. Layers are also flipped.";"";"";"";"";

@@ -1,0 +1,98 @@
+Partlist
+
+Exported from MCAT-CANYVAL-BPL-5X.sch at 2/24/2015 10:20:09 AM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part           Value                     Device                    Package                                Library           Sheet
+
+B2             MCAT-4CU-C-PCB/BPL        MCAT-4CU-C-PCB/BPL        MCAT-4CU-C-BPL-V4-BLANK                gwu_mpnl_ucat_v10 1
+CU-V2L1-1:BC3  BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 CU-V2L2:1
+CU-V2L1-1:BC4  BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 CU-V2L2:1
+CU-V2L1-1:J9   CONN_NANO54415_MODULE     CONN_NANO54415_MODULE     CONN_SD-67910-001                      gwu_mpnl_ucat_v10 CU-V2L2:1
+CU-V2L1-1:OK1  PS2801C-4                 PS2801C-4                 SSOP(16PIN)                            gwu_mpnl_ucat_v10 CU-V2L2:1
+CU-V2L1-1:R3   560R                      R-US_R0805                R0805                                  resistor          CU-V2L2:1
+CU-V2L1-1:R4   1K2                       R-US_R0805                R0805                                  resistor          CU-V2L2:1
+CU-V2L1-1:SJ3  0R                        SJ                        SJ                                     jumper            CU-V2L2:1
+CU-V2L1-1:SW1  SPST_TACT-EVQQ2           SPST_TACT-EVQQ2           EVQ-Q2                                 adafruit          CU-V2L2:1
+CU-V2L1-1:TP1  PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 CU-V2L2:1
+J1             MOLEX-502598-5193         MOLEX-502598-5193         MOLEX-502598-5193                      gwu_mpnl_ucat_v10 1
+J2             MOLEX-502598-5193         MOLEX-502598-5193         MOLEX-502598-5193                      gwu_mpnl_ucat_v10 1
+PD-V2L1-1:BC1  BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:BC2  BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:BC3  BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:BC4  BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:OK2  PS2801C-4                 PS2801C-4                 SSOP(16PIN)                            gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:OK3  PS2801C-4                 PS2801C-4                 SSOP(16PIN)                            gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q1   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q2   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q3   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q4   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q5   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q6   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q7   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:Q8   SI5404BDC                 SI5404BDC                 1206-8-CHIPFET                         gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:R7   5K42                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R8   5K42                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R9   5K42                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R10  5K42                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R11  5K42                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R12  5K42                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R13  5K42                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R14  5K42%                     R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R15  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R16  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R17  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R18  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R19  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R20  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R21  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R22  100k                      R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R23  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R24  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R25  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R26  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R27  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R28  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R29  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R30  51k                       R-US_R0402                R0402                                  resistor          PD-V2L1:1
+PD-V2L1-1:R31  0.1R                      R-US_R1206                R1206                                  rcl               PD-V2L1:1
+PD-V2L1-1:R32  0.1R                      R-US_R1206                R1206                                  rcl               PD-V2L1:1
+PD-V2L1-1:R33  0.1R                      R-US_R1206                R1206                                  rcl               PD-V2L1:1
+PD-V2L1-1:R34  0.1R                      R-US_R1206                R1206                                  rcl               PD-V2L1:1
+PD-V2L1-1:U3   LT1161ISW                 LT1161ISW                 20-LEAD-PLASTIC-SO                     gwu_mpnl_ucat_v10 PD-V2L1:1
+PD-V2L1-1:U4   LT1161ISW                 LT1161ISW                 20-LEAD-PLASTIC-SO                     gwu_mpnl_ucat_v10 PD-V2L1:1
+PPU-V8C1-1:BC1 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:BC2 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:BC3 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:BC4 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:C1  680uF/20WV                APSG200ELL681MJB5S        CHEMI-CON-PSG-JB5                      samudra_ucat_v9   PPU-V8C1:1
+PPU-V8C1-1:CT1 MURATA-5600-CURR-XFR/RA   MURATA-5600-CURR-XFR/RA   MURATA-5600-SERIES-CURR-XFR-RA         gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:L1  PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2                      gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:Q11 IXYH30N120C3D1            IXYH30N120C3D1/V          IXYS-TO-247-AD-VERT                    gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:R1  15R                       R-US_R1210                R1210                                  rcl               PPU-V8C1:1
+PPU-V8C1-1:R2  1K                        R-US_R0805                R0805                                  rcl               PPU-V8C1:1
+PPU-V8C1-1:SJ1 0R                        SJ                        SJ                                     jumper            PPU-V8C1:1
+PPU-V8C1-1:T1  MCAT-SPADE-TERMINAL       MCAT-SPADE-TERMINAL       SPADE-TERMINAL-FLANGED-NYLON-INSULATED gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:TP1 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:TP2 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:TP3 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-1:U$1 IXDN604/SI                IXDN604/SI                IXYS-SI-8PIN-POWER-SOIC                gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:BC1 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:BC2 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:BC3 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:BC4 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:C1  680uF/20WV                APSG200ELL681MJB5S        CHEMI-CON-PSG-JB5                      samudra_ucat_v9   PPU-V8C1:1
+PPU-V8C1-3:CT1 MURATA-5600-CURR-XFR/RA   MURATA-5600-CURR-XFR/RA   MURATA-5600-SERIES-CURR-XFR-RA         gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:L1  PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2                      gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:Q11 IXYH30N120C3D1            IXYH30N120C3D1/V          IXYS-TO-247-AD-VERT                    gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:R1  15R                       R-US_R1210                R1210                                  rcl               PPU-V8C1:1
+PPU-V8C1-3:R2  1K                        R-US_R0805                R0805                                  rcl               PPU-V8C1:1
+PPU-V8C1-3:SJ1 0R                        SJ                        SJ                                     jumper            PPU-V8C1:1
+PPU-V8C1-3:T1  MCAT-SPADE-TERMINAL       MCAT-SPADE-TERMINAL       SPADE-TERMINAL-FLANGED-NYLON-INSULATED gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:TP1 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:TP2 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:TP3 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-3:U$1 IXDN604/SI                IXDN604/SI                IXYS-SI-8PIN-POWER-SOIC                gwu_mpnl_ucat_v10 PPU-V8C1:1

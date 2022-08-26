@@ -1,0 +1,96 @@
+/*
+ * groundtest_mcat_config.h - C++ header file for MCAT-4CU controller
+ *
+ * For groundtesting only
+ *
+ * Copyright 2014-2015 The George Washington University. ALL RIGHTS RESERVED. Patents Pending
+ * Author: Samudra Haque (SH), G19124781, N3RDX, samudra@gwu.edu, samudra.haque@gmail.com
+ * 9/25/2014
+ */
+
+#ifndef GROUNDTEST_MCAT_CONFIG_H_
+#define GROUNDTEST_MCAT_CONFIG_H_
+
+//define DMA TIMER section relevant values
+DWORD doPulseStack[USER_TASK_STK_SIZE];
+DWORD uint32_counter = 0;
+DWORD PulseCount = 0;
+DWORD MaxCount = 1;
+int TS1Count = 0;
+bool Continuous = FALSE;
+OS_SEM SemPulse;
+OS_SEM SempTP;
+
+
+//logic definitions
+int HIGH=1; int NHIGH = 0;
+int LOW=0; int NLOW = 1;
+
+int countUP; //interrupt cycle
+
+
+
+
+#ifdef TESTCU
+#include <pins.h>
+//GPIO PIN definition TESTCU
+#define SW_RUNPMA Pins[23]
+#define SW_TP1 Pins[12]
+#define SW_P18L12 Pins[16]
+#define SW_P18H12 Pins[25]
+#define SW_P18L34 Pins[49]
+#define SW_P18H34 Pins[50]
+#else
+#ifdef FLTCU
+#include <pins.h>
+//GPIO PIN definition FLTCU
+#define SW_RUNPMA Pins[23]
+#define SW_TP1 Pins[31]
+#define SW_P18H4 Pins[32]
+#define SW_P18H3 Pins[33]
+#define SW_P18H2 Pins[34]
+#define SW_P18H1 Pins[35]
+#define SW_P18L4 Pins[36]
+#define SW_P18L3 Pins[37]
+#define SW_P18L2 Pins[38]
+#define SW_P18L1 Pins[39]
+
+#define SW_P18L12 Pins[99]
+#define SW_P18H12 Pins[99]
+#define SW_P18L34 Pins[99]
+#define SW_P18H34 Pins[99]
+
+#endif //FLTCU
+#endif //TESTCU
+
+/*
+* TESTBUS (MOD54415), TESTCU (NANO54414)/FLTCU (NANO54414) I2C address
+*/
+#define CU_I2C_SLAVE_ADDR 0x26 // hardcoded I2C slave address.
+#define TESTBUS_I2C_SLAVE_ADDR 0x24 //hardcoded I2C slave address
+
+/*
+* TESTCU/FLTCUsoftware build information
+*/
+#define CU_BUILD_MAJOR "5"  // numeric
+#define CU_BUILD_MINOR "A" // alpha only
+#define CU_VERSION_LEN 10 //numeric
+
+/*
+* TESTBUS software build information
+*/
+#define TB_BUILD_MAJOR "1"  // numeric
+#define TB_BUILD_MINOR "A" // alpha only
+#define TB_VERSION_LEN 10 //numeric
+
+/*
+* General Build Information
+*/
+#define BUILD_TIMESTAMP "201409251844"
+#define BUILD_APP_TASKMON "M2CU-4G"
+#define BUILD_APP_TITLE "Micro-Cathode Arc Thruster 2-Ch Control Unit - Remote Test Program"
+
+
+
+
+#endif /* GROUNDTEST_MCAT_CONFIG_H_ */

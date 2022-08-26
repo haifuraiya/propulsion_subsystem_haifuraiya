@@ -1,0 +1,120 @@
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%IDUSB_Provider%
+CatalogFile=IDUSB.cat
+DriverVer=03/19/2012,3.4.1.92
+
+[SourceDisksNames]
+1=%IDUSB_Install%,,,
+
+[SourceDisksFiles]
+IDUSB.sys = 1
+
+[DestinationDirs]
+IDUSB.Files.Ext = 10,System32\Drivers
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%IDUSB_Provider%=Device,NT,NTx86,NTamd64
+
+;for all platforms
+[Device]
+%VID_1FFF&PID_0100.DeviceDesc%=IdUSB, USB\VID_1FFF&PID_0100  
+
+
+;for windows 2000 non intel platforms
+[Device.NT]
+%VID_1FFF&PID_0100.DeviceDesc%=IdUSB, USB\VID_1FFF&PID_0100  
+
+
+;for x86 platforms
+[Device.NTx86]
+%VID_1FFF&PID_0100.DeviceDesc%=IdUSB, USB\VID_1FFF&PID_0100  
+
+
+;for x64 platforms
+[Device.NTamd64]
+%VID_1FFF&PID_0100.DeviceDesc%=IdUSB, USB\VID_1FFF&PID_0100  
+
+
+[IDUSB]
+CopyFiles=IDUSB.Files.Ext
+AddReg=IDUSB.AddReg
+
+[IDUSB.HW]
+AddReg=IDUSB.AddReg.Guid
+
+[IDUSB.Services]
+Addservice = IDUSB,2,IDUSB.AddService
+
+[IDUSB.NT]
+CopyFiles=IDUSB.Files.Ext
+AddReg=IDUSB.AddReg
+
+[IDUSB.NT.HW]
+AddReg=IDUSB.AddReg.Guid
+
+[IDUSB.NT.Services]
+Addservice = IDUSB,2,IDUSB.AddService
+
+
+[IDUSB.NTx86]
+CopyFiles=IDUSB.Files.Ext
+AddReg=IDUSB.AddReg
+
+[IDUSB.NTx86.HW]
+AddReg=IDUSB.AddReg.Guid
+
+[IDUSB.NTx86.Services]
+Addservice = IDUSB,2,IDUSB.AddService
+
+[IDUSB.NTamd64]
+CopyFiles=IDUSB.Files.Ext
+AddReg=IDUSB.AddReg
+
+[IDUSB.NTamd64.HW]
+AddReg=IDUSB.AddReg.Guid
+
+[IDUSB.NTamd64.Services]
+Addservice = IDUSB,2,IDUSB.AddService
+
+
+[IDUSB.AddReg]
+; Deprecating - do not use in new apps to identify a IDUSB driver
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,IDUSB.sys
+; You may optionally include a check for DriverBase in your application to check for a IDUSB driver
+HKR,,DriverBase,,IDUSB.sys
+HKR,"Parameters","MaximumTransferSize",0x10001,4096
+HKR,"Parameters","DebugLevel",0x10001,2
+HKR,,FriendlyName,,%IDUSB_Description%
+
+[IDUSB.AddService]
+DisplayName    = %IDUSB_Description%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\IDUSB.sys
+AddReg         = IDUSB.AddReg
+LoadOrderGroup = Base
+
+[IDUSB.Files.Ext]
+IDUSB.sys
+
+[IDUSB.AddReg.Guid]
+HKR,,DriverGUID,,%IDUSB.GUID%
+
+[Strings]
+IDUSB_Provider    = "Ideofy"
+IDUSB_Company     = "Ideofy Inc."
+IDUSB_Description = "Ideofy Generic USB Driver (Cypress)"
+IDUSB_DisplayName = "Ideofy USB Generic"
+IDUSB_Install     = "Ideofy USB Driver"
+VID_1FFF&PID_0100.DeviceDesc="LA-08 Logic Analyzer (3.4.1.92)"
+IDUSB.GUID="{B5CC0E79-BDC2-43c0-906A-CDD16BB6C999}"
+IDUSB_Unused      = "."

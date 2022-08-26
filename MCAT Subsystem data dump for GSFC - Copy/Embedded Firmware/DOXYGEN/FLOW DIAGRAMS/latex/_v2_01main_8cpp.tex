@@ -1,0 +1,533 @@
+\hypertarget{_v2_01main_8cpp}{}\section{C\+:/\+Users/samudra/\+Google Drive/\+M\+C\+A\+T4\+C\+U\+F\+S\+W/\+V2 main.\+cpp File Reference}
+\label{_v2_01main_8cpp}\index{C\+:/\+Users/samudra/\+Google Drive/\+M\+C\+A\+T4\+C\+U\+F\+S\+W/\+V2 main.\+cpp@{C\+:/\+Users/samudra/\+Google Drive/\+M\+C\+A\+T4\+C\+U\+F\+S\+W/\+V2 main.\+cpp}}
+{\ttfamily \#include \char`\"{}predef.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include $<$startnet.\+h$>$}\\*
+{\ttfamily \#include $<$autoupdate.\+h$>$}\\*
+{\ttfamily \#include $<$dhcpclient.\+h$>$}\\*
+{\ttfamily \#include $<$taskmon.\+h$>$}\\*
+{\ttfamily \#include $<$smarttrap.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$multichanneli2c.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}mcat\+\_\+config.\+h\char`\"{}}\\*
+Include dependency graph for V2 main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_v2_01main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_v2_01main_8cpp_af3350bd69feae78ebcd4f766916eeb67}{parse\+C\+M\+D\+Packet} (char C\+M\+D\+Packet\mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]})
+\item 
+void \hyperlink{_v2_01main_8cpp_aa3032893ba2f121a12d4cecf88277580}{parse\+Block\+G} (string Block\+G)
+\item 
+void \hyperlink{_v2_01main_8cpp_ab8ff54f4b027d2dfb6d3b63194fc15a4}{parse\+Block\+C\+U} (string Block\+C\+U)
+\item 
+void \hyperlink{_v2_01main_8cpp_a72e39dd7a2538b8b278f927ffd051bde}{parse\+Block\+I\+P\+D} (string Block\+I\+P\+D)
+\item 
+void \hyperlink{_v2_01main_8cpp_a8109658a433363943c469e7743c238ab}{parse\+Block\+P\+P\+U} (string Block\+P\+P\+U)
+\item 
+B\+Y\+T\+E \hyperlink{_v2_01main_8cpp_a22bb15ed96d4891d904b55838e451124}{Ascii2\+Byte} (char $\ast$buf)
+\item 
+void \hyperlink{_v2_01main_8cpp_ad16e5e62f3579a7048e6b981b172885e}{menu} (void)
+\item 
+void \hyperlink{_v2_01main_8cpp_ace7b2f4c33cbf41f3a43c7be01ff7aec}{User\+Main} (void $\ast$pd)
+\item 
+void \hyperlink{_v2_01main_8cpp_aecd22dba5b4407d85b05640e853fc6f6}{display\+C\+L\+I\+Menu} ()
+\item 
+void \hyperlink{_v2_01main_8cpp_a486c7b37eb37847afaeeb6c73de398b9}{display\+Config} ()
+\item 
+void \hyperlink{_v2_01main_8cpp_a855e0d71fbad695926236f90ac687f35}{do\+Pulses} (void $\ast$pdata)
+\item 
+void \hyperlink{_v2_01main_8cpp_a11ee600b69b27b0bb2d1b5b6e8ece140}{stop\+Pulses} (void $\ast$pdata)
+\item 
+void \hyperlink{_v2_01main_8cpp_a10570e6420ce0f0a076e1e9d3518d305}{init\+D\+M\+A\+T\+I\+M\+E\+R1} ()
+\item 
+void \hyperlink{_v2_01main_8cpp_a7c3f73193878c079945a21075f128059}{Set\+Intc} (long func, int vector, int level, int prio)
+\item 
+void \hyperlink{_v2_01main_8cpp_a8a64466bfb43094b3aec845670b959b4}{set\+Defaults} ()
+\item 
+void \hyperlink{_v2_01main_8cpp_a238885c747f586049b766fa4fcd5ec12}{disable\+All} ()
+\item 
+\hyperlink{_v2_01main_8cpp_a89200d64c07024287b4ef31901f44e15}{I\+N\+T\+E\+R\+R\+U\+P\+T} (func\+\_\+isr, 0x2600)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{_v2_01main_8cpp_a405cdd34a0ec61abf8c5205c7a8c3182}{cmd\+Version} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a8a9767341d04352fccd7068bc1d7c370}{cmd\+Mode} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a56a16ee6139d263a1945acac7412db03}{s\+\_\+cmd\+T\+P1} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_ac2f7f3d71312267f0daf019326ab81ab}{s\+\_\+cmd\+T\+P2} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a684796ab1de60babd3eba75aa8489e68}{s\+\_\+cmd\+T\+P3} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a42269eac5fc051ca6c78aae8b6349920}{s\+\_\+cmd\+T\+P4} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_aa8cec591ab6bc2c30368790b9c90e439}{s\+\_\+cmd\+P\+C\+H1} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a0f0135bb7a354979b68358781b0b9a33}{s\+\_\+cmd\+P\+C\+H2} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_ad027927effdfbc03356897f6784a332f}{s\+\_\+cmd\+P\+C\+H3} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a1ee9de883e3c6e7840f6bfd0fdff6976}{s\+\_\+cmd\+P\+C\+H4} =\char`\"{}\char`\"{}
+\item 
+long \hyperlink{_v2_01main_8cpp_ac244c5de67ae1cf2ad9042dd3dd42f5c}{cmd\+T\+P1}
+\item 
+long \hyperlink{_v2_01main_8cpp_a6b5cb6b3c68ceba258ad6741ccf2c2c2}{cmd\+T\+P2}
+\item 
+long \hyperlink{_v2_01main_8cpp_a22ed1f6fb6c9e5132174497269472950}{cmd\+T\+P3}
+\item 
+long \hyperlink{_v2_01main_8cpp_ac556ac861b98bb773707ad78139dd4a7}{cmd\+T\+P4}
+\item 
+long \hyperlink{_v2_01main_8cpp_a6aa9310d261695da6caf50707b289e99}{cmd\+P\+C\+H1}
+\item 
+long \hyperlink{_v2_01main_8cpp_a2ede701ffcc3766012be6e4080433432}{cmd\+P\+C\+H2}
+\item 
+long \hyperlink{_v2_01main_8cpp_a5128aa37f4fea97bace715bd297c7cb4}{cmd\+P\+C\+H3}
+\item 
+long \hyperlink{_v2_01main_8cpp_acda88eaa3c77c003b3a5642a3e28bb48}{cmd\+P\+C\+H4}
+\item 
+string \hyperlink{_v2_01main_8cpp_a37ec136ae86c4b7dc81f393bb1a01af7}{s\+\_\+cmd\+P18\+H1} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a46ce373f60085f5900464cd0731fa20e}{s\+\_\+cmd\+P18\+H2} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a909acdc96889fb5885793e8bc70b083e}{s\+\_\+cmd\+P18\+H3} =\char`\"{}\char`\"{}
+\item 
+string \hyperlink{_v2_01main_8cpp_a607e82175ad61b864bfa84e686437947}{s\+\_\+cmd\+P18\+H4} =\char`\"{}\char`\"{}
+\item 
+bool \hyperlink{_v2_01main_8cpp_a1a10d6a42e7c3ba1ad7f396b687a7eb7}{cmd\+P18\+H1}
+\item 
+bool \hyperlink{_v2_01main_8cpp_a03df8cc8ee6b4d7ba8a3d2ad50914508}{cmd\+P18\+H2}
+\item 
+bool \hyperlink{_v2_01main_8cpp_aba803fecbea259c5af71f0b9f2e9fa5a}{cmd\+P18\+H3}
+\item 
+bool \hyperlink{_v2_01main_8cpp_a74d16dd0ede9be1a1645027bd2e6fb21}{cmd\+P18\+H4}
+\item 
+B\+Y\+T\+E \hyperlink{_v2_01main_8cpp_a750abfb0120c1735c922980bd47640a5}{buffer} \mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}
+\item 
+char \hyperlink{_v2_01main_8cpp_af54d77a991da4ba360d594c2589140df}{I2\+C\+Input\+Buffer} \mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}
+\item 
+char $\ast$ \hyperlink{_v2_01main_8cpp_abed0c40696905e144ed4118061acf700}{inbuf} = \hyperlink{_v2_01main_8cpp_af54d77a991da4ba360d594c2589140df}{I2\+C\+Input\+Buffer}
+\item 
+B\+Y\+T\+E \hyperlink{_v2_01main_8cpp_a92fb5ea5b6a7d108dea33dd07809152d}{address} = \hyperlink{mcatsubsystemconfig_8h_a8fe248bd745b90e2bfe94d8c5fce0a53}{C\+U\+\_\+\+I2\+C\+\_\+\+S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R}
+\item 
+B\+Y\+T\+E \hyperlink{_v2_01main_8cpp_a6c3dedd37414833dd07e72ee4a642d13}{I2\+C\+Stat}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_v2_01main_8cpp_a22bb15ed96d4891d904b55838e451124}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!Ascii2\+Byte@{Ascii2\+Byte}}
+\index{Ascii2\+Byte@{Ascii2\+Byte}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{Ascii2\+Byte}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E Ascii2\+Byte (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a22bb15ed96d4891d904b55838e451124}
+
+
+Definition at line 691 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a238885c747f586049b766fa4fcd5ec12}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!disable\+All@{disable\+All}}
+\index{disable\+All@{disable\+All}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{disable\+All}]{\setlength{\rightskip}{0pt plus 5cm}void disable\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a238885c747f586049b766fa4fcd5ec12}
+
+
+Definition at line 214 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_aecd22dba5b4407d85b05640e853fc6f6}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!display\+C\+L\+I\+Menu@{display\+C\+L\+I\+Menu}}
+\index{display\+C\+L\+I\+Menu@{display\+C\+L\+I\+Menu}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{display\+C\+L\+I\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}void display\+C\+L\+I\+Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_aecd22dba5b4407d85b05640e853fc6f6}
+
+
+Definition at line 259 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a486c7b37eb37847afaeeb6c73de398b9}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!display\+Config@{display\+Config}}
+\index{display\+Config@{display\+Config}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{display\+Config}]{\setlength{\rightskip}{0pt plus 5cm}void display\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a486c7b37eb37847afaeeb6c73de398b9}
+\hypertarget{_v2_01main_8cpp_a855e0d71fbad695926236f90ac687f35}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!do\+Pulses@{do\+Pulses}}
+\index{do\+Pulses@{do\+Pulses}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{do\+Pulses}]{\setlength{\rightskip}{0pt plus 5cm}void do\+Pulses (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pdata}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a855e0d71fbad695926236f90ac687f35}
+
+
+Definition at line 232 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a10570e6420ce0f0a076e1e9d3518d305}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!init\+D\+M\+A\+T\+I\+M\+E\+R1@{init\+D\+M\+A\+T\+I\+M\+E\+R1}}
+\index{init\+D\+M\+A\+T\+I\+M\+E\+R1@{init\+D\+M\+A\+T\+I\+M\+E\+R1}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{init\+D\+M\+A\+T\+I\+M\+E\+R1}]{\setlength{\rightskip}{0pt plus 5cm}void init\+D\+M\+A\+T\+I\+M\+E\+R1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a10570e6420ce0f0a076e1e9d3518d305}
+from 5270 code set /// D\+O N\+O\+T U\+S\+E Set\+Intc((long) \&func\+\_\+isr, 19, 1, 1);
+
+from 5270 code set /// D\+O N\+O\+T U\+S\+E Set\+Intc((long) \&func\+\_\+isr, 19, 1, 1);
+
+from 5270 code set /// D\+O N\+O\+T U\+S\+E Set\+Intc((long) \&func\+\_\+isr, 19, 1, 1); 
+
+Definition at line 655 of file main5.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a89200d64c07024287b4ef31901f44e15}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!I\+N\+T\+E\+R\+R\+U\+P\+T@{I\+N\+T\+E\+R\+R\+U\+P\+T}}
+\index{I\+N\+T\+E\+R\+R\+U\+P\+T@{I\+N\+T\+E\+R\+R\+U\+P\+T}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{I\+N\+T\+E\+R\+R\+U\+P\+T}]{\setlength{\rightskip}{0pt plus 5cm}I\+N\+T\+E\+R\+R\+U\+P\+T (
+\begin{DoxyParamCaption}
+\item[{func\+\_\+isr}]{, }
+\item[{0x2600}]{}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a89200d64c07024287b4ef31901f44e15}
+
+
+Definition at line 164 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_ad16e5e62f3579a7048e6b981b172885e}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!menu@{menu}}
+\index{menu@{menu}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}void menu (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_ad16e5e62f3579a7048e6b981b172885e}
+
+
+Definition at line 709 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_ab8ff54f4b027d2dfb6d3b63194fc15a4}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!parse\+Block\+C\+U@{parse\+Block\+C\+U}}
+\index{parse\+Block\+C\+U@{parse\+Block\+C\+U}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{parse\+Block\+C\+U}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+C\+U (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+C\+U}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_ab8ff54f4b027d2dfb6d3b63194fc15a4}
+
+
+Definition at line 569 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_aa3032893ba2f121a12d4cecf88277580}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!parse\+Block\+G@{parse\+Block\+G}}
+\index{parse\+Block\+G@{parse\+Block\+G}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{parse\+Block\+G}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+G (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+G}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_aa3032893ba2f121a12d4cecf88277580}
+
+
+Definition at line 559 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a72e39dd7a2538b8b278f927ffd051bde}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!parse\+Block\+I\+P\+D@{parse\+Block\+I\+P\+D}}
+\index{parse\+Block\+I\+P\+D@{parse\+Block\+I\+P\+D}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{parse\+Block\+I\+P\+D}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+I\+P\+D (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+I\+P\+D}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a72e39dd7a2538b8b278f927ffd051bde}
+
+
+Definition at line 579 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a8109658a433363943c469e7743c238ab}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!parse\+Block\+P\+P\+U@{parse\+Block\+P\+P\+U}}
+\index{parse\+Block\+P\+P\+U@{parse\+Block\+P\+P\+U}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{parse\+Block\+P\+P\+U}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+Block\+P\+P\+U (
+\begin{DoxyParamCaption}
+\item[{string}]{Block\+P\+P\+U}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a8109658a433363943c469e7743c238ab}
+
+
+Definition at line 634 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_af3350bd69feae78ebcd4f766916eeb67}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!parse\+C\+M\+D\+Packet@{parse\+C\+M\+D\+Packet}}
+\index{parse\+C\+M\+D\+Packet@{parse\+C\+M\+D\+Packet}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{parse\+C\+M\+D\+Packet}]{\setlength{\rightskip}{0pt plus 5cm}void parse\+C\+M\+D\+Packet (
+\begin{DoxyParamCaption}
+\item[{char}]{C\+M\+D\+Packet\mbox{[}\+I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_af3350bd69feae78ebcd4f766916eeb67}
+
+
+Definition at line 498 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a8a64466bfb43094b3aec845670b959b4}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!set\+Defaults@{set\+Defaults}}
+\index{set\+Defaults@{set\+Defaults}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{set\+Defaults}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a8a64466bfb43094b3aec845670b959b4}
+
+
+Definition at line 221 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a7c3f73193878c079945a21075f128059}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!Set\+Intc@{Set\+Intc}}
+\index{Set\+Intc@{Set\+Intc}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{Set\+Intc}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+Intc (
+\begin{DoxyParamCaption}
+\item[{long}]{func, }
+\item[{int}]{vector, }
+\item[{int}]{level, }
+\item[{int}]{prio}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a7c3f73193878c079945a21075f128059}
+\hypertarget{_v2_01main_8cpp_a11ee600b69b27b0bb2d1b5b6e8ece140}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!stop\+Pulses@{stop\+Pulses}}
+\index{stop\+Pulses@{stop\+Pulses}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{stop\+Pulses}]{\setlength{\rightskip}{0pt plus 5cm}void stop\+Pulses (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pdata}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_a11ee600b69b27b0bb2d1b5b6e8ece140}
+\hypertarget{_v2_01main_8cpp_ace7b2f4c33cbf41f3a43c7be01ff7aec}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!User\+Main@{User\+Main}}
+\index{User\+Main@{User\+Main}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{User\+Main}]{\setlength{\rightskip}{0pt plus 5cm}void User\+Main (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}\label{_v2_01main_8cpp_ace7b2f4c33cbf41f3a43c7be01ff7aec}
+
+
+Definition at line 361 of file V2 main.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_v2_01main_8cpp_a92fb5ea5b6a7d108dea33dd07809152d}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!address@{address}}
+\index{address@{address}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{address}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E address = {\bf C\+U\+\_\+\+I2\+C\+\_\+\+S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R}}\label{_v2_01main_8cpp_a92fb5ea5b6a7d108dea33dd07809152d}
+
+
+Definition at line 160 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a750abfb0120c1735c922980bd47640a5}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!buffer@{buffer}}
+\index{buffer@{buffer}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E buffer\mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}}\label{_v2_01main_8cpp_a750abfb0120c1735c922980bd47640a5}
+
+
+Definition at line 157 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a8a9767341d04352fccd7068bc1d7c370}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+Mode@{cmd\+Mode}}
+\index{cmd\+Mode@{cmd\+Mode}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}string cmd\+Mode =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a8a9767341d04352fccd7068bc1d7c370}
+
+
+Definition at line 93 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a1a10d6a42e7c3ba1ad7f396b687a7eb7}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P18\+H1@{cmd\+P18\+H1}}
+\index{cmd\+P18\+H1@{cmd\+P18\+H1}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P18\+H1}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H1}\label{_v2_01main_8cpp_a1a10d6a42e7c3ba1ad7f396b687a7eb7}
+
+
+Definition at line 107 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a03df8cc8ee6b4d7ba8a3d2ad50914508}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P18\+H2@{cmd\+P18\+H2}}
+\index{cmd\+P18\+H2@{cmd\+P18\+H2}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P18\+H2}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H2}\label{_v2_01main_8cpp_a03df8cc8ee6b4d7ba8a3d2ad50914508}
+
+
+Definition at line 107 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_aba803fecbea259c5af71f0b9f2e9fa5a}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P18\+H3@{cmd\+P18\+H3}}
+\index{cmd\+P18\+H3@{cmd\+P18\+H3}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P18\+H3}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H3}\label{_v2_01main_8cpp_aba803fecbea259c5af71f0b9f2e9fa5a}
+
+
+Definition at line 107 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a74d16dd0ede9be1a1645027bd2e6fb21}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P18\+H4@{cmd\+P18\+H4}}
+\index{cmd\+P18\+H4@{cmd\+P18\+H4}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P18\+H4}]{\setlength{\rightskip}{0pt plus 5cm}bool cmd\+P18\+H4}\label{_v2_01main_8cpp_a74d16dd0ede9be1a1645027bd2e6fb21}
+
+
+Definition at line 107 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a6aa9310d261695da6caf50707b289e99}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P\+C\+H1@{cmd\+P\+C\+H1}}
+\index{cmd\+P\+C\+H1@{cmd\+P\+C\+H1}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P\+C\+H1}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+P\+C\+H1}\label{_v2_01main_8cpp_a6aa9310d261695da6caf50707b289e99}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a2ede701ffcc3766012be6e4080433432}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P\+C\+H2@{cmd\+P\+C\+H2}}
+\index{cmd\+P\+C\+H2@{cmd\+P\+C\+H2}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P\+C\+H2}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+P\+C\+H2}\label{_v2_01main_8cpp_a2ede701ffcc3766012be6e4080433432}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a5128aa37f4fea97bace715bd297c7cb4}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P\+C\+H3@{cmd\+P\+C\+H3}}
+\index{cmd\+P\+C\+H3@{cmd\+P\+C\+H3}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P\+C\+H3}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+P\+C\+H3}\label{_v2_01main_8cpp_a5128aa37f4fea97bace715bd297c7cb4}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_acda88eaa3c77c003b3a5642a3e28bb48}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+P\+C\+H4@{cmd\+P\+C\+H4}}
+\index{cmd\+P\+C\+H4@{cmd\+P\+C\+H4}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+P\+C\+H4}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+P\+C\+H4}\label{_v2_01main_8cpp_acda88eaa3c77c003b3a5642a3e28bb48}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_ac244c5de67ae1cf2ad9042dd3dd42f5c}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+T\+P1@{cmd\+T\+P1}}
+\index{cmd\+T\+P1@{cmd\+T\+P1}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+T\+P1}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+T\+P1}\label{_v2_01main_8cpp_ac244c5de67ae1cf2ad9042dd3dd42f5c}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a6b5cb6b3c68ceba258ad6741ccf2c2c2}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+T\+P2@{cmd\+T\+P2}}
+\index{cmd\+T\+P2@{cmd\+T\+P2}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+T\+P2}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+T\+P2}\label{_v2_01main_8cpp_a6b5cb6b3c68ceba258ad6741ccf2c2c2}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a22ed1f6fb6c9e5132174497269472950}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+T\+P3@{cmd\+T\+P3}}
+\index{cmd\+T\+P3@{cmd\+T\+P3}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+T\+P3}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+T\+P3}\label{_v2_01main_8cpp_a22ed1f6fb6c9e5132174497269472950}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_ac556ac861b98bb773707ad78139dd4a7}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+T\+P4@{cmd\+T\+P4}}
+\index{cmd\+T\+P4@{cmd\+T\+P4}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+T\+P4}]{\setlength{\rightskip}{0pt plus 5cm}long cmd\+T\+P4}\label{_v2_01main_8cpp_ac556ac861b98bb773707ad78139dd4a7}
+
+
+Definition at line 102 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a405cdd34a0ec61abf8c5205c7a8c3182}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!cmd\+Version@{cmd\+Version}}
+\index{cmd\+Version@{cmd\+Version}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{cmd\+Version}]{\setlength{\rightskip}{0pt plus 5cm}string cmd\+Version =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a405cdd34a0ec61abf8c5205c7a8c3182}
+
+
+Definition at line 92 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_af54d77a991da4ba360d594c2589140df}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!I2\+C\+Input\+Buffer@{I2\+C\+Input\+Buffer}}
+\index{I2\+C\+Input\+Buffer@{I2\+C\+Input\+Buffer}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{I2\+C\+Input\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}char I2\+C\+Input\+Buffer\mbox{[}I2\+C\+\_\+\+M\+A\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\mbox{]}}\label{_v2_01main_8cpp_af54d77a991da4ba360d594c2589140df}
+
+
+Definition at line 158 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a6c3dedd37414833dd07e72ee4a642d13}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!I2\+C\+Stat@{I2\+C\+Stat}}
+\index{I2\+C\+Stat@{I2\+C\+Stat}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{I2\+C\+Stat}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E I2\+C\+Stat}\label{_v2_01main_8cpp_a6c3dedd37414833dd07e72ee4a642d13}
+
+
+Definition at line 161 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_abed0c40696905e144ed4118061acf700}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!inbuf@{inbuf}}
+\index{inbuf@{inbuf}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{inbuf}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ inbuf = {\bf I2\+C\+Input\+Buffer}}\label{_v2_01main_8cpp_abed0c40696905e144ed4118061acf700}
+
+
+Definition at line 159 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a37ec136ae86c4b7dc81f393bb1a01af7}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P18\+H1@{s\+\_\+cmd\+P18\+H1}}
+\index{s\+\_\+cmd\+P18\+H1@{s\+\_\+cmd\+P18\+H1}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H1}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H1 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a37ec136ae86c4b7dc81f393bb1a01af7}
+
+
+Definition at line 103 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a46ce373f60085f5900464cd0731fa20e}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P18\+H2@{s\+\_\+cmd\+P18\+H2}}
+\index{s\+\_\+cmd\+P18\+H2@{s\+\_\+cmd\+P18\+H2}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H2}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H2 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a46ce373f60085f5900464cd0731fa20e}
+
+
+Definition at line 104 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a909acdc96889fb5885793e8bc70b083e}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P18\+H3@{s\+\_\+cmd\+P18\+H3}}
+\index{s\+\_\+cmd\+P18\+H3@{s\+\_\+cmd\+P18\+H3}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H3}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H3 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a909acdc96889fb5885793e8bc70b083e}
+
+
+Definition at line 105 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a607e82175ad61b864bfa84e686437947}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P18\+H4@{s\+\_\+cmd\+P18\+H4}}
+\index{s\+\_\+cmd\+P18\+H4@{s\+\_\+cmd\+P18\+H4}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P18\+H4}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P18\+H4 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a607e82175ad61b864bfa84e686437947}
+
+
+Definition at line 106 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_aa8cec591ab6bc2c30368790b9c90e439}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P\+C\+H1@{s\+\_\+cmd\+P\+C\+H1}}
+\index{s\+\_\+cmd\+P\+C\+H1@{s\+\_\+cmd\+P\+C\+H1}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P\+C\+H1}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P\+C\+H1 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_aa8cec591ab6bc2c30368790b9c90e439}
+
+
+Definition at line 98 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a0f0135bb7a354979b68358781b0b9a33}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P\+C\+H2@{s\+\_\+cmd\+P\+C\+H2}}
+\index{s\+\_\+cmd\+P\+C\+H2@{s\+\_\+cmd\+P\+C\+H2}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P\+C\+H2}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P\+C\+H2 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a0f0135bb7a354979b68358781b0b9a33}
+
+
+Definition at line 99 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_ad027927effdfbc03356897f6784a332f}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P\+C\+H3@{s\+\_\+cmd\+P\+C\+H3}}
+\index{s\+\_\+cmd\+P\+C\+H3@{s\+\_\+cmd\+P\+C\+H3}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P\+C\+H3}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P\+C\+H3 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_ad027927effdfbc03356897f6784a332f}
+
+
+Definition at line 100 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a1ee9de883e3c6e7840f6bfd0fdff6976}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+P\+C\+H4@{s\+\_\+cmd\+P\+C\+H4}}
+\index{s\+\_\+cmd\+P\+C\+H4@{s\+\_\+cmd\+P\+C\+H4}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+P\+C\+H4}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+P\+C\+H4 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a1ee9de883e3c6e7840f6bfd0fdff6976}
+
+
+Definition at line 101 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a56a16ee6139d263a1945acac7412db03}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+T\+P1@{s\+\_\+cmd\+T\+P1}}
+\index{s\+\_\+cmd\+T\+P1@{s\+\_\+cmd\+T\+P1}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+T\+P1}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+T\+P1 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a56a16ee6139d263a1945acac7412db03}
+
+
+Definition at line 94 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_ac2f7f3d71312267f0daf019326ab81ab}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+T\+P2@{s\+\_\+cmd\+T\+P2}}
+\index{s\+\_\+cmd\+T\+P2@{s\+\_\+cmd\+T\+P2}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+T\+P2}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+T\+P2 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_ac2f7f3d71312267f0daf019326ab81ab}
+
+
+Definition at line 95 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a684796ab1de60babd3eba75aa8489e68}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+T\+P3@{s\+\_\+cmd\+T\+P3}}
+\index{s\+\_\+cmd\+T\+P3@{s\+\_\+cmd\+T\+P3}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+T\+P3}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+T\+P3 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a684796ab1de60babd3eba75aa8489e68}
+
+
+Definition at line 96 of file V2 main.\+cpp.
+
+\hypertarget{_v2_01main_8cpp_a42269eac5fc051ca6c78aae8b6349920}{}\index{V2 main.\+cpp@{V2 main.\+cpp}!s\+\_\+cmd\+T\+P4@{s\+\_\+cmd\+T\+P4}}
+\index{s\+\_\+cmd\+T\+P4@{s\+\_\+cmd\+T\+P4}!V2 main.\+cpp@{V2 main.\+cpp}}
+\subsubsection[{s\+\_\+cmd\+T\+P4}]{\setlength{\rightskip}{0pt plus 5cm}string s\+\_\+cmd\+T\+P4 =\char`\"{}\char`\"{}}\label{_v2_01main_8cpp_a42269eac5fc051ca6c78aae8b6349920}
+
+
+Definition at line 97 of file V2 main.\+cpp.
+

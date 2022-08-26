@@ -1,0 +1,61 @@
+Partlist
+
+Exported from MCAT-CANYVAL-TOP-5X.sch at 2/24/2015 10:48:57 AM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part           Value                       Device                      Package                  Library           Sheet
+
+B8             MCAT-4CU-C-PCB/TOP          MCAT-4CU-C-PCB/TOP          MCAT-4CU-C-TOP-V4-BLANK  gwu_mpnl_ucat_v10 1
+CT-V2L1-1:BC3  BYPASS-CAP-1UF              BYPASS-CAP-1UF              0612-REV                 gwu_mpnl_ucat_v10 CT-V2L1:1
+CT-V2L1-1:BC4  BYPASS-CAP-0.1UF            BYPASS-CAP-0.1UF            0612-REV                 gwu_mpnl_ucat_v10 CT-V2L1:1
+CT-V2L1-1:BC5  BYPASS-CAP-1UF              BYPASS-CAP-1UF              0612-REV                 gwu_mpnl_ucat_v10 CT-V2L1:1
+CT-V2L1-1:BC6  BYPASS-CAP-0.1UF            BYPASS-CAP-0.1UF            0612-REV                 gwu_mpnl_ucat_v10 CT-V2L1:1
+CT-V2L1-1:J7   MOLEX-78171-5007            MOLEX-78171-5007            MOLEX-78171-5007         gwu_mpnl_ucat_v10 CT-V2L1:1
+CT-V2L1-1:JMP1 0R-JUMPA                    0R-JUMPA                    A0R-JMP                  jump-0r-smd       CT-V2L1:1
+CT-V2L1-1:R1   10k                         R-US_R0402                  R0402                    resistor          CT-V2L1:1
+CT-V2L1-1:R2   10k                         R-US_R0402                  R0402                    resistor          CT-V2L1:1
+CT-V2L1-1:R3   10k                         R-US_R0402                  R0402                    resistor          CT-V2L1:1
+CT-V2L1-1:U1   PCA9512ADP                  PCA9512ADP                  SOT505-1                 gwu_mpnl_ucat_v10 CT-V2L1:1
+GBUS-TOP1:G1   HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV    gwu_mpnl_ucat_v10 GBUS-TOP:1
+GBUS-TOP1:G2   HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV    gwu_mpnl_ucat_v10 GBUS-TOP:1
+GBUS-TOP1:H1   H1-H5-INBOARD-CSK-BUS-CONN  H1-H5-INBOARD-CSK-BUS-CONN  CONN-2X26X0.1-HDR        gwu_mpnl_ucat_v10 GBUS-TOP:1
+GBUS-TOP1:H2   H2-H6-OUTBOARD-CSK-BUS-CONN H2-H6-OUTBOARD-CSK-BUS-CONN CONN-2X26X0.1-HDR        gwu_mpnl_ucat_v10 GBUS-TOP:1
+J2             MOLEX-502598-5193           MOLEX-502598-5193           MOLEX-502598-5193        gwu_mpnl_ucat_v10 1
+PM-V2L2-1:BC1  BYPASS-CAP-0.1UF            BYPASS-CAP-0.1UF            0612-REV                 gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:BC2  BYPASS-CAP-1UF              BYPASS-CAP-1UF              0612-REV                 gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:BC3  BYPASS-CAP-0.1UF            BYPASS-CAP-0.1UF            0612-REV                 gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:BC4  BYPASS-CAP-1UF              BYPASS-CAP-1UF              0612-REV                 gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:C1   68uF                        OSCON-50SVPF68M             OS-CON-SVPF-F12          samudra_ucat_v9   PM-V2L2:1
+PM-V2L2-1:C2   4.7uF                       AVX-LD105C475KAB2A          MLCC-X7R-1210            samudra_ucat_v9   PM-V2L2:1
+PM-V2L2-1:C3   10uF                        C-USC1210K                  C1210K                   rcl               PM-V2L2:1
+PM-V2L2-1:C4   10uF                        C-USC1210K                  C1210K                   rcl               PM-V2L2:1
+PM-V2L2-1:C5   68uF                        OSCON-50SVPF68M             OS-CON-SVPF-F12          samudra_ucat_v9   PM-V2L2:1
+PM-V2L2-1:C6   10u                         C-USC1210                   C1210                    adafruit          PM-V2L2:1
+PM-V2L2-1:C7   10u                         C-USC1206                   C1206                    resistor          PM-V2L2:1
+PM-V2L2-1:C8   10n                         C-USC0402                   C0402                    resistor          PM-V2L2:1
+PM-V2L2-1:C9   3.3u                        C-USC0805                   C0805                    resistor          PM-V2L2:1
+PM-V2L2-1:C10  10n                         C-USC0402                   C0402                    resistor          PM-V2L2:1
+PM-V2L2-1:L1   33uH                        MSS1048                     MSS1048                  gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:L2   68uH                        MSS1048                     MSS1048                  gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:L3   10uH                        ELL-5PS100M                 SERIES-POWER-INDUCTORS   gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:R1   2K                          R-US_R0402                  R0402                    rcl               PM-V2L2:1
+PM-V2L2-1:R2   1K                          R-US_R0402                  R0402                    rcl               PM-V2L2:1
+PM-V2L2-1:R3   27mOhms                     R-US_R0805                  R0805                    resistor          PM-V2L2:1
+PM-V2L2-1:R4   4k70.1%                     R-US_R0603                  R0603                    resistor          PM-V2L2:1
+PM-V2L2-1:R5   1M                          R-US_R0402                  R0402                    rcl               PM-V2L2:1
+PM-V2L2-1:R6   1M                          R-US_R0402                  R0402                    rcl               PM-V2L2:1
+PM-V2L2-1:R7   357K                        R-US_R1206                  R1206                    rcl               PM-V2L2:1
+PM-V2L2-1:R8   210K                        R-US_R0402                  R0402                    rcl               PM-V2L2:1
+PM-V2L2-1:R9   619K                        R-US_R0805                  R0805                    rcl               PM-V2L2:1
+PM-V2L2-1:R10  200K                        R-US_R0402                  R0402                    rcl               PM-V2L2:1
+PM-V2L2-1:SJ3  0R                          R-US_R0805                  R0805                    resistor          PM-V2L2:1
+PM-V2L2-1:SJ4  0R                          R-US_R0805                  R0805                    resistor          PM-V2L2:1
+PM-V2L2-1:SJ6  0R                          R-US_R0805                  R0805                    resistor          PM-V2L2:1
+PM-V2L2-1:TP1  PCB-MINI-SMD-TESTPOINT/SQ   PCB-MINI-SMD-TESTPOINT/SQ   PCB-MINI-SMD-TESTPOINT   gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:TP2  PCB-MINI-SMD-TESTPOINT/SQ   PCB-MINI-SMD-TESTPOINT/SQ   PCB-MINI-SMD-TESTPOINT   gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:TP4  PCB-MINI-SMD-TESTPOINT/SQ   PCB-MINI-SMD-TESTPOINT/SQ   PCB-MINI-SMD-TESTPOINT   gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:U1   LTM4609MPV#PBF              LTM4609MPV#PBFROHS/HITEMP   LGA-141-LTC-05-08-1840-B gwu_mpnl_ucat_v10 PM-V2L2:1
+PM-V2L2-1:U2   LT3030MPFE#PBF              LT3030MPFE#PBF              TSSOP20-FE-CB            gwu_mpnl_ucat_v10 PM-V2L2:1

@@ -1,0 +1,44 @@
+Partlist
+
+Exported from MCAT-CANYVAL-BPR-5X.sch at 2/24/2015 10:39:07 AM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part           Value                     Device                    Package                                Library           Sheet
+
+B1             MCAT-4CU-C-PCB/BPR        MCAT-4CU-C-PCB/BPR        MCAT-4CU-C-BPR-V4-BLANK                gwu_mpnl_ucat_v10 1
+J4             MOLEX-502598-5193         MOLEX-502598-5193         MOLEX-502598-5193                      gwu_mpnl_ucat_v10 1
+PPU-V8C1-2:BC1 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:BC2 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:BC3 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:BC4 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:C1  680uF/20WV                APSG200ELL681MJB5S        CHEMI-CON-PSG-JB5                      samudra_ucat_v9   PPU-V8C1:1
+PPU-V8C1-2:CT1 MURATA-5600-CURR-XFR/RA   MURATA-5600-CURR-XFR/RA   MURATA-5600-SERIES-CURR-XFR-RA         gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:L1  PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2                      gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:Q11 IXYH30N120C3D1            IXYH30N120C3D1/V          IXYS-TO-247-AD-VERT                    gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:R1  15R                       R-US_R1210                R1210                                  rcl               PPU-V8C1:1
+PPU-V8C1-2:R2  1K                        R-US_R0805                R0805                                  rcl               PPU-V8C1:1
+PPU-V8C1-2:SJ1 0R                        SJ                        SJ                                     jumper            PPU-V8C1:1
+PPU-V8C1-2:T1  MCAT-SPADE-TERMINAL       MCAT-SPADE-TERMINAL       SPADE-TERMINAL-FLANGED-NYLON-INSULATED gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:TP1 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:TP2 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:TP3 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-2:U$1 IXDN604/SI                IXDN604/SI                IXYS-SI-8PIN-POWER-SOIC                gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:BC1 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:BC2 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:BC3 BYPASS-CAP-0.1UF          BYPASS-CAP-0.1UF          0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:BC4 BYPASS-CAP-1UF            BYPASS-CAP-1UF            0612-REV                               gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:C1  680uF/20WV                APSG200ELL681MJB5S        CHEMI-CON-PSG-JB5                      samudra_ucat_v9   PPU-V8C1:1
+PPU-V8C1-4:CT1 MURATA-5600-CURR-XFR/RA   MURATA-5600-CURR-XFR/RA   MURATA-5600-SERIES-CURR-XFR-RA         gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:L1  PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2         PPUV8-INDUCTOR-V2                      gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:Q11 IXYH30N120C3D1            IXYH30N120C3D1/V          IXYS-TO-247-AD-VERT                    gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:R1  15R                       R-US_R1210                R1210                                  rcl               PPU-V8C1:1
+PPU-V8C1-4:R2  1K                        R-US_R0805                R0805                                  rcl               PPU-V8C1:1
+PPU-V8C1-4:SJ1 0R                        SJ                        SJ                                     jumper            PPU-V8C1:1
+PPU-V8C1-4:T1  MCAT-SPADE-TERMINAL       MCAT-SPADE-TERMINAL       SPADE-TERMINAL-FLANGED-NYLON-INSULATED gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:TP1 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:TP2 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:TP3 PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT/SQ PCB-MINI-SMD-TESTPOINT                 gwu_mpnl_ucat_v10 PPU-V8C1:1
+PPU-V8C1-4:U$1 IXDN604/SI                IXDN604/SI                IXYS-SI-8PIN-POWER-SOIC                gwu_mpnl_ucat_v10 PPU-V8C1:1

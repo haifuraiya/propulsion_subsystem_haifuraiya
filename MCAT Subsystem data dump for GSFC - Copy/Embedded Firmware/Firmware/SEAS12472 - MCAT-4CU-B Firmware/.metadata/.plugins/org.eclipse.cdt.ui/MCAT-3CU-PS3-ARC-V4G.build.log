@@ -1,0 +1,24 @@
+
+**** Build of configuration Release for project MCAT-3CU-PS3-ARC-V4G ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -IC:\nburn/include -IC:\nburn/mod5270B/include -IC:\nburn/gcc-m68k/m68k-elf/include -IC:\Users\samudra\Dropbox\GWU\MPNL\Research\uCAT Subsystem\USNA\BRICSAT\Design Sprint 5\Firmware\SEAS12472 - MCAT-4CU-B Firmware\MCAT-3CU-PS3-ARC-V4G -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5270B -DMCF5270 -o main.o ..\main.cpp
+m68k-elf-g++ main.o -Wl,-Map=MCAT-3CU-PS3-ARC-V4G.map -mcpu=5206e -Wl -Wl,-n -TC:\nburn/MOD5270B/lib/MOD5270B.ld -Wl,-RC:\nburn/MOD5270B/lib/sys.ld -Wl,--start-group,C:\nburn/lib/MOD5270.a C:\nburn/lib/NetBurner.a C:\nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oMCAT-3CU-PS3-ARC-V4G.elf
+m68k-elf-objcopy MCAT-3CU-PS3-ARC-V4G.elf --strip-all --output-target=srec MCAT-3CU-PS3-ARC-V4G.s19
+compcode MCAT-3CU-PS3-ARC-V4G.s19 MCAT-3CU-PS3-ARC-V4G_APP.s19 -R 0xffc08000 0xFFC80000 -PMOD5270B
+Block starts at 2000000 
+Block ends at 203d6dc 
+Block size= 245K
+Execution starts at 2000000 
+compressed 251612 bytes into 152193 bytes
+Code CheckSum= ad8fc8de
+Struct CheckSum= 90bf6013
+S records output with a base address of ffc08000
+S records output with a final address of ffc2d299
+About to write S7...
+******************************Build summary ******************************
+Used 152217 bytes of 491520 available flash (30.97%)
+Used 733840 bytes of 8388608 available ram (8.75%)
+NNDK release tag version:2.6.7
+Build complete for project MCAT-3CU-PS3-ARC-V4G
+Time consumed: 38796  ms.  

@@ -1,0 +1,15 @@
+Partlist
+
+Exported from MCAT-CANYVAL-BOTTOM-5X.sch at 2/24/2015 10:52:52 AM
+
+EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part         Value                       Device                      Package                    Library           Sheet
+
+B8           MCAT-4CU-C-PCB/BOTTOM       MCAT-4CU-C-PCB/BOTTOM       MCAT-4CU-C-BOTTOM-V4-BLANK gwu_mpnl_ucat_v10 1
+GBUS-TOP1:G1 HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV      gwu_mpnl_ucat_v10 GBUS-BOTTOM:1
+GBUS-TOP1:G2 HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV       HIROSE-FH40-60S-0.5SV      gwu_mpnl_ucat_v10 GBUS-BOTTOM:1
+GBUS-TOP1:H1 H1-H5-INBOARD-CSK-BUS-CONN  H1-H5-INBOARD-CSK-BUS-CONN  CONN-2X26X0.1-HDR          gwu_mpnl_ucat_v10 GBUS-BOTTOM:1
+GBUS-TOP1:H2 H2-H6-OUTBOARD-CSK-BUS-CONN H2-H6-OUTBOARD-CSK-BUS-CONN CONN-2X26X0.1-HDR          gwu_mpnl_ucat_v10 GBUS-BOTTOM:1
