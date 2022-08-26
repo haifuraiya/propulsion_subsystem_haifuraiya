@@ -29,8 +29,8 @@ If you choose to view/utilize the references (Approximately *3.14GB, 3525 files*
 
 [1:] https://github.com/phase4ground/documents/tree/master/Papers_Articles_Presentations/Slide_Presentations/haifuraiya/   
 [2:] https://github.com/phase4ground/documents/blob/master/Papers_Articles_Presentations/Slide_Presentations/haifuraiya/HEO-F_Mission%20Overview.pptx  
-[99:]https://mpnl.seas.gwu.edu/
-[100:] https://www.gwu.edu
+[99:] https://mpnl.seas.gwu.edu/  
+[100:] https://www.gwu.edu  
 [101:] TBD
 
 
